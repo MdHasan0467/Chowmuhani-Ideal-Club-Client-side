@@ -43,7 +43,7 @@ const MemberShipForm = () => {
                <input
                    type="text"
                    className="input input-bordered md:w-80"
-                   placeholder="Enter your valid number"
+                   placeholder="আপনার মাতার নাম লিখুন"
                />
              </div>
                                  <div className="form-control">
@@ -188,7 +188,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered md:w-80"
-            placeholder="আপনার গ্রামের নাম লিখুন"
+            placeholder="গ্রামের নাম লিখুন"
           />
         </div>
 
@@ -199,7 +199,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered  md:w-80"
-            placeholder="আপনাদের পোষ্ট অফিসের নাম লিখুন"
+            placeholder="পোষ্ট অফিসের নাম লিখুন"
           />
         </div>
         </div>
@@ -211,7 +211,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered md:w-80"
-            placeholder="আপনার থানার নাম লিখুন"
+            placeholder="থানার নাম লিখুন"
           />
         </div>
 
@@ -222,7 +222,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered  md:w-80"
-            placeholder="আপনাদের জেলা কোনটি লিখুন"
+            placeholder="জেলার নাম লিখুন"
           />
         </div>
       </div>
@@ -239,7 +239,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered md:w-80"
-            placeholder="আপনার গ্রামের নাম লিখুন"
+            placeholder="গ্রামের নাম লিখুন"
           />
         </div>
 
@@ -250,7 +250,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered  md:w-80"
-            placeholder="আপনাদের পোষ্ট অফিসের নাম লিখুন"
+            placeholder="পোষ্ট অফিসের নাম লিখুন"
           />
         </div>
         </div>
@@ -262,7 +262,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered md:w-80"
-            placeholder="আপনার থানার নাম লিখুন"
+            placeholder="থানার নাম লিখুন"
           />
         </div>
 
@@ -273,7 +273,7 @@ const MemberShipForm = () => {
           <input
             type="text"
             className="input input-bordered  md:w-80"
-            placeholder="আপনাদের জেলা কোনটি লিখুন"
+            placeholder="জেলার নাম লিখুন"
           />
         </div>
       </div>
