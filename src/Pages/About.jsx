@@ -1,4 +1,5 @@
 import LogoBanner from '../assets/logoBanner.jpg'
+import Footer from '../Shared/Footer/Footer';
 import LargeNavbar from '../Shared/Navs/Desktop/LargeNavbar';
 import TopLargeNavbar from '../Shared/Navs/Desktop/TopLargeNavbar';
 
@@ -106,6 +107,21 @@ const About = () => {
            <h1 className='m-5 text-xl font-semibold'>যে কেউ চাইলে একজন সেচ্ছাসেবী হিসেবে আমাদের সংগঠনের সদস্য হিসেবে যোগ দান করতে পারবেন। 
             তবে তাকে অবশ্যই আমাদের অনলাইন সদস্য ফরমটি পূরণ করতে হবে।
             </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Footer />
+
 
 
         </div>
