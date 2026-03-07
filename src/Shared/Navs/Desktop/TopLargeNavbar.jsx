@@ -10,7 +10,7 @@ const TopLargeNavbar = () => {
         {/* <p className="text-xl font-bold text-primary cursor-pointer flex md:hidden">
           CIC
         </p> */}
-        <Link className="text-xl font-bold text-white cursor-pointer ">Chowmuhani Ideal Club</Link>
+        <Link className="text-xl font-bold text-white cursor-pointer font-serif hover:text-amber-50">Chowmuhani Ideal Club (CIC)</Link>
       </div>
 
     

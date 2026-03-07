@@ -1,4 +1,5 @@
 import LogoBanner from '../assets/logoBanner.jpg'
+import Logo from '../assets/logo.jpg'
 import Footer from '../Shared/Footer/Footer';
 import LargeNavbar from '../Shared/Navs/Desktop/LargeNavbar';
 import TopLargeNavbar from '../Shared/Navs/Desktop/TopLargeNavbar';
@@ -12,8 +13,21 @@ const About = () => {
 
             {/* Tittle */}
             <div className="font-serif">
+                <div className="">
+                
+                <div className='flex justify-center'>
+                <img src={Logo} alt="Logo" 
+                className='w-20 h-20 mt-2 cursor-no-drop'
+                />
                 <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">চৌমুহনী আইডিয়াল ক্লাব</h1>
-            <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
+                </div>
+                <div>
+                <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
+                </div>
+
+                </div>
+                
+
 
                         <h3 className="text-2xl m-5 text-center">
                 <span className="font-bold">

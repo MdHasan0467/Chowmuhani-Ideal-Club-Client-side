@@ -34,7 +34,7 @@ const LargeNavbar = () => {
       </div>
 
       {/* Mobile Hamburger */}
-      <div className="dropdown dropdown-end md:hidden">
+      {/* <div className="dropdown dropdown-end md:hidden">
 
         <div className="dropdown dropdown-end mx-5">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
@@ -61,7 +61,7 @@ const LargeNavbar = () => {
         <li><a>Logout</a></li>
       </ul>
     </div>
-      </div>
+      </div> */}
     </div>
   );
 };

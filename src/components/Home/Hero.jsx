@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Carousel from "./Carousel";
 
 const Hero = () => {
   return (
@@ -37,6 +38,8 @@ const Hero = () => {
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
+
+
         >
           {/* <img 
             src="https://nirmawebsite.s3.ap-south-1.amazonaws.com/wp-content/uploads/sites/25/2019/05/SU4SW_LOGO-400x300.jpg" 
@@ -44,42 +47,30 @@ const Hero = () => {
             className="rounded-lg shadow-lg"
           /> */}
 
-          <figure className="diff aspect-16/9" tabIndex={0}>
-  <div className="diff-item-1" role="img" tabIndex={0}>
-    <div className="bg-orange-200 text-primary-content grid place-content-center text-5xl font-black">
-      CHOWMUHANI IDEAL CLUB
-    </div>
-  </div>
-  <div className="diff-item-2" role="img">
-    <div className="bg-base-200 grid place-content-center text-5xl font-black">CHOWMUHANI IDEAL CLUB</div>
-  </div>
-  <div className="diff-resizer"></div>
-</figure>
+
+
+          {/* <figure className="diff aspect-16/9" tabIndex={0}>
+            <div className="diff-item-1" role="img" tabIndex={0}>
+              <div className="bg-orange-200 text-primary-content grid place-content-center text-5xl font-black">
+                CHOWMUHANI IDEAL CLUB
+              </div>
+            </div>
+            <div className="diff-item-2" role="img">
+              <div className="bg-base-200 grid place-content-center text-5xl font-black">CHOWMUHANI IDEAL CLUB</div>
+            </div>
+            <div className="diff-resizer"></div>
+          </figure> */}
+
+
+
+          <Carousel />
         </motion.div>
       </motion.div>
 
-      {/* Stats Section */}
-      <motion.section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.8 }}
-      >
-        <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-blue-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-blue-600">500+</h2>
-          <p>Volunteers</p>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-green-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-green-600">120+</h2>
-          <p>Projects</p>
-        </motion.div>
-        <motion.div whileHover={{ scale: 1.05 }} className="p-6 bg-orange-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-orange-600">15K+</h2>
-          <p>People Helped</p>
-        </motion.div>
-      </motion.section>
+      
+      
+      
 
-      {/* Other sections (Mission, Causes, Contact) */}
-      {/* Add similar motion wrappers for animation on scroll */}
 
     </div>
   );

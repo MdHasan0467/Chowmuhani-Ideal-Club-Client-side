@@ -24,13 +24,13 @@ const causes = [
 const OurCauses = () => {
   return (
     <section className="py-20">
-      <div className="container mx-auto px-6">
+      <div className="md:container md:mx-auto md:px-6">
 
         <h2 className="text-3xl font-bold text-center mb-10">
           Our Causes
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="md:grid md:grid-cols-3 gap-6">
 
           {causes.map((cause, i) => (
             <motion.div

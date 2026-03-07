@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const OurMission = () => {
   return (
     <section className="">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row md:space-x-52 items-center">
+      <div className="md:container md:mx-auto md:px-6 flex flex-col md:flex-row md:space-x-52 items-center">
         {/* Text */}
         <motion.div 
           className="md:w-1/2 mb-8 md:mb-0"
