@@ -5,9 +5,11 @@ const MemberShipForm = () => {
   
 
   return (
-    <div className="">
+    <div className="bg-orange-50 p-10">
       {/* <img src={Shortaboli} alt="Shortaboli" className="w-full" /> */}
-      <div className="m-5">
+
+      {/* শর্তসমূহ */}
+      <div className="m-1 md:m-5">
         <h1 className="text-2xl font-bold underline my-5">শর্তাবলিঃ</h1>
         <p>১। আমি নিজ ইচ্ছায় বিনা স্বার্থে "চৌমুহনী আইডিয়াল ক্লাব" এর সদস্য হিসেবে কাজ করতে আগ্রহী।</p>
         <p>২। আমি আমার উপর অর্পিত সকল দ্বায়িত্ব, কর্তব্য, নিয়মাবলী ও সকল শর্তাবলি মানতে বাধ্য থাকিব।</p>
@@ -34,10 +36,12 @@ const MemberShipForm = () => {
         <p>১২। সংগঠন কর্তৃক ধার্য্যকৃত মাসিক টাকা প্রতি মাসের ৫ তারিখের মধ্যে নিজ দ্বায়িত্বে পরিশোধ করিতে হবে।</p>
 
       </div>
-      <form className="w-1/2 mx-auto mt-20 bg-amber-100 p-10">
+
+      {/* Online Form */}
+      <form className="md:w-1/2 md:mx-auto md:mt-20 mt-7 bg-amber-100 md:p-10 p-5">
       <h1 className="text-orange-500 font-serif text-xl md:text-2xl font-bold text-center">অনলাইন সদস্য ফরম</h1>
 
-      <p className="m-5">এই মর্মে প্রত্যয়ন করিতেছি যে, আমি...</p>
+      <p className="md:m-5 m-1">এই মর্মে প্রত্যয়ন করিতেছি যে, আমি...</p>
 
         <h2 className="text-2xl bold">ব্যক্তিগত তথ্যঃ</h2>
         <div className="space-y-4">
@@ -97,7 +101,7 @@ const MemberShipForm = () => {
            <div className="group-card md:flex">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">আপনার ফেসবুক আইডি-র নাম কি?</span>
+                <span className="label-text">ফেসবুক আইডি-র নামঃ</span>
               </label>
               <input
                 type="text"
@@ -107,7 +111,7 @@ const MemberShipForm = () => {
             </div>
             <div className="form-control mx-2">
               <label className="label">
-                <span className="label-text">আপনার ফেসবুক আই ডি - র প্রোফাইল লিংক দিনঃ</span>
+                <span className="label-text">ফেসবুক আই ডি-র প্রোফাইল লিংকঃ</span>
               </label>
               <input
                 type="text"
@@ -318,24 +322,24 @@ const MemberShipForm = () => {
             <span className="label-text">🩸আপনার রক্তের গ্রুপ কি? </span>
           </label>
           <select defaultValue="Pick a color" className="select">
-  <option disabled={true}>রক্তের গ্রুপ নির্বাচন করুন</option>
-  <option>A (+ ve)</option>
-  <option>A (- ve)</option>
-  <option>B (+ ve)</option>
-  <option>B (- ve)</option>              
-  <option>AB (+ ve)</option>         
-  <option>AB (- ve)</option>
-  <option>AB (- ve)</option>
-  <option>O (+ ve)</option>
-  <option>O (- ve)</option>
-  <option>জানা নেই</option>
-</select>
+              <option disabled={true}>রক্তের গ্রুপ নির্বাচন করুন</option>
+              <option>A (+ ve)</option>
+              <option>A (- ve)</option>
+              <option>B (+ ve)</option>
+              <option>B (- ve)</option>              
+              <option>AB (+ ve)</option>         
+              <option>AB (- ve)</option>
+              <option>AB (- ve)</option>
+              <option>O (+ ve)</option>
+              <option>O (- ve)</option>
+              <option>জানা নেই</option>
+          </select>
         </div>
       </div>
         <div className="group-card md:flex mt-5">
           <div className="form-control">
           <label className="label">
-            <span className="label-text">📅🩸আপনি সর্বশেষ কবে রক্ত দান করেছেন?</span>
+            <span className="label-text">🩸সর্বশেষ কবে রক্ত দান করেছেন?</span>
           </label>
           <input
             type="date"
@@ -345,7 +349,7 @@ const MemberShipForm = () => {
 
         <div className="form-control mx-2">
           <label className="label">
-            <span className="label-text">🩸আপনি সর্বমোট কতবার রক্ত দান করেছেন?</span>
+            <span className="label-text">🩸সর্বমোট কতবার রক্ত দান করেছেন?</span>
           </label>
           <input
             type="number"
