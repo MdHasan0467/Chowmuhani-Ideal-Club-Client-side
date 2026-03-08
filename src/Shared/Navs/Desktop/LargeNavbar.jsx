@@ -23,11 +23,7 @@ const LargeNavbar = () => {
         <Link to="/add-event" className="btn btn-ghost btn-sm">Add Event</Link>
         <Link to="/find-blood" className="btn btn-ghost btn-sm">Find Blood</Link>
         <Link to="/dashboard" className="btn btn-ghost btn-sm">Dashboard</Link>
-        <Link 
-          to="/add-new-member"
-          className="btn btn-sm" 
-          style={{ backgroundColor: "#ec6737", color: "white" }}
-        >
+        <Link to="/add-new-member"className="btn btn-sm" style={{ backgroundColor: "#ec6737", color: "white" }}>
           Add New Membber
         </Link>
 
@@ -36,6 +32,7 @@ const LargeNavbar = () => {
 
       {/* Mobile Menu */}
         <div className="flex mx-auto gap-1 md:hidden">
+        <Link to="/" className="btn btn-ghost btn-sm">Home</Link>
         <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
         <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>

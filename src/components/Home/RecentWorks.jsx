@@ -121,9 +121,6 @@ const images = [
 
     return (
         <div>
-            <h1 className="text-2xl md:text-4xl font-bold md:m-5 m-3 mb-8 md:mb-10">Our Recent Works.....</h1>
-            <br />
-            
 
              <div className="max-w-7xl mx-auto px-3 md:px-4 py-8 md:py-10">
 
@@ -162,7 +159,7 @@ const images = [
             onClick={() => setShowAll(true)}
             className="bg-[#ec6737] text-white px-6 py-2 rounded-lg hover:opacity-90 transition"
           >
-            See More...
+            আরো দেখুন...
           </button>
         </div>
       )}

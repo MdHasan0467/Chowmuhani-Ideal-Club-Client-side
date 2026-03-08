@@ -50,6 +50,7 @@ const NextWorkPlan =() => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 space-y-10">
         <h1 className="text-lg md:text-2xl font-semibold">আমাদের পরবর্তী সামাজিক কাজের পরিকল্পনাঃ</h1>
+      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
@@ -83,9 +84,13 @@ const NextWorkPlan =() => {
 
         {/* Plan Right */}
         <div className="bg-green-50 p-6 rounded-xl shadow-lg flex flex-col justify-start relative">
-          <h2 className="text-2xl md:text-3xl font-bold text-green-900 mb-4">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-green-900 mb-4">
             বৃক্ষ রোপণ কর্মসূচী
           </h2>
+          <p className="text-end">সম্ভাব্য তারিখঃ ০৬/০৪/২০২৬</p>
+          <p className="text-end mb-5">স্থানঃ চৌমুহনী সরকারী এস এ কলেজ প্রাঙ্গণ</p>
+          </div>
 
           {/* Text container with fixed height */}
           <div
@@ -103,7 +108,7 @@ const NextWorkPlan =() => {
                 onClick={() => setShowFullText(true)}
                 className="text-green-900 font-semibold hover:underline"
               >
-                See More...
+                বিস্তারিত জানুন...
               </button>
             </div>
           )}
@@ -115,9 +120,16 @@ const NextWorkPlan =() => {
       {showFullText && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4">
           <div className="bg-white rounded-xl max-w-2xl w-full p-6 relative shadow-lg overflow-y-auto max-h-[80vh]">
-            <h2 className="text-2xl font-bold text-green-900 mb-4">
-              বৃক্ষ রোপণ কর্মসূচী
-            </h2>
+         
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-green-900 mb-4">
+            বৃক্ষ রোপণ কর্মসূচী
+          </h2>
+          <p className="text-end">সম্ভাব্য তারিখঃ ০৬/০৪/২০২৬</p>
+          <p className="text-end mb-5">স্থানঃ চৌমুহনী সরকারী এস এ কলেজ প্রাঙ্গণ</p>
+          </div>
+
+
             <p className="text-gray-700 leading-relaxed text-justify">
               {planText}
             </p>

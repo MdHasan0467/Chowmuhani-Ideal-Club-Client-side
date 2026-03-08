@@ -363,7 +363,7 @@ const MemberShipForm = () => {
       <p className="font-semibold m-5">সৃষ্টিকর্তা আমাকে সেই শক্তি এবং সুযোগ করে দিক। (আমিন)</p>
 
         <input
-          className="btn mx-2 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white md:w-80 md:mt-9"
+          className="btn mx-2 w-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white md:mt-9"
           value="জমা দিন"
           type="submit"
         />
