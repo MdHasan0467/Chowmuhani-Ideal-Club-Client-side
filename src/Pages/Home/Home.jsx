@@ -1,6 +1,10 @@
+import BloodBloog from "../../components/Home/BloodBloog";
+import CricketBlood from "../../components/Home/CricketBlood";
 import GetInvolved from "../../components/Home/getInvolved";
 import Hero from "../../components/Home/Hero";
+import RecentWorks from "../../components/Home/RecentWorks";
 import Stat from "../../components/Home/Stat";
+import YouthSocialWork from "../../components/Home/YouthSocialWork";
 // import Carousel from "../../components/Home/Carousel";
 // import OurCauses from "../../components/Home/OurCauses";
 // import OurMission from "../../components/Home/OurMission";
@@ -13,6 +17,10 @@ const Home = () => {
     <div>
       <Hero />
       <Stat />
+      <RecentWorks />
+      <BloodBloog />
+      <YouthSocialWork />
+      <CricketBlood />
       <MemberShipForm />
       {/* <Carousel /> */}
       {/* <OurMission />
