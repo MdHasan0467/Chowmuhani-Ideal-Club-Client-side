@@ -17,6 +17,7 @@ const LargeNavbar = () => {
      {/* Desktop Menu */}
       <div className="hidden md:flex md:mx-auto gap-6">
         <Link to="/" className="btn btn-ghost btn-sm">Home</Link>
+        <Link to="/servey" className="btn btn-ghost btn-sm">Survey</Link>
         <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
         <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>
@@ -32,7 +33,7 @@ const LargeNavbar = () => {
 
       {/* Mobile Menu */}
         <div className="flex mx-auto gap-1 md:hidden">
-        <Link to="/" className="btn btn-ghost btn-sm">Home</Link>
+        <Link to="/servey" className="btn btn-ghost btn-sm">Servey</Link>
         <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
         <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>

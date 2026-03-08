@@ -14,6 +14,8 @@ import FindBlood from './Pages/FindBlood.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import Dashboard from './Pages/Dashboard.jsx'
 import AddNewMember from './Pages/AddNewMember.jsx'
+import IncomeAndCostSharePublicly from './Pages/Home/IncomeAndCostSharePublicly.jsx'
+import AddAdminPost from './Pages/Home/AddAdminPost.jsx'
 
 
 
@@ -57,6 +59,14 @@ const router = createBrowserRouter ([
   {
     path: '/about',
     element: <About />
+  },
+  {
+    path: '/servey',
+    element: <IncomeAndCostSharePublicly />
+  },
+  {
+    path: '/add-admin-post',
+    element: <AddAdminPost />
   },
   {
     path: '/dashboard',

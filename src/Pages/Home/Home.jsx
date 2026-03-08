@@ -12,6 +12,7 @@ import YouthSocialWork from "../../components/Home/YouthSocialWork";
 // import OurMission from "../../components/Home/OurMission";
 import Footer from "../../Shared/Footer/Footer";
 import MemberShipForm from "../MemberShipForm";
+import AdminPosts from "./AdminPosts";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
     <div>
       <Hero />
       <Stat />
+      <AdminPosts />
       <RecentWorks />
       <NextWorkPlan />
       <UserAdviceForNextPlan />
