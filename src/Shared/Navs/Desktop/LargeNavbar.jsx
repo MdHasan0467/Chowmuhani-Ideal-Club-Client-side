@@ -33,6 +33,15 @@ const LargeNavbar = () => {
 
       </div>
 
+
+      {/* Mobile Menu */}
+        <div className="flex mx-auto gap-1 md:hidden">
+        <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
+        <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
+        <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>
+        <Link to="/find-blood" className="btn btn-ghost btn-sm">Find Blood</Link>
+      </div>
+
       {/* Mobile Hamburger */}
       {/* <div className="dropdown dropdown-end md:hidden">
 

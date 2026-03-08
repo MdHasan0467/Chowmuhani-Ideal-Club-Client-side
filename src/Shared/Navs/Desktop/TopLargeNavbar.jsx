@@ -7,10 +7,14 @@ const TopLargeNavbar = () => {
       
       {/* Logo */}
       <div className="flex-1">
-        {/* <p className="text-xl font-bold text-primary cursor-pointer flex md:hidden">
+        <Link to={'/'} 
+        className="text-xl font-bold text-white cursor-pointer font-serif hover:text-amber-50 flex md:hidden">
           CIC
-        </p> */}
-        <Link className="text-xl font-bold text-white cursor-pointer font-serif hover:text-amber-50">Chowmuhani Ideal Club (CIC)</Link>
+        </Link>
+        <Link to={'/'} 
+        className="hidden md:flex text-xl font-bold text-white cursor-pointer font-serif hover:text-amber-50">
+        Chowmuhani Ideal Club (CIC)
+        </Link>
       </div>
 
     
