@@ -179,7 +179,7 @@ const images = [
 
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-3 right-3 bg-black/60 hover:bg-black text-white w-10 h-10 rounded-full flex items-center justify-center text-xl"
+              className="absolute top-3 cursor-pointer right-3 bg-black/60 hover:bg-black text-white w-10 h-10 rounded-full flex items-center justify-center text-xl"
             >
               ×
             </button>
@@ -187,7 +187,7 @@ const images = [
             <div className="flex justify-center mt-4">
               <button
                 onClick={() => handleDownload(selectedImage)}
-                className="bg-[#ec6737] text-white px-6 py-2 rounded-lg hover:opacity-90 transition"
+                className="bg-[#ec6737] cursor-pointer text-white px-6 py-2 rounded-lg hover:opacity-90 transition"
               >
                 Download Image
               </button>

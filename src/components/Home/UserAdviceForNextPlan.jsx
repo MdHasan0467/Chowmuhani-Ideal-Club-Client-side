@@ -9,8 +9,8 @@ const UserAdviceForNextPlan = () => {
 
 
                   <form className="md:w-1/2 md:mx-auto md:mt-20 mt-7 bg-amber-100 md:p-10 p-5">
-        <h2 className="text-2xl bold">ব্যক্তিগত তথ্যঃ</h2>
-                     <div className="form-control">
+                     <h2 className="text-2xl bold">আপনার ব্যক্তিগত তথ্যঃ</h2>
+             <div className="form-control">
                <label className="label">
                  <span className="label-text mr-2">নামঃ</span>
                </label>
@@ -43,7 +43,7 @@ const UserAdviceForNextPlan = () => {
 
 
 
-        <h2 className="text-2xl bold">বর্তমান ঠিকানা</h2>
+        <h2 className="text-2xl bold">আপনার বর্তমান ঠিকানা</h2>
         <div className="form-control">
           <label className="label">
             <span className="label-text mr-2">🏕️গ্রামঃ</span>
@@ -88,11 +88,13 @@ const UserAdviceForNextPlan = () => {
           />
         </div>
 
+        <br /><br />
 
-    <h1>বিষয়</h1>
+
+        <h1 className="text-2xl bold">আপনার পরিকল্পনার বিষয়</h1>
 
     
-        <div className="form-control mx-2">
+        <div className="form-control">
           <label className="label">
             <span className="label-text mr-2">শিরোনামঃ</span>
           </label>
@@ -103,7 +105,7 @@ const UserAdviceForNextPlan = () => {
           />
         </div>
 
-        <div className="form-control mx-2">
+        <div className="form-control">
           <label className="label">
             <span className="label-text mr-2">বিস্তারিতঃ</span>
           </label>
@@ -114,7 +116,7 @@ const UserAdviceForNextPlan = () => {
           />
         </div>
 
-        <div className="form-control mx-2">
+        <div className="form-control">
           <label className="label">
             <span className="label-text mr-2">যে বিষয়ে জানাতে চান তার নমুনা ছবি</span>
           </label>
@@ -123,11 +125,11 @@ const UserAdviceForNextPlan = () => {
           />
         </div>
 
-
+        <br /><br />
 
 
         <input
-          className="btn mx-2 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white  md:mt-9"
+          className="btn mx-2 bg-linear-to-r w-full from-indigo-500 via-purple-500 to-pink-500 border-0 text-white  md:mt-9"
           value="জমা দিন"
           type="submit"
         />
