@@ -9,7 +9,7 @@ const MemberShipForm = () => {
       {/* <img src={Shortaboli} alt="Shortaboli" className="w-full" /> */}
 
       {/* শর্তসমূহ */}
-      <div className="m-1 md:m-5">
+      <div className="mx-1 md:mx-5">
         <h1 className="text-2xl font-bold underline my-5">শর্তাবলিঃ</h1>
         <p>১। আমি নিজ ইচ্ছায় বিনা স্বার্থে "চৌমুহনী আইডিয়াল ক্লাব" এর সদস্য হিসেবে কাজ করতে আগ্রহী।</p>
         <p>২। আমি আমার উপর অর্পিত সকল দ্বায়িত্ব, কর্তব্য, নিয়মাবলী ও সকল শর্তাবলি মানতে বাধ্য থাকিব।</p>

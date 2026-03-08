@@ -121,7 +121,7 @@ const images = [
 
     return (
         <div>
-            <h1>Our Recent Works are.....</h1>
+            <h1 className="text-2xl md:text-4xl font-bold md:m-5 m-3 mb-8 md:mb-10">Our Recent Works.....</h1>
             <br />
             
 
