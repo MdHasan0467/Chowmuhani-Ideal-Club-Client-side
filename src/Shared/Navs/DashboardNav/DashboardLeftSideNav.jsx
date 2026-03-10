@@ -5,7 +5,6 @@ import { Link } from 'react-router';
 
 const DashboardLeftSideNav = () => {
     return (
-        <div>
                     <Scrollbars>
 			<div className="py-10">
 				
@@ -272,7 +271,6 @@ const DashboardLeftSideNav = () => {
 
 			</div>
         </Scrollbars>
-        </div>
     );
 };
 

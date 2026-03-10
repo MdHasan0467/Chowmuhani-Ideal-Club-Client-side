@@ -9,11 +9,13 @@ const Dashboard = () => {
             <TopLargeNavbar />
             <LargeNavbar />
 
-            <div className='grid grid-cols-12 gap-4 h-screen'>
-                <div className='col-span-3 border border-black'>
+            <div className='grid grid-cols-12 gap-4'>
+                <div className='col-span-3'>
                     <DashboardLeftSideNav />
                 </div>
-                <Outlet />
+                <div className="col-span-9">
+                    <Outlet />
+                </div>
             </div>
 
             
