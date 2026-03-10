@@ -1,6 +1,4 @@
 import { useState } from "react";
-import LargeNavbar from "../Shared/Navs/Desktop/LargeNavbar";
-import TopLargeNavbar from "../Shared/Navs/Desktop/TopLargeNavbar";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -121,8 +119,6 @@ const images = [
 
     return (
         <div>
-            <TopLargeNavbar />
-            <LargeNavbar />
             
 
              <div className="max-w-7xl mx-auto px-3 md:px-4 py-8 md:py-10">

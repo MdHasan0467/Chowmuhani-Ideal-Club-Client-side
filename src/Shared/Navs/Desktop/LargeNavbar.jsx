@@ -21,7 +21,7 @@ const LargeNavbar = () => {
         <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
         <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>
-        <Link to="/add-event" className="btn btn-ghost btn-sm">Add Event</Link>
+        <Link to="/dashboard/add/event" className="btn btn-ghost btn-sm">Add Event</Link>
         <Link to="/find-blood" className="btn btn-ghost btn-sm">Find Blood</Link>
         <Link to="/dashboard" className="btn btn-ghost btn-sm">Dashboard</Link>
         <Link to="/add-new-member"className="btn btn-sm" style={{ backgroundColor: "#ec6737", color: "white" }}>

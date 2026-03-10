@@ -5,40 +5,41 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 // import Home from './Pages/Home/Home.jsx'
 import App from './App.jsx'
-import LogIn from './Pages/Authentications/LogIn/LogIn.jsx'
-import SignUp from './Pages/Authentications/SignUp/SignUp.jsx'
+import LogIn from './Pages/LogIn.jsx'
+import SignUp from './Pages/SignUp.jsx'
 import About from './Pages/About.jsx'
 import AddEvent from './Pages/AddEvent.jsx'
 import Events from './Pages/Events.jsx'
 import FindBlood from './Pages/FindBlood.jsx'
 import Gallery from './Pages/Gallery.jsx'
-import Dashboard from './Pages/Dashboard.jsx'
 import AddNewMember from './Pages/AddNewMember.jsx'
-import IncomeAndCostSharePublicly from './Pages/Home/IncomeAndCostSharePublicly.jsx'
-import AddAdminPost from './Pages/Home/AddAdminPost.jsx'
+import IncomeAndCostSharePublicly from './Pages/IncomeAndCostSharePublicly.jsx'
+import AddAdminPost from './Pages/AddAdminPost.jsx'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { HelmetProvider } from 'react-helmet-async'
+import Main from './Layouts/Main.jsx'
+import Home from './Pages/Home.jsx'
+import Dashboard from './Layouts/Dashboard.jsx'
+import AdminProfile from './components/Dashboard/AdminProfile.jsx'
 
 
 
 const router = createBrowserRouter ([
-  {
+ {
+  path:'/',
+  Component: Main,
+  children : [
+     {
     path: '/',
-    element: <App />
+    element: <Home />
   },
   {
-    path: '/login',
-    element: <LogIn />
-  },
-  {
-    path: '/signup',
-    element: <SignUp />
+    path: '/home',
+    element: <Home />
   },
   {
     path: '/add-new-member',
     element: <AddNewMember />
-  },
-  {
-    path: '/add-event',
-    element: <AddEvent />
   },
   {
     path: '/events',
@@ -64,18 +65,46 @@ const router = createBrowserRouter ([
     path: '/servey',
     element: <IncomeAndCostSharePublicly />
   },
-  {
-    path: '/add-admin-post',
-    element: <AddAdminPost />
+
+    {
+    path: '/login',
+    element: <LogIn />
   },
   {
-    path: '/dashboard',
-    element: <Dashboard />
+    path: '/signup',
+    element: <SignUp />
   },
+  ]
+ },
+
+{
+  path: "/dashboard",
+  element: <Dashboard />,
+  children: [
+    {
+      path: "admin/profile",
+      element: <AdminProfile />,
+    },
+    {
+      path: "add/admin/post",
+      element: <AddAdminPost />,
+    },
+    {
+    path: 'add/event',
+    element: <AddEvent />
+  },
+  ],
+}
 ])
+
+const queryClient = new QueryClient();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+           <RouterProvider router={router} />
+      </QueryClientProvider>
+    </HelmetProvider>
   </StrictMode>,
 )

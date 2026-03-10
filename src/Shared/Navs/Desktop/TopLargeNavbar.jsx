@@ -45,7 +45,7 @@ const TopLargeNavbar = () => {
             <span className="badge">New</span>
           </a>
         </li>
-        <li><a href="/add-admin-post">Admin Posts</a></li>
+        <li><a href="/dashboard/add/admin/post">Admin Posts</a></li>
         <li><a>Logout</a></li>
       </ul>
     </div>
@@ -75,7 +75,7 @@ const TopLargeNavbar = () => {
           <li><Link to="/events">Events</Link></li>
           <li><Link to="/get-involved">Get Involved</Link></li>
           <li></li>
-        <li><a href="/add-admin-post">Admin Posts</a></li>
+        <li><a href="/dashboard/add/admin/post">Admin Posts</a></li>
         <li><a>Logout</a></li>
       </ul>
     </div>

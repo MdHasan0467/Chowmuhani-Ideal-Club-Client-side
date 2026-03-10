@@ -1,11 +1,10 @@
-import LargeNavbar from "../Shared/Navs/Desktop/LargeNavbar";
-import TopLargeNavbar from "../Shared/Navs/Desktop/TopLargeNavbar";
+import { Helmet } from "react-helmet-async";
+
 
 const AddEvent = () => {
     return (
         <div>
-            <TopLargeNavbar />
-            <LargeNavbar />
+            <Helmet><title>CIC / Add an event</title></Helmet>
             <h1>Add New Event</h1>
         </div>
     )

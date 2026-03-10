@@ -1,5 +1,5 @@
 import './App.css'
-import Home from './Pages/Home/Home';
+import Home from './Pages/Home';
 import LargeNavbar from './Shared/Navs/Desktop/LargeNavbar';
 import TopLargeNavbar from './Shared/Navs/Desktop/TopLargeNavbar';
 // import ModalButton from './components/Shared/Modals/ModalButton';

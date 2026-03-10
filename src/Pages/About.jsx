@@ -1,15 +1,11 @@
-import LogoBanner from '../assets/logoBanner.jpg'
+// import LogoBanner from '../assets/logoBanner.jpg'
 import Logo from '../assets/logo.jpg'
 import Footer from '../Shared/Footer/Footer';
-import LargeNavbar from '../Shared/Navs/Desktop/LargeNavbar';
-import TopLargeNavbar from '../Shared/Navs/Desktop/TopLargeNavbar';
 
 const About = () => {
 
     return (
         <div>
-            <TopLargeNavbar />
-            <LargeNavbar />
 
             {/* Tittle */}
             <div className="font-serif">
