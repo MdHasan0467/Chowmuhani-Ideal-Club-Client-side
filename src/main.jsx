@@ -1,9 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-// import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-// import Home from './Pages/Home/Home.jsx'
 import App from './App.jsx'
 import LogIn from './Pages/LogIn.jsx'
 import SignUp from './Pages/SignUp.jsx'
@@ -20,8 +18,8 @@ import { HelmetProvider } from 'react-helmet-async'
 import Main from './Layouts/Main.jsx'
 import Home from './Pages/Home.jsx'
 import Dashboard from './Layouts/Dashboard.jsx'
-import AdminProfile from './components/Dashboard/AdminProfile.jsx'
 import Profile from './Pages/Profile.jsx'
+import AddMoneySurvey from './Pages/AddMoneySurvey.jsx'
 
 
 
@@ -97,6 +95,14 @@ const router = createBrowserRouter ([
     {
     path: 'add/event',
     element: <AddEvent />
+  },
+  {
+    path: 'add/new/member',
+    element: <AddNewMember />
+  },
+    {
+    path: 'add/money/survey',
+    element: <AddMoneySurvey />
   },
   ],
 }

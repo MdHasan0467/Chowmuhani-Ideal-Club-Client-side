@@ -9,11 +9,11 @@ const TopLargeNavbar = () => {
       <div className="flex-1">
         <Link to={'/'} 
         className="text-xl font-bold text-white cursor-pointer font-serif hover:text-amber-50 flex md:hidden">
-          CIC
+          সি আই সি
         </Link>
         <Link to={'/'} 
         className="hidden md:flex text-xl font-bold text-white cursor-pointer font-serif hover:text-amber-50">
-        Chowmuhani Ideal Club (CIC)
+        চৌমুহনী আইডিয়াল ক্লাব
         </Link>
       </div>
 
@@ -25,7 +25,7 @@ const TopLargeNavbar = () => {
           className="btn btn-sm" 
           style={{ backgroundColor: "#ac6735", color: "white" }}
         >
-          Login
+          লগইন
         </Link>
 
         <div className="dropdown dropdown-end">
@@ -40,13 +40,13 @@ const TopLargeNavbar = () => {
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li>
-          <a href="/dashboard" className="justify-between">
-            Profile
-            <span className="badge">New</span>
+          <a href="/dashboard/profile" className="justify-between">
+            প্রোফাইল
+            <span className="badge">নতুন</span>
           </a>
         </li>
-        <li><a href="/dashboard/add/admin/post">Admin Posts</a></li>
-        <li><a>Logout</a></li>
+        <li><a href="/dashboard/add/admin/post">পোষ্ট করুন</a></li>
+        <li><a>লগ আউট</a></li>
       </ul>
     </div>
       </div>
@@ -66,17 +66,15 @@ const TopLargeNavbar = () => {
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li>
-          <a href="/dashboard" className="justify-between">
-            Profile
-            <span className="badge">New</span>
+          <a href="/dashboard/profile" className="justify-between">
+            প্রোফাইল
+            <span className="badge">নতুন</span>
           </a>
         </li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/events">Events</Link></li>
-          <li><Link to="/get-involved">Get Involved</Link></li>
+          <li><Link to="/about">আমাদের সম্পর্কে জানুন</Link></li>
+          <li><Link to="/events">ইভেন্ট সমূহ</Link></li>
           <li></li>
-        <li><a href="/dashboard/add/admin/post">Admin Posts</a></li>
-        <li><a>Logout</a></li>
+        <li><a>লগ আউট</a></li>
       </ul>
     </div>
       </div>

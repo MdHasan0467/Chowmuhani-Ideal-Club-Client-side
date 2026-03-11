@@ -9,16 +9,16 @@ const Stat = () => {
         transition={{ delay: 0.6, duration: 1.05 }}
       >
         <motion.div whileHover={{ scale: 1.05,  }}  transition={{ duration: 0.5 }} className="p-6 bg-blue-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-blue-600">500+</h2>
-          <p>Volunteers</p>
+          <h2 className="text-3xl font-bold text-blue-600">৬০+</h2>
+          <p>সেচ্ছাসেবী</p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }} className="p-6 bg-green-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-green-600">120+</h2>
-          <p>Events</p>
+          <h2 className="text-3xl font-bold text-green-600">১২০+</h2>
+          <p>সর্বমোট ইভেন্ট</p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }} className="p-6 bg-orange-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-orange-600">15K+</h2>
-          <p>People Helped</p>
+          <h2 className="text-3xl font-bold text-orange-600">১৫০০০+</h2>
+          <p>মোট সাহায্য পেয়েছেন</p>
         </motion.div>
       </motion.section>
         </div>

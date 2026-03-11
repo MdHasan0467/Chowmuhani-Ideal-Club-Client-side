@@ -65,7 +65,7 @@ const DashboardLeftSideNav = () => {
 						</>
                     </div> */}
 
-                    <span className="mr-2">Guest</span>
+                    <span className="mr-2">গেস্ট</span>
             </div>
 
 
@@ -73,11 +73,43 @@ const DashboardLeftSideNav = () => {
 
 			<ul>
 			<li>
-			<Link to='/dashboard' className="flex mx-10 my-5 hover:text-orange-500 dark:hover:text-[#ff5b09] text-semibold" >
+			<Link to='/dashboard/profile' className="flex mx-10 my-5 hover:text-orange-500 dark:hover:text-[#ff5b09] text-semibold" >
 			<span className="mx-3 dark:text-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] rounded-lg bg-white p-2">
 			<BsPersonBadge />
 			</span>
-			<span className="mt-2">Profile</span>
+			<span className="mt-2">প্রোফাইল</span>
+			</Link>
+			</li>
+			<li>
+			<Link to='/dashboard/add/new/member' className="flex mx-10 my-5 hover:text-orange-500 dark:hover:text-[#ff5b09] text-semibold" >
+			<span className="mx-3 dark:text-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] rounded-lg bg-white p-2">
+			<BsPersonBadge />
+			</span>
+			<span className="mt-2">নতুন সদস্য যুক্ত করুন</span>
+			</Link>
+			</li>
+			<li>
+			<Link to='/dashboard/add/event' className="flex mx-10 my-5 hover:text-orange-500 dark:hover:text-[#ff5b09] text-semibold" >
+			<span className="mx-3 dark:text-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] rounded-lg bg-white p-2">
+			<BsPersonBadge />
+			</span>
+			<span className="mt-2">নতুন ইভেন্ট যুক্ত করুন</span>
+			</Link>
+			</li>
+			<li>
+			<Link to='/dashboard/add/admin/post' className="flex mx-10 my-5 hover:text-orange-500 dark:hover:text-[#ff5b09] text-semibold" >
+			<span className="mx-3 dark:text-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] rounded-lg bg-white p-2">
+			<BsPersonBadge />
+			</span>
+			<span className="mt-2">পোষ্ট করুন</span>
+			</Link>
+			</li>
+			<li>
+			<Link to='/dashboard/add/money/survey' className="flex mx-10 my-5 hover:text-orange-500 dark:hover:text-[#ff5b09] text-semibold" >
+			<span className="mx-3 dark:text-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] rounded-lg bg-white p-2">
+			<BsPersonBadge />
+			</span>
+			<span className="mt-2">টাকার হিসেব যুক্ত করুন</span>
 			</Link>
 			</li>
 

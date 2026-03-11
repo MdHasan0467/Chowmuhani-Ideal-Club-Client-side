@@ -16,16 +16,14 @@ const LargeNavbar = () => {
     
      {/* Desktop Menu */}
       <div className="hidden md:flex md:mx-auto gap-6">
-        <Link to="/" className="btn btn-ghost btn-sm">Home</Link>
-        <Link to="/servey" className="btn btn-ghost btn-sm">Survey</Link>
-        <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
-        <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
-        <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>
-        <Link to="/dashboard/add/event" className="btn btn-ghost btn-sm">Add Event</Link>
-        <Link to="/find-blood" className="btn btn-ghost btn-sm">Find Blood</Link>
-        <Link to="/dashboard" className="btn btn-ghost btn-sm">Dashboard</Link>
+        <Link to="/" className="btn btn-ghost btn-sm">হোম</Link>
+        <Link to="/servey" className="btn btn-ghost btn-sm">টাকার হিসেব</Link>
+        <Link to="/about" className="btn btn-ghost btn-sm">আমাদের সম্পর্কে জানুন</Link>
+        <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
+        <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
+        <Link to="/find-blood" className="btn btn-ghost btn-sm">রক্ত অনুসন্ধান করুন</Link>
         <Link to="/add-new-member"className="btn btn-sm" style={{ backgroundColor: "#ec6737", color: "white" }}>
-          Add New Membber
+          নতুন সদস্য হোন
         </Link>
 
       </div>
@@ -33,11 +31,11 @@ const LargeNavbar = () => {
 
       {/* Mobile Menu */}
         <div className="flex mx-auto gap-1 md:hidden">
-        <Link to="/servey" className="btn btn-ghost btn-sm">Servey</Link>
-        <Link to="/about" className="btn btn-ghost btn-sm">About</Link>
-        <Link to="/events" className="btn btn-ghost btn-sm">Events</Link>
-        <Link to="/gallery" className="btn btn-ghost btn-sm">Gallery</Link>
-        <Link to="/find-blood" className="btn btn-ghost btn-sm">Find Blood</Link>
+        <Link to="/servey" className="btn btn-ghost btn-sm">টাকার হিসেব</Link>
+        <Link to="/about" className="btn btn-ghost btn-sm">আমাদের সম্পর্কে জানুন</Link>
+        <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
+        <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
+        <Link to="/find-blood" className="btn btn-ghost btn-sm">রক্ত খুজুন</Link>
       </div>
 
       {/* Mobile Hamburger */}

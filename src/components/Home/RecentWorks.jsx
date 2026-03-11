@@ -125,7 +125,7 @@ const images = [
              <div className="max-w-7xl mx-auto px-3 md:px-4 py-8 md:py-10">
 
       <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-10">
-        Gallery
+        গ্যালারী
       </h1>
 
       {/* Masonry Gallery */}
@@ -145,7 +145,7 @@ const images = [
 
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
               <span className="text-white text-[10px] md:text-lg font-semibold">
-                View
+                দেখুন
               </span>
             </div>
           </div>
@@ -186,7 +186,7 @@ const images = [
                 onClick={() => handleDownload(selectedImage)}
                 className="bg-[#ec6737] cursor-pointer text-white px-6 py-2 rounded-lg hover:opacity-90 transition"
               >
-                Download Image
+                ডাউনলোড করুন
               </button>
             </div>
           </div>

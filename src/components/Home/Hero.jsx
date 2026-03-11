@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import Carousel from "./Carousel";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Together We Can Make a Difference
+            এটি একটি অরাজনৈতিক এবং সামাজিক সংগঠন।
           </motion.h1>
           <motion.p
             className="mb-6 text-gray-700"
@@ -27,11 +28,11 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Join us in helping those in need and creating a better future.
+            আমাদের প্রতিটি কাজ  হোক একমাত্র আল্লাহ কে রাজি খুশি করার জন্য।
           </motion.p>
           <motion.div className="flex gap-4">
-            <button className="btn btn-primary hover:text-black">Get Involved</button>
-            <button className="btn bg-orange-600 hover:text-white">Donate Now</button>
+            <Link to={'/'} className="btn btn-primary hover:text-black">সদস্য হোন</Link>
+            <Link to={'/'} className="btn bg-orange-600 hover:text-white">দান করুন</Link>
           </motion.div>
         </div>
         <motion.div className="flex-1"
