@@ -1,0 +1,3017 @@
+{
+"Dhaka": {
+"Dhaka": [
+"Dhamrai",
+"Dohar",
+"Keraniganj",
+"Nawabganj",
+"Savar"
+],
+"Faridpur": [
+"Alfadanga",
+"Banga",
+"Boalmari",
+"Char Bhadrasan",
+"Faridpur Sadar",
+"Madukhali",
+"Nagarkanda",
+"Sadarpur",
+"Saltha"
+],
+"Gazipur": [
+"Gazipur Sadar",
+"Kaliakair",
+"Kaliganj",
+"Kapasia",
+"Sripur"
+],
+"Gopalganj": [
+"Gopalganj Sadar",
+"Kashiani",
+"Kotalipara",
+"Muksudpur",
+"Tungipara"
+],
+"Kishoreganj": [
+"Ashtagram",
+"Bajitpur",
+"Bhairab",
+"Hossainpur",
+"Itna",
+"Karimganj",
+"Katiyadi",
+"Kishoreganj Sadar",
+"Kuliarchar",
+"Mithamin",
+"Nikli",
+"Pakundia",
+"Tarail"
+],
+"Madaripur": [
+"Dassa",
+"Kalkini",
+"Madaripur Sadar",
+"Rajair",
+"Shivchar"
+],
+"Manikganj": [
+"Daulatpur",
+"Ghior",
+"Harirampur",
+"Manikganj",
+"Saturia",
+"Shivalay",
+"Singair"
+],
+"Munshiganj": [
+"Ghazaria",
+"Lauhjung",
+"Munshiganj Sadar",
+"Sirajdikhan",
+"Srinagar",
+"Tongibari"
+],
+"Narayanganj": [
+"Araihajar",
+"Bondor",
+"Narayanganj Sadar",
+"Rupganj",
+"Sonargaon"
+],
+"Narsingdi": [
+"Belabo",
+"Manohardy",
+"Narsingdi Sadar",
+"Palash",
+"Raipura",
+"Shivpur"
+],
+"Rajbari": [
+"Baliakandi",
+"Goaland",
+"Kalukhali",
+"Pangsha",
+"Rajbari Sadar"
+],
+"Shariatpur": [
+"Damudya",
+"Gosairhat",
+"Jazeera",
+"Naria",
+"Shariatpur Sadar",
+"Vedarganj"
+],
+"Tangail": [
+"Basil",
+"Bhuapur",
+"Delduar",
+"Dhanbari",
+"Ghatail",
+"Gopalpur",
+"Kalihati",
+"Madhupur",
+"Mirzapur",
+"Nagarpur",
+"Sakhipur",
+"Tangail Sadar"
+]
+},
+"Chittagong": {
+"Bandarban": {
+"Alikadam": [
+"Alikadam",
+"Chaikhyang",
+"Nayapara",
+"Kurukpata"
+],
+"Lama": [
+"Aziznagar",
+"Lama",
+"Ghazalia",
+"Sarai",
+"Rupsipara",
+"Fasinakhali",
+"Phaitong"
+],
+"Naikshyongchari": [
+"Naikshyangchari",
+"Baishari",
+"Dochhari",
+"Ghumdhum",
+"Sonaichari"
+],
+"Rowangchari": [
+"Rowanchari",
+"Taracha",
+"Nayapatang",
+"Alekshyong"
+],
+"Ruma": [
+"Paindu",
+"Ruma Sadar",
+"Remakri Prangsa",
+"Galengya"
+],
+"Sadar": [
+"Bandarban Sadar",
+"Kuhlang",
+"Swalak",
+"Tongkabati",
+"Rajbila"
+],
+"Thanchi": [
+"Thanchi",
+"Remakri",
+"Tindu",
+"Bolipara"
+]
+},
+"Brahmanbaria": {
+"Sadar": [
+"Vasudeva",
+"Dakshinatai",
+"Suhilpur",
+"Machihata",
+"Majlishpur",
+"Talshahr",
+"Ramrail",
+"Sadekpur",
+"Sultanpur",
+"Bancharampur",
+"Budhal"
+],
+"Sarail": [
+"Ormanrail",
+"Chunta",
+"Kalikachh",
+"Noagaon",
+"Pakshimul",
+"Sarail",
+"Shahbazpur",
+"Shajadpur",
+"Panishwar"
+],
+"Akhaura": [
+"Akhaura (North)",
+"Akhaura (South)",
+"Dharkhar",
+"Manyanda",
+"Mogra"
+],
+"Kasba": [
+"Badaiba",
+"Bayek",
+"Benouti",
+"Gopinathpur",
+"Kaimpur",
+"Kasba West",
+"Khadeba",
+"Kuti",
+"Mehari",
+"Mulgram"
+],
+"Nasirnagar": [
+"Barikandi",
+"Vidyakut",
+"Birgaon",
+"Bitghar",
+"Ibrahimpur",
+"Junedpur",
+"Kaitla(W)",
+"Kaitla(S)",
+"Krishnanagar",
+"Laurfatepur",
+"Natghar",
+"West Nabinagar",
+"Nabinagar(East)",
+"Rashulsnabad",
+"Ratanpur",
+"Chalimganj",
+"Barail",
+"Satmora",
+"Shivpur",
+"Shyamgram",
+"Srirampur"
+],
+"Vijaynagar": [
+"Mercury",
+"Chandura",
+"Charislampur",
+"Singrabil",
+"Harshpur",
+"Paharpur",
+"Pattan",
+"Ichapura",
+"Bishnupur",
+"Champaknagar"
+],
+"Ashuganj": [
+"Araisidha",
+"Ashuganj",
+"Charchartala",
+"Lalpur",
+"West Talshahr",
+"Sharifpur",
+"Durgapur",
+"Taruya"
+],
+"Nabinagar": [
+"Valakut",
+"Burishwar",
+"Chapratala",
+"Chatalpar",
+"Dharmandal",
+"Fandauk",
+"Goalnagar",
+"Gokarna",
+"Gunyak",
+"Haripur",
+"Kua",
+"Nasirnagar",
+"Purba Bhag"
+],
+"Bancharampur": [
+"Ayubpur",
+"Dariyadaulat",
+"Pahariakandi",
+"Sixfulkandi",
+"Rupasadi",
+"Fardabad",
+"Manikpur",
+"Ujanchar",
+"Chalimabad",
+"Sonarampur",
+"Tejkhali",
+"Bancharampur",
+"Darikandi"
+]
+},
+"Chandpur": {
+"Faridganj": [
+"West Balithuba",
+"East Balithuba",
+"East Subidpur",
+"West Subidpur",
+"East Gupti",
+"West Gupti",
+"North Paikpara",
+"South Paikpara",
+"North Gobindpur",
+"South Gobindpur",
+"East Char Dukhiya",
+"West Char Dukhiya",
+"South Faridganj",
+"South Rupsa",
+"Uttar Rupsa"
+],
+"Haimchar": [
+"Gazipur",
+"North Algi Durgapur",
+"Dakshin Algi Durgapur",
+"Nil Comol",
+"Char Bhairavi"
+],
+"Hajiganj": [
+"North Rajargaon",
+"Bakila",
+"Uttar Kalchon",
+"South Kalchon",
+"Hajiganj",
+"East Barakul",
+"West Barakul",
+"East Hatila",
+"North Gandharvyapur",
+"South Gandharvyapur",
+"West Hatila"
+],
+"Kachua": [
+"Sachar",
+"Pathoir",
+"Bitara",
+"Sahdevpur (West)",
+"Sahdevpur (East)",
+"North Kachua",
+"South Kachua",
+"Kadla",
+"Kadaiya",
+"North Gohat",
+"South Gohat",
+"Ashrafpur"
+],
+"Matlab North": [
+"Shatnol",
+"Baganbari",
+"Sadullyapur",
+"Durgapur",
+"Kalakanda",
+"Mohanpur",
+"Ekhlachpur",
+"Zahirabad",
+"East Fatehpur",
+"West Fatehpur",
+"Frajikandi",
+"Islamabad",
+"Sultanabad",
+"Gajra"
+],
+"Matlab South": [
+"North Nairgaon",
+"South Nairgaon",
+"Khadergaon",
+"Narayanpur",
+"Uttar Upadi",
+"Dakhhin Upadi"
+],
+"Sadar": [
+"Bishnupur",
+"Ashikati",
+"Kalyanpur",
+"Shah Mahamudpur",
+"Rampur",
+"Moishadi",
+"Tarpuchondi",
+"Bagadi",
+"Balia",
+"Lakshipur",
+"Ibrahimpur",
+"Chandra",
+"Haranchar",
+"Rajarajeshwar"
+],
+"Shahrasti": [
+"South Tamta",
+"North Tamta",
+"Meher South",
+"Meher Uttar",
+"Uttar Suchipara",
+"South Suchipara",
+"East Chitshi",
+"Dakshin Rayasri",
+"Uttar Rayasri",
+" West Chitshi"
+]
+},
+"Chittagong": {
+"Anwara": [
+"1 No. Bairag",
+"2 No. Barshat",
+"3 No. Raipur",
+"4 No. Battali",
+"5 No. Barumchara",
+"6 No. Barkhain",
+"7 No. Anwara Sadar",
+"8 No. Chatri",
+"9 No. Parikora",
+"10 No. Haildhar",
+"11 No. Zuidandi"
+],
+"Boalkhali": [
+"1 No. Kadhurkhil",
+"2 No. West Gomadandi",
+"4 No. Shakpura",
+"5 No. Sarwatoli",
+"6 No. Popadia",
+"7 No. Charandwip",
+"8 No. Sreepur-Kharandwip",
+"9 No. Amuchia",
+"10 No. Ahalla koroldenga"
+],
+"Banshkhali": [
+"1 No. Pukuria",
+"2 No. Sadhanpur",
+"3 No. Khankhanabad",
+"4 No. Baharchra",
+"5 No. Kalipur",
+"6 No. Bailchari",
+"7 No. Kathria",
+"8 No. Saral",
+"9 No. Shilkup",
+"10 No. Chambal",
+"No. 11 Gandamara",
+"No. 12 Shekerkhil",
+"No. 13 Puichhari",
+"No. 14 Chanua"
+],
+"Chandanish": [
+"1st Kanchanabad",
+"2nd Joara",
+"4th Borokal",
+"5th Barma",
+"6th Bailtali",
+"7th Satbaria",
+"8th Hashimpur",
+"9th Dohazari",
+"10th Dhopachari"
+],
+"Hathajari": [
+"1 No. Farhadabad",
+"2 No. Dhlai",
+"3 No. Mirzapur",
+"4 No. Gumanmardan",
+"5 No. Nangalmora",
+"6 No. Chipatali",
+"8 No. Mekhal",
+"9 No. Garduara",
+"No. 10 North Madarsha",
+"No. 11 Fatepur",
+"No. 12 Chikandandi",
+"No. 13 Dakshin Madarsha",
+"No. 14 Sikarpur",
+"15 No. Burishchar"
+],
+"Karnaphuli": [
+"1 No. Charlakshya",
+"1(ka) No. Juldha",
+"1(kha) No. Charpatharghata",
+"2 No. Boro Uthan",
+"3 No. Shikalbaha"
+],
+"Lohagara": [
+"1st Barahatia",
+"2nd Amirabad",
+"3rd Padua",
+"4th Charamba",
+"5th Kalauzhan",
+"6th Lohagara",
+"7th Putibila",
+"8th Chunti",
+"9th Adhunagar"
+],
+"Mirsarai": [
+"1 No. Karerhat",
+"2 No. Hinguli",
+"3 No. Dhum",
+"5 No. Osmanpur",
+"6 No. Ichakhali",
+"7 No. Durgapur",
+"9 No. Mirsarai",
+"10 No. Moghadia",
+"No. 12 Khaiachra",
+"13 No. Mayani",
+"14 No. Haitkandi",
+"15 No. Wahedpur",
+"No. 6 Saherkhali"
+],
+"Patia": [
+"4 No. Kolagaon",
+"5 No. Habilasdwip",
+"6 No. Kusumpura",
+"7 No. Jiri",
+"8 No. Kashiaish",
+"8 (Ka) No. Aasia",
+"9 No. Jangalkhain",
+"9 (Ka) No. Borlia",
+"No. 10 Dhalghat",
+"No. 11 Kelishahar",
+"No. 12 Hydgaon",
+"No. 13 Dakshin Bhurshi",
+"No. 14 Bhatikhain",
+"No. 15 Chanhara",
+"No. 16 Kachuai",
+"No. 17 Kharna",
+"No. 19 Shobhandandi"
+],
+"Phatikchari": [
+"No. 1 Bagan Bazar",
+"No. 2 No. Dathmara",
+"3 No. Narayanhat",
+"No. 4 Bhujpur",
+"No. 5 Harualchhari",
+"No. 6 Paindang",
+"No. 7 Kanchannagar",
+"No. 10 Sundarpur",
+"No. 11 Suabil",
+"No. 13 Lelang",
+"No. 14 Nanupur",
+"No. 15 Sorangiri",
+"16 No. Bakhtpur",
+"No. 17 Jaftnagar",
+"No. 18 Dharmapur",
+"No. 19 Samitirhat",
+"No. 20 Abdullahpur"
+],
+"Rangunia": [
+"1st Rajanagar",
+"2nd Hochnabad",
+"3rd Svanirbhar Rangunia",
+"4th Mariamnagar",
+"5th Parua",
+"6th Pomra",
+"7th Betagi",
+"8th Sarafbhata",
+"9th Shilak",
+"10th Padua",
+"11th Chandraghona",
+"12th Kodala",
+"13th Islampur",
+"14th Dakshin Rajanagar",
+"15th Lalanagar"
+],
+"Raujan": [
+"1 No. Haldia",
+"2 No. Dabua",
+"3 No. Chikdair",
+"4 No. Gahira",
+"6 No. Binajuri",
+"7 No. Raujan",
+"8 No. Kadalpur",
+"9 No. Pahartali",
+"No. 10 East Gujra",
+"11 No. West Gujra",
+"No. 12 Urkirchar",
+"No. 13 Noapara",
+"No. 14 Bagoan",
+"15 No. Nowajishpur"
+],
+"Sandwip": [
+"1 No. Udirchar",
+"2 No. Amanullaya",
+"3 No. Gachua",
+"4 No. Muchapur",
+"6 No. Kalapania",
+"8 No. Harishpur",
+"9 No. Rahmatpur",
+"10 No. Bauria",
+"12 No. Santoshpur",
+"13 No. Azimpur",
+"14 No. Sarikait",
+"15 No. Maitvhanga",
+"17 No. Magadhara",
+"18 No. Haramiya"
+],
+"Satkania": [
+"No. 1 Charati",
+"No. 2 Khagria",
+"No. 3 Nalua",
+"No. 4 Kanchana",
+"5 No. Amilias",
+"No. 6 Eochia",
+"No. 7 Madarsha",
+"8 No. Demsha",
+"No. 9 Paschim Dhemsha",
+"No. 10 Keochia",
+"No. 11 Kaliaish",
+"No. 12 Dharmapur",
+"13 No. Bazalia",
+"No. 14 Purangor",
+"No. 15 Chadaha",
+"No. 16 Satkania",
+"17 no Sonakania"
+],
+"Sitakunda": [
+"1 No. Syedpur",
+"2 No. Baraiadhala",
+"4 No. Muradpur",
+"5 No. Barbakund",
+"6 No. Banshbaria",
+"7 No. Kumira",
+"8 No. Sonaichari",
+"9 No. Bhatiari",
+"10 No. Salimpur"
+]
+},
+"Comilla": {
+"Adarsh Sadar": [
+"Kalirbazar Union",
+"Durgapur (North) Union",
+"Durgapur (South) Union",
+"Amratali Union",
+"Panchthubi Union",
+"Jagannathpur Union"
+],
+"Barura": [
+"Aganagar Union",
+"Bhavanipur Union",
+"Khoshbas (U:) Union",
+"Jhelum Union",
+"Chitda Union",
+"Shilmuri (D) Union",
+"Shilmuri (U:) Union",
+"Galimpur Union",
+"Shakpur Union",
+"Vauxhar Union",
+"Chandla Union",
+"Adda Union",
+"Adra Union"
+],
+"Brahmanpara": [
+"Shidlai Union",
+"Chandla Union",
+"Shasidal Union",
+"Dulalpur (2) Union",
+"Brahmanpara Sadar Union",
+"Sahebabad Union",
+"Malapara Union",
+"Madhavpur Union"
+],
+"Burichong": [
+"Mainamati Union",
+"Varella Union (North)",
+"Mokam Union",
+"Burichong Sadar Union",
+"BakshiMool Union",
+"Pirjatrapur Union",
+"Sholonol Union",
+"Rajapur Union",
+"Varella Union (South)"
+],
+"Chauddagram": [
+"Sripur Union",
+"Kashinagar Union",
+"Kalikapur Union",
+"Shubopur Union",
+"Gholpasha Union",
+"Munsirhat Union",
+"Batisa Union",
+"Kankapait Union",
+"Chiora Union",
+"Jagannathdighi Union",
+"Gunwati Union",
+"Alkara Union",
+"Wazirpur Union"
+],
+"Chandina": [
+"Suhilpur Union",
+"Bataghasi Union",
+"Joag Union",
+"Borkore Union",
+"Madhyaya Union",
+"Dollai Nawabpur Union",
+"Mohichail Union",
+"Gallai Union",
+"Kernakhal Union",
+"Myzkhar Union",
+"Etabarpur Union",
+"Badera Union",
+"Burkeit Union"
+],
+"Daudkandi": [
+"Daulatpur Union",
+"Daudkandi (North) Union",
+"Iletganj (North) Union",
+"Iletganj (South) Union",
+"Jinglatli Union",
+"Sundalpur Union",
+"Gauripur Union",
+"Mohammadpur (Poob) Union",
+"Mohammadpur (West) Union",
+"Gwalmari Union",
+"Maruka Union",
+"Biteshwar Union",
+"Padua Union",
+"Panchgachia (West) Union",
+"Barpara Union"
+],
+"Devidwar": [
+"Subil Union",
+"Rasulpur Union",
+"Gunaighar (North) Union",
+"Gunaighar (South) Union",
+"Barasalghar Union",
+"Rajamehar Union",
+"Yusufpur Union",
+"Mohanpur Union",
+"Bhani Union",
+"Fatehabad Union",
+"Jafarganj Union",
+"Dhamati Union",
+"Barkamta Union",
+"Sultanpur Union",
+"Allahabad Union"
+],
+"Homna": [
+"Mathabhanga Union",
+"Ghagutia Union",
+"Ashadpur Union",
+"Chanderchar Union",
+"Language Union",
+"Nilkhi Union",
+"Gharmora Union",
+"Jaipur Union",
+"Dulalpur Union"
+],
+"Laksam": [
+"Baki Union",
+"Mudaffar Ganj Union",
+"Kandirpar Union",
+"Gobindpur Union (2)",
+"Uttarada Union",
+"Laksam East Union",
+"Azgra Union"
+],
+"Lalmai": [
+"Bagmara North Union",
+"Bagmara South Union",
+"Bhullin North Union",
+"BHULIN SOUTH UNION",
+"Belghar North Union",
+"Belghar South Union",
+"Perul North Union",
+"Perul South Union",
+"Bakay North Union"
+],
+"Manoharganj": [
+"Baishgaon Union",
+"Saraspur Union",
+"Hasanabad Union",
+"Jhlam North Union",
+"Jhlam South Union",
+"Maishatua Union",
+"Lakshanpur Union",
+"North Howla Union",
+"Natherpetua Union",
+"Bipulasa Union"
+],
+"Meghna": [
+"Manikarchar Union",
+"Chandanpur Union",
+"Chalibhanga Union",
+"Gobindpur Union",
+"Barakanda Union",
+"Radhanagar Union",
+"Looterchor Union",
+"Bhaorkhola Union"
+],
+"Muradnagar": [
+"1 No. Srikail Union",
+"3 No. Andikot Union",
+"2 No. Akubpur Union",
+"4 No. Purbadhair (East) Union",
+"5 No. Purbadhair (West) Union",
+"6 No. Bangra (East) Union",
+"5 No. Purbadhair (West) Union",
+"8 No. Chapitla Union",
+"9 No. Kamalla Union",
+"10 No. Jatrapur Union",
+"Ramchandrapur North Union",
+"Ramchandrapur South Union",
+"No. 13 Muradnagar Sadar Union",
+"No. 12 Nabipur (East) Union",
+"No. 14 Dhamghar Union",
+"No. 15 Jahapur Union",
+"No. 13 Nabipur (West) Union",
+"No. 16 Chaliakandi Union",
+"No. 17 Darora Union",
+"No. 18 Paharpur Union",
+"No. 21 Babutipara Union",
+"No. 22 Tonki Union"
+],
+"Nangalkot": [
+"Banggodda Union",
+"Periya Union",
+"Raikot Union",
+"Mokra Union",
+"Makrabpur Union",
+"Hesakhal Union",
+"Adra Union",
+"Jodda Union",
+"Dhalua Union",
+"Doulkhand Union",
+"Boxganj Union",
+"Satbaria Union"
+],
+"Sadar Dakshin": [
+"Jorkanan (East) Union",
+"Jorkanan (West) Union",
+"Chowara Union",
+"Barpara Union",
+"Goliara Union",
+"Bagmara (North) Union",
+"Bagmara (South) Union",
+"Bhullin (North) Union",
+"Bhullin (South) Union",
+"Belghar (North) Union",
+" Belghar (South) Union",
+"Perul (North) Union",
+"Perul (South) Union",
+"Vijaypur Union"
+],
+"Titas": [
+"Satanic union",
+"Jagatpur Union",
+"Balrampur Union",
+"Karikandi Union",
+"Kalakandi Union",
+"Vitikandi Union",
+"Narandia Union",
+"Ziarakandi Union",
+"Majidpur Union"
+]
+},
+"Cox's Bazar": {
+"Eidgoan": [
+"Eidgah",
+"Pokkhali",
+"Jalalabad",
+"Islamapur",
+"Pokkhali"
+],
+"Sadar": [
+"Choufaldandi",
+"BharuaKhali",
+"PM Khali",
+"Khurushkul",
+"Jhilangja"
+],
+"Ramu": [
+"Kacchapia",
+"Garjania",
+"Fatekharkul",
+"Kawarkhop",
+"Chakmarkul",
+"Eidgarh",
+"Zorianala",
+"Rashid Nagar",
+"South Mithachir",
+"Killer Spinach",
+"Rajarakula"
+],
+"Chakaria": [
+"Kakara",
+"Koyarbil Union",
+"Konakhali Union",
+"Khutakhali",
+"chiringa",
+"Dhemushia",
+"Doulahazara",
+"Paschim Boro Viola",
+"Purba Boro viola",
+"Badarkhali",
+"Bamu Bilchari",
+"Baroitoli",
+"Veola Manikchar",
+"Lakharchar",
+"Saharbil",
+"Surajpur Manikpur",
+"Harbang",
+"hanged"
+],
+"Qutubdia": [
+"Ali Akbar Dail",
+"Uttar Dhurong",
+"Choirbill",
+"South Dhurung",
+"big deal",
+"Lemsikhali",
+"Dhalghata",
+"Matarbari",
+"Kalamarchara"
+],
+"Pekua": [
+"Magnama",
+"Uzantia"
+],
+"Ukhia": [
+"Rajapalang",
+"Jaliapalong",
+"Yellow spinach",
+"Ratnapalang",
+"Palangkhali"
+],
+"Teknaf": [
+"Sabrang",
+"Baharchora",
+"Hnila",
+"Hoyaikong",
+"Saint Martin",
+"Teknaf"
+],
+"Maheshkhali": [
+"Shaplapur",
+"Hoyakong",
+"Boro Maheshkhali",
+"Kutubzom",
+"Choto Maheshkhali"
+]
+},
+"Feni": {
+"Sadar": [
+"1no. Sarishadi",
+"2 no. Panchgachia",
+"4 no. Dhormapur",
+"5 no. Kazirbag",
+"6 no. Kalidah",
+"7 no. Baligaon",
+"8 no. Dhalia",
+"9 no. Lemua",
+"10 no. Chanua",
+"11 no. Motobi",
+"12 no. Fazilpur",
+"13 no. Forhadnogor"
+],
+"Chagalnaya": [
+"5no. Mohamaya",
+"6np Pathannagar",
+"8no. Radhanagar",
+"9no. Shuvapur",
+"10no. Ghopal"
+],
+"Daganbhuiyan": [
+"1no. Sindurpur",
+"2no. Rajapur",
+"3no. Purbachandrapur",
+"4no. Ramnagar",
+"5no.Yeakubpur",
+"6no. Dagonbhuiyan",
+"7no. Matubhuiyan",
+"8no. Jayloskor"
+],
+"Parashuram": [
+"1no. Mizanagar",
+"3no. Citholia",
+"4no. Boxmahmmud"
+],
+"Sonagazi": [
+"1no.Charmozlishpur",
+"2no. Bogadana",
+"3no. Mongolkandi",
+"4no. Motigonj",
+"5no. Chardorbesh",
+"6no. Chorchandia",
+"7no. Sonagazi",
+"8no. Amirabad",
+"9no. Nababpur"
+],
+"Fulgazi": [
+"1no. Fulgazi",
+"2no. Munshirhat",
+"3no. Dorbarpur",
+"4no. Anandopur",
+"5no. Amzadhat",
+"6no. G.M.hat"
+]
+},
+"Khagrachhari": {
+"Dighinala": [
+"1st Merung",
+"2nd Beyalkhali",
+"3rd Kabakhali",
+"4th Dighinala",
+"5th Babuchra"
+],
+"Guimara": [
+"1st Guimaras",
+"2nd Hafchari",
+"3rd Sindukchari"
+],
+"Lakshmichari": [
+"1st Lakshmichari",
+"2nd Dulyatali",
+"3rd Varmachari"
+],
+"Mahalchari": [
+"1st Mahalchari",
+"2nd Mubachhari",
+"3rd Kayanghat",
+"4th Maischari"
+],
+"Manikchari": [
+"1st Manikchari",
+"2nd Batnatali",
+"4th Tintahri",
+"3rd Yogyachola"
+],
+"Matiranga": [
+"1st Taindang",
+"2nd Tabalchhari",
+"3rd Baranal",
+"4th Gomti",
+"5th Belchhari",
+"6th Matiranga",
+"7th Amtali"
+],
+"Panchari": [
+"1st Logang",
+"2nd Chengi",
+"3rd Panchari",
+"4th Latiban",
+"5th Ultchari"
+],
+"Ramgarh": [
+"1st Ramgarh",
+"2nd Patachhra"
+],
+"Sadar": [
+"1 No. Khagrachari",
+"2 No. Kamalchari",
+"3 No. Golabadi",
+"4 No. Perachra",
+"5 No. Vaibonchara"
+]
+},
+"Lakshmipur": [
+"Sadar",
+"Raipur",
+"Ramganj",
+"Ramgati",
+"Kamalnagar"
+],
+"Noakhali": [
+"Sadar",
+"Begumganj",
+"Companyganj",
+"Chatkhil",
+"Hatia",
+"Subarnachar",
+"Senbagh",
+"Kabirhat",
+"Sonaimuri"
+],
+"Rangamati": {
+"Sadar": [
+"Magban",
+"Balukhali",
+"Bokdukbhanga",
+"Kutukchari",
+"Shapchori",
+"Jobtoli"
+],
+"Kaukhali": [
+"Betbunya",
+"Fatikchari",
+"Ghagra",
+"Kalampati"
+],
+"Nanyarchar": [
+"Sabekhan",
+"Nannyarchar",
+"Burighat",
+"Ghilachari"
+],
+"Longadu": [
+"Longadu",
+"Mainimukh",
+"Attarkahra",
+"Kalapakuzya",
+"Gulshakhali",
+"Oratory",
+"Bhasanyadam"
+],
+"Rajasthan": [
+"Ghilachari",
+"Gaindya",
+"Bangalhalia"
+],
+"Bilaichari": [
+"Bilachhari",
+"Kawdachori",
+"Pharuah",
+"Boro tholi"
+],
+"Barkal": [
+"Subolong",
+"Barkal",
+"Eyemachhara",
+"Bhushanchara",
+"Boro Horina"
+],
+"Baghaichari": [
+"Baghaichari",
+"Amtali",
+"Khedarmara",
+"Marisya",
+"Bongaltoli",
+"Rupakari",
+"Sarboatoli",
+"Sajek"
+],
+"Kaptai": [
+"Chandraghona",
+"Raikhali",
+"Chitmaram",
+"Kaptai",
+"Wagga"
+],
+"Jurachari": [
+"Jurashari",
+"Vanyogichara",
+"Maidang",
+"Dumdumya"
+]
+}
+},
+"Rajshahi": {
+"Bogra": [
+"Bogra Sadar",
+"Shajahanpur",
+"Sherpur",
+"Dhunat",
+"Sariakandi",
+"Gabtali",
+"Sonatala",
+"Shivganj",
+"Dupchachia",
+"Kahalu",
+"Adamdighi",
+"Nandigram"
+],
+"Chapainawabganj": [
+"Chapainawabganj Sadar",
+"Shibganj",
+"Bholahat",
+"Gomstapur",
+"Nachol"
+],
+"Joypurhat": [
+"Jaipurhat Sadar",
+"Panchbibi",
+"Akkelpur",
+"Kshetlal",
+"Kalai"
+],
+"Naogaon": [
+"Naogaon Sadar",
+"Atrai",
+"Raninagar",
+"Patnitala",
+"Sapahar",
+"Porsha",
+"Manda",
+"Mahadevpur",
+"Dhamirhat",
+"Badalgachi",
+"Niamatpur"
+],
+"Natore": [
+"Natore Sadar",
+"Lalpur",
+"Bagatipara",
+"Baraigram",
+"Gurdaspur",
+"Singra",
+"Naldanga"
+],
+"Pabna": [
+"Pabna Sadar",
+"Santhia",
+"Sujanagar",
+"Bara",
+"Ishwardi",
+"Bhangura",
+"Faridpur",
+"Chatmohar",
+"Atgharia"
+],
+"Rajshahi": [
+"Paba",
+"Charghat",
+"Bagha",
+"Puthia",
+"Tanore",
+"Mohanpur",
+"Durgapur",
+"Bagmara",
+"Godagari"
+],
+"Sirajganj": [
+"Sirajganj Sadar",
+"Raiganj",
+"Kazipur",
+"Tarash",
+"Shahjadpur",
+"Ullapara",
+"Kamarkhand",
+"Belkuchi",
+"Chauhali"
+]
+},
+"Khulna": {
+"Bagerhat": {
+"Bagerhat Sadar": [
+"Karapara",
+"Bamorta",
+"Gotapara",
+"Bishnapur",
+"Baruipara",
+"Jatharapur",
+"Shaitgomboj",
+"Khanpur",
+"Rakhalgachi",
+"Dema"
+],
+"Fakirhat": [
+"Betaga",
+"Lakhpur",
+"Piljanga",
+"Fakirhat",
+"Bahirdia-mansa",
+"Naldha-mauvhog",
+"Mulghar",
+"Suvhadia"
+],
+"Mollahat": [
+"Udoypur",
+"Chunkhola",
+"Gangni",
+"Kulia",
+"Gaola",
+"Kodalia",
+"Atjuri"
+],
+"Kachua": [
+"Gojalia",
+"Dhopakhali",
+"Moghia",
+"Kachua",
+"Gopalpur",
+"Raripara",
+"Badhal"
+],
+"Chitalmari": [
+"Barobaria",
+"Kalatala",
+"Hizla",
+"Shibpur",
+"Chitalmari",
+"Charbaniri",
+"Shantoshpur"
+],
+"Morelganj": [
+"Teligati",
+"Panchakaran",
+"Putikhali",
+"Daibagnyahati",
+"Ramchandrapur",
+"Chingrakhali",
+"Hoglapasha",
+"Banagram",
+"Balaibunia",
+"Hoglabunia",
+"Baharbunia",
+"Jiudhara",
+"Nishanbaria",
+"Baraikhali",
+"Morrelganj",
+"Khaulia"
+],
+"Rampal": [
+"Gouramva",
+"Uzzalkur",
+"Baintala",
+"Rampal",
+"Rajnagar",
+"Hurka",
+"Perikhali",
+"Vospatia",
+"Mollikerbar",
+"Bastoli"
+],
+"Mongla": [
+"Burrirdangga",
+"Mithakhali",
+"Sonailtala",
+"Chadpai",
+"Chila",
+"Sundarban"
+],
+"Sarankhola": [
+"Dhanshagor",
+"Khontakata",
+"Rayenda",
+"Southkhali"
+]
+},
+"Chuadanga": {
+"Chuadanga": [
+"Alukdia",
+"Mominpur",
+"Qutubpur",
+"Shankar Chandra",
+"Begumpur",
+"Titudah",
+"Padmabila"
+],
+"Alamdanga": [
+"Bhangbaria",
+"Hardy",
+"Kumari",
+"Badadi",
+"Gangni",
+"Khadimpur",
+"Jehala",
+"Belgachi",
+"Daukhi",
+"Jamjami",
+"Nagdah",
+"Khaskarra",
+"Kalidaspur",
+"Chitla",
+"Ailhash"
+],
+"Damurhuda": [
+"Judanpur",
+"Notipota",
+"Karpasdanga",
+"Kurulgachi",
+"Parakrishnapur Madana",
+"Hawley",
+"Damurhuda",
+"Natudah"
+],
+"Jibannagar": [
+"Uthali",
+"Andulbaria",
+"Baka",
+"Simanto",
+"Hasadah",
+"Raipur",
+"Manohar",
+"KDK"
+]
+},
+"Jessore": {
+"Abhaynagar": [
+"Baghutia",
+"Prembagh",
+"Sundali",
+"Payra",
+"Chalishia",
+"Siddhipasha",
+"Sridharpur",
+"Shubopara"
+],
+"Bagharpara": [
+"Basuari",
+"Bandabila",
+"Darajhat",
+"Dhalgram",
+"Dohakula",
+"Jamdia",
+"Jahurpur",
+"Narikelbaria",
+"Raipur"
+],
+"Chougacha": [
+"Chougacha",
+"Dhuliani",
+"Hakimpur",
+"Jagdishpur",
+"Swarupdah",
+"Narayanpur",
+"Pashapol",
+"Patibila",
+"Phulsara",
+"Singhajhuli",
+"Sukhpukuria"
+],
+"Jessore Sadar": [
+"Arabpur",
+"Basundia",
+"Chanchra",
+"Churamankati",
+"Deyara",
+"Fatepur",
+"Haibatpur",
+"Ichali",
+"Kashimpur",
+"Kachua",
+"Lebutla",
+"Narendrapur",
+"Nawapara",
+"Ramnagar",
+"Upshahar",
+"Jessore Cantonment"
+],
+"Jhikargacha": [
+"Bakra",
+"Ganganandpur",
+"Gadkhali",
+"Hazirbagh",
+"Jhikargacha",
+"Magura",
+"Navaran",
+"Nirbaskhola",
+"Panisara",
+"Shankarpur",
+"Shimulia"
+],
+"Keshavpur": [
+"Vidyanandakati",
+"Gourighona",
+"Keshavpur",
+"Majidpur",
+"Mangalkot",
+"Pajia",
+"Sagardari",
+"Suflakati",
+"Trimohini"
+],
+"Manirampur": [
+"Bhojgati",
+"Chaluahati",
+"Dhakuria",
+"Durbadanga",
+"Haridaskati",
+"Hariharnagar",
+"Jhampa",
+"Kashimnagar",
+"Khanpur",
+"Khedapara",
+"Kultia",
+"Manirampur",
+"Manoharpur",
+"Mashmimnagar",
+"Nehalpur",
+"Ruhita",
+"Shyamkur"
+],
+"Sharsha": [
+"Bagachra",
+"Bahadurpur",
+"Benapole",
+"Dihi",
+"Goga",
+"Kaiba",
+"Laxmanpur",
+"Nizampur",
+"Putkhali",
+"Sharsha",
+"Ulashi"
+]
+},
+"Jhenaidah": {
+"Jhenaidah Sadar": [
+"Sadhuhati",
+"Madhuhati",
+"Saganna",
+"Holidhani",
+"Kumrabaria",
+"Ganna",
+"Maharajpur",
+"Paglakanai",
+"Porahati",
+"Harishankarpur",
+"Padmakar",
+"Dogachi",
+"Fursundi",
+"Kalicharanpur",
+"Surat",
+"Ghorshal",
+"Naldanga"
+],
+"Kaliganj": [
+"Sundarpur-Durgapur",
+"Jamal",
+"Cola",
+"Niamatpur",
+"Simlarokanpur",
+"Trilochanpur",
+"Raigram",
+"Maliat",
+"Barbazar",
+"Kastbhanga",
+" Rakhalgachi"
+],
+"Kotchandpur": [
+"Sabdalpur",
+"Dora",
+"Kushna",
+"Baluhar",
+"Elangi"
+],
+"Maheshpur": [
+"SBK",
+"Fatepur",
+"Pantapara",
+"Swaruppur",
+"Shyamkur",
+"Nepa",
+"Kazirber",
+"Banshbaria",
+"Jadavpur",
+"Natima",
+"Mandarbaria",
+"Azampur"
+],
+"Shailkupa": [
+"Tribeni",
+"Mirzapur",
+"Dignagar",
+"Kacherkol",
+"Sarutia",
+"Hakimpur",
+"Dhalharachandra",
+"Manoharpur",
+"Bogra",
+"Abaipur",
+"Nityanandpur",
+"Umedpur",
+"Dudhsar",
+"Phulhari"
+],
+"Harinakundu": [
+"Bhayana",
+"Joradah",
+"Taherhuda",
+"Daulatpur",
+"Kapashhatia",
+"Falshi",
+"Raghunathpur",
+"Chandpur"
+]
+},
+"Khulna": {
+"Rupsa": [
+"Aichgati",
+"Sriphaltala",
+"Naihati",
+"TSB",
+"Ghatbhog"
+],
+"Terkhada": [
+"Terkhad",
+"Chagladah",
+"Barasat",
+"Sachiagat",
+"Madhupur",
+"Ajgara"
+],
+"Dighlia": [
+"Dighlia",
+"Senhati",
+"Ghazirhat",
+"Barakpur",
+"Aranghata",
+"Yogipol"
+],
+"Phultala": [
+"Phultala",
+"Damodar",
+"Atara Gilatala",
+"Jamira"
+],
+"Dumuria": [
+"Dumuria",
+"Maguraghona",
+"Bhandarpara",
+"Courage",
+"Rudaghra",
+"Gutudia",
+"Shobna",
+"Kharnia",
+"Atlia",
+"Dhamalia",
+"Magurkhali",
+"Raghunathpur",
+"Rangpur",
+"Sharafpur"
+],
+"Batiaghata": [
+"Batiaghata",
+"Amirpur",
+"Gangarampur",
+"Surkhali",
+"Bhandarkot",
+"Baliadanga",
+"Jalma"
+],
+"Dakop": [
+"Dakop",
+"Bajua",
+"Kamarkhola",
+"Tildanga",
+"Sutarkhali",
+"Loudob",
+"Pankhali",
+"Banishanta",
+"Kailashganj"
+],
+"Paikgacha": [
+"Haridhali",
+"Garikhali",
+"Kapilmuni",
+"Lata",
+"Deluti",
+"Laskar",
+"Gadaipur",
+"Raduli",
+"Chandkhali",
+"Soladana"
+],
+"Koira": [
+"Koira",
+"Maharajpur",
+"Maheshwaripur",
+"North Bedkashi",
+"South Bedkashi",
+"Amadi",
+"Bagali"
+]
+},
+"Kushtia": {
+"Kushtia Sadar": [
+"1 No. Hatsh Haripur Union Parishad",
+"2 No. Botoil Union Parishad",
+"3 No. Alampur Union Parishad",
+"4 No. Ziarkhi Union Parishad",
+"5 No. Ailchara Union Parishad",
+"6 No. Patikabari Union Parishad",
+"7 No. Jhowdia Union Parishad",
+"8 No. Ujangram Union Parishad",
+"9 No. Abdalpur Union Parishad",
+"10 No. Harinarayanpur Union Parishad Parishad",
+"No. 11 Manohardia Union Parishad",
+"No. 12 Goswamidurgapur Union Parishad",
+"No. 15 Kanchanpur Union Parishad"
+],
+"Kumarkhali": [
+"1 No. Kaya Union Parishad",
+"2 No. Shilaidah Union Parishad",
+"3 No. Jagannathpur Union Parishad",
+"4 No. Sadaki Union Parishad",
+"5 No. Nandalalpur Union Parishad",
+"6 No. Chapra Union Parishad",
+"7 No. Bagulat Union Parishad",
+"8 No. Jaduboyra Union Parishad",
+"9 No. Chandpur Union Parishad",
+"No. 10 Panti Union Parishad",
+"No. 11 Charsadipur Union Parishad"
+],
+"Khoksa": [
+"Khoksa Union Parishad",
+"Osmanpur Union Parishad",
+"Betbaria Union Parishad",
+"Janipur Union Parishad",
+"Shimulia Union Parishad",
+"Shomspur Union Parishad",
+"Gopgram Union Parishad",
+"Jayantihajra Union Parishad",
+"Ambaria Union Parishad"
+],
+"Mirpur": [
+"Chithlia Union Information Batayan",
+"Bahalbaria Union",
+"Talbaria Union",
+"Baruipara Union",
+"Fulbaria Union",
+"Amla Union",
+"Sadarpur Union",
+"Chatian Union",
+"Poradah Union",
+"Kursha Union",
+"Malihad Union",
+"Ambaria Union",
+"Dhubail Union"
+],
+"Bheramara": [
+"Juniadah Union",
+"Bahirchar Union",
+"Dharampur Union",
+"Chandgram Union",
+"Mokarimpur Union",
+"Bahadurpur Union"
+],
+"Daulatpur": [
+"Daulatpur Union Parishad",
+"Refaitpur Union Parishad",
+"Adabaria Union Parishad",
+"Hogalbaria Union Parishad",
+"Boalia Union Parishad",
+"Philipnagar Union Parishad",
+"Mathurapur Union Parishad",
+"Prapur Union Parishad",
+"Moricha Union Parishad",
+"Chilmari Union Parishad",
+"Ramakrishnapur Union Parishad",
+"Aria Union Parishad",
+"Khalishakundi Union Parishad",
+"Pierpur Union Parishad"
+]
+},
+"Magura": {
+"Sripur Upazila": [
+"01 No. Goeshpur Union",
+"02 No. Amalsar Union",
+"03 No. Srikol Union",
+"04 No. Sripur Union",
+"05 No. Dwariapur Union",
+"06 No. Kadirpara Union",
+"07 No. Sabdalpur Union",
+"08 No. Nakol Union"
+],
+"Shalikha Upazila": [
+"Dhaneshwargati Union",
+"Talkhari Union",
+"Arpara Union",
+"Shatkhali Union",
+"Shalikha Union",
+"Bunagati Union",
+"Gangarampur Union"
+],
+"Magura Sadar Upazila": [
+"1 No. Hajipur Union",
+"2 No. Athar Khada Union",
+"3 No. Kachundi Union",
+"4 No. Bagia Union",
+"5 No. Hazrapur Union",
+"6 No. Raghab Dair Union",
+"7 No. Maghi Union",
+"8 No. Jagdal Union",
+"9 No. Chaulia Union",
+"10 No. Shatrujitpur Union",
+"No. 11 Beril Polita Union",
+"No. 12 Kuchiamora Union",
+"No. 13 Gopalgram Union"
+],
+"Mohammadpur Upazila": [
+"Babu Khali Union",
+"Binodpur Union",
+"Digha Union",
+"Rajapur Union",
+"Balidia Union",
+"Mohammadpur Union",
+"Palashbaria Union",
+"Nahata Union"
+]
+},
+"Meherpur": {
+"Meherpur Sadar": [
+"Qutubpur",
+"Buripota",
+"Amjhupi",
+"Amdah",
+"Pirojpur"
+],
+"Mujibnagar": [
+"Dariapur",
+"Monkhali",
+"Bagwan",
+"Mahajanpur"
+],
+"Gangni": [
+"Kathuli",
+"Tetulbaria",
+"Kazipur",
+"Bamandi",
+"Matmura",
+"Sholtaka",
+"Saharbati",
+"Dhankhola",
+"Raipur"
+]
+},
+"Narail": {
+"Sadar": [
+"Maijpara",
+"Habkhali",
+"Chandibarpur",
+"Audia",
+"Shahabad",
+"Tularampur",
+"Sheikhhati",
+"Kalora",
+"Singasholpur",
+"Bhadrabila",
+"Banshgram",
+"Bichali",
+"Mulia"
+],
+"Lohagara": [
+"Naldi",
+"Lahuria",
+"Shalnagar",
+"Noagram",
+"Lakshipasa",
+"Jaipur",
+"Lohagra",
+"Dighlia",
+"Mallikpur",
+"Kotakol",
+"Itna",
+"Kashipur"
+],
+"Kalia": [
+"Babra-Hachla",
+"Purulia",
+"Hamidpur",
+"Mauli",
+"Salamabad",
+"Khasial",
+"Jaynagar",
+"Kalabaria",
+"Baisona",
+"Pahardanga",
+"Perli",
+"Chachuri",
+"Baranal-Iliachabad",
+"Panchgram"
+]
+},
+"Satkhira": {
+"Asashuni": [
+"Shobnali",
+"Budhhata",
+"Kulya",
+"Dargahpur",
+"Baradal",
+"Asashuni",
+"Sriula",
+"Khazra",
+"Anulia",
+"Pratapnagar",
+"Kadakati"
+],
+"Debhata": [
+"Kushlia",
+"Parulia",
+"Sakhipur",
+"Nawapara",
+"Debhata"
+],
+"Kalaroa": [
+"Joynagar",
+"Jalalabad",
+"Koyla",
+"Langaljhara",
+"Kedagachi",
+"Sonabaria",
+"Chandanpur",
+"Keralakata",
+"Helatola",
+"Kushodanga",
+"Deyara",
+"Yugikhali"
+],
+"Kaliganj": [
+"Krishnanagar",
+"Bishnupur",
+"Champaful",
+"Dakshin Sripur",
+"Kushulia",
+"Nalta",
+"Tarali",
+"Bharashimla",
+"Mathureshpur",
+"Dhalbaria",
+"Ratanpur",
+"Mautola"
+],
+"Satkhira Sadar": [
+"Baansdah",
+"Kushkhali",
+"Baikari",
+"Ghona",
+"Shibpur",
+"Bhomra",
+"Alipur",
+"Dhulihar",
+"Brahmarajpur",
+"Agardari",
+"Jhowdanga",
+"Balli",
+"Labsa",
+"Fingri"
+],
+"Shyamnagar": [
+"Vurulia",
+"Kashimari",
+"Shyamnagar",
+"Noornagar",
+"Kaikhali",
+"Ramzannagar",
+"Munshiganj",
+"Ishwaripur",
+"Burigoalini",
+"Atulia",
+"Padmapukur",
+"Gabura"
+],
+"Tala": [
+"Dhandia",
+"Nagarghata",
+"Sarulia",
+"Kumira",
+"Tentulia",
+"Tala",
+"Islamkati",
+"Magura",
+"Khalishkhali",
+"Kheshra",
+"Jalalpur",
+"Khalilnagar"
+]
+}
+},
+"Barisal": {
+"Barguna": [
+"Barguna Sadar",
+"Amtali",
+"Patharghata",
+"Betagi",
+"Bamana",
+"Taltali"
+],
+"Barisal": [
+"Agailjhara",
+"Bakerganj",
+"Babuganj",
+"Banaripara",
+"Gournadi",
+"Hijla",
+"Barisal Sadar",
+"Mehendiganj",
+"Muladi",
+"Uzirpur"
+],
+"Bhola": [
+"Bhola Sadar",
+"Tajmuddin",
+"Daulatkhan",
+"Borhanuddin",
+"Manpura",
+"Lalmohan",
+"Char fashion"
+],
+"Jhalokati": [
+"Kanthalia",
+"Jhalakathi Sadar",
+"Nolchiti",
+"Rajapur"
+],
+"Patuakhali": [
+"Patuakhali Sadar",
+"Bowfall",
+"Doahmina",
+"Golachipa",
+"Kalapara",
+"Mirzaganj",
+"Dumki",
+"Ranga Bali"
+],
+"Pirojpur": [
+"Kaukhali",
+"Nazirpur",
+"Nesharabad (Swaroopakathi)",
+"Pirojpur Sadar",
+"Bhandaria",
+"Mathbaria",
+"Indurkani"
+]
+},
+"Sylhet": {
+"Habiganj": {
+"Ajmiriganj": [
+"Ajmiriganj Sadar Union",
+"Badalpur Union",
+"Jalsukha Union",
+"Shibpasha Union",
+"Kakailcheo Union"
+],
+"Bahubal": [
+"Snanghat Union",
+"Putijuri Union",
+"Satkapan Union",
+"Bahubal Sadar Union",
+"Lamatashi Union",
+"Mirpur Union",
+"Vadeshwar Union"
+],
+"Baniachong": [
+"Baniachong North East Union",
+"Baniachong North West Union",
+"Baniachong South East Union",
+"Baniachong South West Union",
+"Daulatpur Union",
+"Baniachong",
+"Kagapasha Union",
+"Barayuri Union",
+"Khagawra Union",
+"Pukra Union",
+"Subidpur Union",
+"Makrampur Union",
+"Sujatpur Union",
+"Mandari Union",
+"Muradpur Union",
+"Paylarkandi Union"
+],
+"Chunarughat": [
+"Gazipur Union",
+"Ahmedabad Union",
+"Deorgach Union",
+"Paikpara Union",
+"Shankhala Union",
+"Chunarughat Union",
+"Ubahata Union",
+"Satyajuri Union",
+"Ranigaon Union",
+"Mirashi Union"
+],
+"Lakhai": [
+"Lakhai Union",
+"Morakari Union",
+"Muriyauk Union",
+"Bamoi Union",
+"Karab Union",
+"Bulla Union"
+],
+"Madhavpur": [
+"Adaair Union",
+"Andiura Union",
+"Chaumuhani Union",
+"Chhatiyain Union",
+"Jagdishpur Union",
+"Dharmaghar Union",
+"Noapara Union",
+"Baghasura Union",
+"Bahra Union",
+"Shahjahanpur Union",
+"Bulla Union"
+],
+"Nabiganj": [
+"Barabhakir West Union",
+"Barabhakir East Union",
+"Inatganj Union",
+"Dighalbak Union",
+"Aushkandi Union",
+"Kurshi Union",
+"Kargaon Union",
+"Nabiganj Sadar Union",
+"Bausa Union",
+"Debpara Union",
+"Ghaznaipur Union",
+"Kaliarbhanga Union",
+"Paniumda Union"
+],
+"Habiganj Sadar": [
+"Lokra Union",
+"Ritchie Union",
+"Tegharia Union",
+"Pail Union",
+"Gopaya Union",
+"Rajiura Union",
+"Nizampur Union",
+"Lashkarpur Union"
+],
+"Shaistaganj": [
+"Nurpur Union",
+"Shaistaganj Union",
+"Brahmandora Union"
+]
+},
+"Moulvibazar": {
+"Baralekha": [
+"Baralekha Union",
+"Varni Union",
+"South Shahbazpur Union",
+"South Dakshinbhag Union",
+"Daser Bazar Union",
+"Nij Bahadurpur Union",
+"Sujanagar Union",
+"Katal Tali Union",
+"North Shahbazpur Union",
+"Talimpur Union"
+],
+"Kulaura": [
+"Baramchal Union",
+"Bhukshimail Union",
+"Jaichandi Union",
+"Brahmanbazar Union",
+"Kadipur Union",
+"Kulaura Union",
+"Routgaon Union",
+"Tilagaon Union",
+"Sharifpur Union",
+"Prithimpasha Union",
+"Karmdha Union",
+"Bhatera Union",
+"Hajipur Union"
+],
+"Kamalganj": [
+"Rahimpur Union",
+"Patnaushar Union",
+"Munsibazar Union",
+"Shamsernagar Union",
+"Kamalganj Union",
+"Alinagar Union",
+"Adampur Union",
+"Madhavpur Union",
+"Islampur Union"
+],
+"Rajnagar": [
+"Fatepur Union",
+"Uttarbhag Union",
+"Munsibazar Union",
+"Panchgaon Union",
+"Rajnagar Union",
+"Tengra Union",
+"Kamarchak Union",
+"Mansurnagar Union"
+],
+"Moulvibazar Sadar": [
+"Khalilpur Union",
+"Manumukh Union",
+"Kamalpur Union",
+"Upper Kagabla Union",
+"Akhailkura Union",
+"Ekatuna Union",
+"Chandnighat Union",
+"Kanakpur Union",
+"Amoil Union",
+"Nazirabad Union",
+"Mostafapur Union",
+"Giasnagar Union"
+],
+"Srimangal": [
+"Mirzapur Union",
+"Bhunbir Union",
+"Srimangal Union",
+"Sindurkhan Union",
+"Kalapur Union",
+"Ashidron Union",
+"Rajghat Union",
+"Kalighat Union",
+"Satgaon Union"
+],
+"Juri": [
+"Jaifarnagar Union",
+"West Juri Union",
+"East Juri Union",
+"Goalbari Union",
+"Sagarnal Union",
+"Phultala Union"
+]
+},
+"Sunamganj": {
+"Biswambharpur": [
+"Salukabad Union",
+"Dhanpur Union",
+"Palash Union",
+"Fatepur Union",
+"Badaghat South Union"
+],
+"Chatak": [
+"Chatak Sadar Union",
+"Norai Union",
+"Islampur Union",
+"Kalaruka Union",
+"Khurma North Union",
+"Khurma South Union",
+"Jawa Bazar Union",
+"Chramhalla Union",
+"Bhatgaon Union",
+"Singchapir Union",
+"Gobindganj-Saider Gaon Union",
+"Dolarbazar Union",
+"Chaila Afzalabad Union"
+],
+"Dirai": [
+"Rafinagar Union",
+"Bhatipara Union",
+"Rajanagar Union",
+"Dirai",
+"Charnarchar Union",
+"Dirai Sarmangal Union",
+"Karimpur Union",
+"Jagdal Union",
+"Taral Union",
+"Kulanj Union"
+],
+"Dharmapasha": [
+"Paikurati Union",
+"Selbarash Union",
+"Dharmapasha Union",
+"Jayashree Union",
+"Sukhair Rajapur North Union",
+"Sukhair Rajapur South Union"
+],
+"Doara Bazar": [
+"Banglabazar Union",
+"Doarabazar",
+"Narsingpur Union",
+"Doarabazar Union",
+"Mannargaon Union",
+"Pandargaon Union",
+"Dohalia Union",
+"Laxmipur Union",
+"Doarabazar",
+"Boglabazar Union",
+"Surma Union",
+"Doarabazar"
+],
+"Jagannathpur": [
+"Kalkalia Union",
+"Patoli Union",
+"Mirpur Union",
+"Jagannathpur",
+"Chilaura-Haldipur Union",
+"Raniganj Union",
+"Syedpur Shaharpara Union",
+"Asharkandi Union",
+"Pailgaon Union"
+],
+"Jamalganj": [
+"Behli Union",
+"Jamalganj Union",
+"Fenerbank Union",
+"Sachna Bazar Union",
+"Bhimkhali Union",
+"Jamalganj North Union"
+],
+"Tahirpur": [
+"Badaghat Union",
+"Tahirpur Union",
+"Balijuri Union",
+"North Sripur Union",
+"South Sripur Union",
+"Tahirpur",
+"South Baradal Union",
+"North Baradal Union"
+],
+"Sunamganj Sadar": [
+"Laxmanshri Union",
+"Mohanpur Union",
+"Kathir Union",
+"Gourarang Union",
+"Surma Union",
+"Jahangirnagar Union",
+"Ranggarchar Union",
+"Kurbannagar Union",
+"Mollapara Union"
+],
+"Shalla": [
+"Atgaon Union",
+"Shalla",
+"Habibpur Union",
+"Bahara Union",
+"Shalla Union"
+],
+"South Sunamgonj": [
+"Shimulbak Union",
+"West Pagla Union",
+"East Pagla Union",
+"Joykals Union",
+"Patharia Union",
+"Dargapasha Union",
+"East Birgaon Union",
+"West Birgaon Union"
+],
+"Madhyanagar": [
+"Banshikunda North Union",
+"Banshikunda South Union",
+"Chamardani Union",
+"Madhyanagar Union"
+]
+},
+"Sylhet": {
+"Balaganj": [
+"East Pailonpur Union",
+"Boaljur Union",
+"Dewanbazar Union",
+"West Gouripur Union",
+"Balaganj Union",
+"East Gouripur Union"
+],
+"Biyanibazar": [
+"Alinagar Union",
+"Kurarbazar Union",
+"Charkhai Union",
+"Dubag Union",
+"Biyanibazar Union (Defunct)",
+"Mathiura Union",
+"Tilpara Union",
+"Muria Union",
+"Mollapur Union",
+"Lauta Union",
+"Sheola Union"
+],
+"Biswanath": [
+"Lamakaji Union",
+"Khajanchi Union",
+"Alankari Union",
+"Rampasha Union",
+"Daulatpur Union",
+"Vishwanath Union",
+"Deoklas Union"
+],
+"Companyganj": [
+"Islampur West Union",
+"Islampur East Union",
+"Telikhal Union",
+"Ichakals Union",
+"North Ranikhai Union",
+"South Ranikhai Union"
+],
+"Dakshin Surma": [
+"Mollargaon Union",
+"Tetli Union",
+"Lalabazar Union",
+"Jalalpur Union",
+"Moglabazar Union",
+"Daudpur Union",
+"Kamalbazar Union"
+],
+"Fenchuganj": [
+"Fenchuganj Union",
+"Maizgaon Union",
+"Ghilachra Union",
+"North Kushiara Union",
+"North Fenchuganj Union"
+],
+"Golapganj": [
+"Bagha Union",
+"Golapganj Union",
+"Phulbari Union",
+"Laxmipasha Union",
+"Dhaka South Union",
+"Laxmanband Union",
+"Bhadeshwar Union",
+"West Amura Union",
+"Uttar Badepasha Union",
+"Sharifganj Union"
+],
+"Goainghat": [
+"Rustampur Union",
+"West Jaflong Union",
+"East Jaflong Union",
+"Lenguda Union",
+"Alirgaon Union",
+"Fatepur Union",
+"Goainghat",
+"Nandirgaon Union",
+"Towakul Union",
+"Daubari Union"
+],
+"Jaintapur": [
+"Nijpat Union",
+"Jaintapur Union",
+"Charikata Union",
+"Darbast Union",
+"Fatehpur Union",
+"Chiknagul Union"
+],
+"Jokiganj": [
+"Barhal Union",
+"Birashree Union",
+"Kajalsar Union",
+"Khalachra Union",
+"Jokiganj Sadar Union",
+"Sultanpur Union",
+"Barthakuri Union",
+"Kaskanakpur Union",
+"Manikpur Union"
+],
+"Kanaighat": [
+"East Laxmiprasad Union",
+"West Laxmiprasad Union",
+"East Dighirpar Union",
+"Satbank Union",
+"Barachtul Union",
+"Kanighat Union",
+"South Banigram Union",
+"Jhingabari Union",
+"Rajaganj Union"
+],
+"Osmaninagar": [
+"Umarpur Union",
+"Tajpur Union",
+"Paschim Pailanpur Union",
+"Burungabazar Union",
+"Goalabazar Union",
+"Sadipur Union",
+"Usmanpur Union",
+"Dayamir Union"
+],
+"Sylhet Sadar": [
+"Kandigaon Union",
+"Khadimnagar Union",
+"Khadimpara Union",
+"Jalalabad Union",
+"Tuker Bazar Union",
+"Mogalgaon Union",
+"Hatkhola Union"
+]
+}
+},
+"Rangpur": {
+"Dinajpur": [
+"Kaharol",
+"Khansama",
+"Birganj",
+"Chirirbandar",
+"Birampur",
+"Ghoraghat",
+"Dinajpur Sadar",
+"Nawabganj",
+"Bochaganj",
+"Phulbari",
+"Birol",
+"Parvatipur",
+"Hakimpur"
+],
+"Gaibandha": [
+"Gobindganj",
+"Saghata",
+"Palashbari",
+"Gaibandha Sadar",
+"Sadulyapur",
+"Sundarganj",
+"Fuljhuri"
+],
+"Kurigram": [
+"Fuljhuri",
+"Ulipur",
+"Bhurungamari",
+"Nageshwari",
+"Rajarhat",
+"Rajivpur",
+"Kurigram Sadar",
+"Rosemary",
+"Chilmari"
+],
+"Lalmonirhat": [
+"Patagam",
+"handcuffs",
+"Lalmonirhat Sadar",
+"Aditamari",
+"Kaliganj"
+],
+"Nilphamari": [
+"Dimla",
+"Jaldhaka",
+"Syedpur",
+"Kishoreganj",
+"Nilphamari Sadar",
+"Domar"
+],
+"Panchagarh": [
+"Panchagarh Sadar",
+"Tetulia",
+"Atwari",
+"Debiganj",
+"Boda"
+],
+"Rangpur": {
+"MithaPukur": [
+"1 No. Khoragach",
+"2 No. Rani Pond",
+"3 No. Payaraband",
+"4 No. Bhangni",
+"5 No. Balarhat",
+"6 No. Kafrikhal",
+"7 No. Latibpur",
+"8 No. Chengmari",
+"9 No. Moenpur",
+"10 No. Balua Masimpur",
+"11 No. Barabala",
+"12 No. Milanpur",
+"13 No. Gopalpur",
+"14 No. Durgapur",
+"15 No. Bara Hazratpur",
+"16 No. Mirzapur",
+"17 No. Imadpur"
+],
+"Taraganj": [
+"1 No. Alampur",
+"2 No. Kursha",
+"3 No. Ikorchali",
+"4 No. Hariya Kuti",
+"5 No. Soyer"
+],
+"Badarganj": [
+"6 No. Radhanagar",
+"7 No. Gopinathpur",
+"8 No. Ramnathpur",
+"9 No. Damedpur",
+"10 No. Madhupur",
+"11 No. Gopalpur",
+"12 No. Qutubpur",
+"13 No. Kalupara",
+"14 No. Bishnupur",
+"15 No. Lohanipara"
+],
+"Pirganj": [
+"1 No. Chaitrakol",
+"2 No. Vendabari",
+"3 No. Baradaroga",
+"4 No. Kumedpur",
+"5 No. Madankhali",
+"6 No. Tukuria",
+"7 No. Bara Alampur",
+"8 No. Raipur",
+"9 No. Pirganj",
+"10 No. Shanerhat",
+"11 No. Panchgachi",
+"12 No. Mithapur",
+"13 No. Ramnathpur",
+"14 No. Chatra",
+"15 No. Kabilpur"
+],
+"Pirgacha": [
+"1 No. Kalyani",
+"2 No. Parul",
+"3 No. Itakumari",
+"4 No. Annadanagar",
+"5 No. Chawla",
+"6 No. Tambulpur",
+"7 No. Pirgacha",
+"8 No. Kaikuri",
+"9 No. Kandi"
+],
+"Gangachara": [
+"1 No. Betgari",
+"2 No. BoroBill",
+"3 No. Kolkond",
+"4 No. Lakshitari",
+"5 No. Gangachra",
+"6 No. Gaujaghonta",
+"7 No. Marnea",
+"8 No. Alam Biditar",
+"9 No. Nohali"
+],
+"Kaunia": [
+"1 No. Sarai",
+"2 No. Haragach",
+"3 No. Nankursha",
+"4 No. ShahidBagh",
+"5 No. Balapara",
+"6 No. Tepa Madhupur"
+],
+"Rangpur Sadar": [
+"1 No. 1 Mominpur",
+"2 No. Haridebpur",
+"3 No. Sandalwood",
+"4 No. Freshers",
+"5 No. Khaleya"
+]
+},
+"Thakurgaon": [
+"Thakurgaon Sadar",
+"Ranishankail",
+"Baliyadangi",
+"Haripur",
+"Pirganj"
+]
+},
+"Mymensingh": {
+"Jamalpur": {
+"Bakshiganj": [
+"1 No. Dhanua",
+"2 No. Bagarchar",
+"3 No. Batrajor",
+"4 No. Sadhurpara",
+"5 No. Baksiganj",
+"6 No. Nilaksia",
+"7 No. Merurchar"
+],
+"Dewanganj": [
+"1 No. Dangdhara",
+"2 No. Charamkhawa",
+"3 No. Parram Rampur",
+"4 No. Hatibhanga",
+"5 No. Bahadurabad",
+"6 No. Chikajani",
+"7 No. Chukaibari",
+"8 No. Dewanganj"
+],
+"Islampur": [
+"1 No. Kulkandi",
+"2 No. Belgacha",
+"3 No. Chinaduli",
+"4 No. Sapdhari",
+"5 No. Noarpara",
+"6 No. Islampur",
+"7 No. Pathshi",
+"8 No. Palbandha",
+"9 No. Gowalerchar",
+"10 No. Gaibandha",
+"11 No. Charputimari",
+"12 No. Chargoalini"
+],
+"Jamalpur Sadar": [
+"1 No. Kendua",
+"2 No. Sharifpur",
+"3 No. Lakshirchar",
+"4 No. Tulshirchar",
+"5 No. Etail",
+"6 No. Narundi",
+"7 No. Ghoradhap",
+"8 No. Bashachra",
+"9 No. Ranagacha",
+"10 No. Sripur",
+"11 No. Shahbazpur",
+"12 No. Titpalla",
+"13 No. Mesta",
+"14 No. Digpait",
+"15 No. Rashidpur"
+],
+"Motherganj": [
+"1 No. Charpakerdah",
+"2 No. Karichhra",
+"3 No. Gunaritala",
+"4 No. Balijuri",
+"5 No. Jorkhali",
+"6 No. Adarvita",
+"7 No. Sidhuli"
+],
+"Melandah": [
+"1 No.  Durmut",
+"2 No.  Kulia",
+"3 No.  Mahmudpur",
+"4 No.  Nangla",
+"5 No.  Nayanagar",
+"6 No.  Adra",
+"7 No.  Charbani Pakuria",
+"8 No. Phulkocha",
+"9 No. Ghosherpara",
+"10 No. Jhaugara",
+"11 No. Shyampur"
+],
+"Sarishabari": [
+"1 No. Satpoa",
+"2 No. Pogaldigha",
+"3 No. Doyle",
+"4 No. Aona",
+"5 No. Pingna",
+"6 No. Bhatara",
+"7 No. Kamrabad",
+"8 No. Mahadan"
+]
+},
+"Mymensingh": {
+"Bhaluka": [
+"Uthura",
+"Medwari",
+"Bhardoba",
+"Dhitpur",
+"Dakatiya",
+"Birunia",
+"Valuka",
+"Mallikbari",
+"Kachina",
+"Habirbari",
+"Rajoi"
+],
+"Dhobaura": [
+"South",
+"Gamaritala",
+"Dhobaura",
+"Porakandulia",
+"Goatla",
+"Ghoshgaon",
+"Baghber"
+],
+"Fulbaria": [
+"Deokhola",
+"Naogaon",
+"Putijana",
+"Kushmail",
+"Phulbaria",
+"Bakta",
+"Rangamatia",
+"Enayetpur",
+"Kaladah",
+"Radhakanai",
+"Achimpatuli",
+"Bhavanipur",
+"Balian"
+],
+"Gafargaon": [
+"Rasulpur",
+"Barbaria",
+"Charalgi",
+"Saltia",
+"Rawna",
+"Longair",
+"Pythal",
+"Gafargaon",
+"Jashra",
+"Mashakhali",
+"Panchbagh",
+"Usthi",
+"Datterbazar",
+"Niguari",
+"Tangab"
+],
+"Gouripur": [
+"Sahnati",
+"Achintpur",
+"Mailakanda",
+"Bokainagar",
+"Gauripur",
+"Maoha",
+"Ramgopalpur",
+"Douhakhla",
+"Bhangnamari",
+"Sidhla"
+],
+"Haluaghat": [
+"Bhubankura",
+"Jugli",
+"Kaichapur",
+"Haluaghat",
+"Ghazirvita",
+"Bildora",
+"Shakuai",
+"Narail",
+"Dhara",
+"Dhurail",
+"Amtail",
+"Swadeshi"
+],
+"Ishwarganj": [
+"Ishwarganj",
+"Sarisha",
+"Sohagi",
+"Atharbari",
+"Rajibpur",
+"Maizbag",
+"Magtula",
+"Jatia",
+"Uchakhila",
+"Tarundia",
+"Barahit"
+],
+"Mymensingh Sadar": [
+"Ashtadhar",
+"Borrachar",
+"Dapunia",
+"Khagdahar",
+"Charnilakxia",
+"Kushtia",
+"Paranganj",
+"Sirta",
+"Charishwardia",
+"Ghagra",
+"Bhavkhali"
+],
+"Muktagacha": [
+"Dulla",
+"Baragram",
+"Tarati",
+"Kumaragata",
+"Bashati",
+"Mankon",
+"Ghoga",
+"Daogaon",
+"Kashimpur",
+"Kherujani"
+],
+"Nandail": [
+"Charbaitagir",
+"Birbaitager",
+"Nandale",
+"Chandipasha",
+"Gangail",
+"Rajgati",
+"Moazzempur",
+"Sherpur",
+"Singrail",
+"Mushulli",
+"Achargaon",
+"Kharua",
+"Jahangirpur"
+],
+"Phulpur": [
+"Rambhadrapur",
+"Chandhara",
+"Bhaitkandi",
+"Singheshwar",
+"Phulpur",
+"Baola",
+"Paari",
+"Balia",
+"Rahimganj",
+"Rupsi"
+],
+"Tarakanda": [
+"Banihala",
+"Biska",
+"Balikha",
+"Kakani",
+"Dhakua",
+"Tarakanda",
+"Galagaon",
+"Kamargaon",
+"Kamaria",
+"Rampur"
+],
+"Trishal": [
+"Dhanikhola",
+"Bailor",
+"Kanthal",
+"Kanihari",
+"Trishal",
+"Harirampur",
+"Sakhua",
+"Balipara",
+"Mokshpur",
+"Mathbari",
+"Amirabari",
+"Rampur"
+]
+},
+"Netrakona": {
+"Netrakona Sadar": [
+"Chalisha",
+"Kailati",
+"Dakshin Bishiura",
+"Madanpur",
+"Amtala",
+"Lakshiganj",
+"Sinherbangla",
+"Thakurakona",
+"Rouha",
+"Medni",
+"Maugati",
+"Kaliara Gabragati"
+],
+"Purbadhala": [
+"Khalishaur",
+"Ghagra",
+"Jaria",
+"Narandia",
+"Bishkakuni",
+"Bairati",
+"Hogla",
+"Gohalakanda",
+"Dhalamulgaon",
+"Agia",
+"Purbadhala"
+],
+"Durgapur": [
+"Durgapur",
+"Kakairgarh",
+"Kullagarh",
+"Chandigarh",
+"Birishiri",
+"Bakaljora",
+"Gaonkandia"
+],
+"Barhatta": [
+"Asma",
+"Chiram",
+"Baushi",
+"Barhatta",
+"Raipur",
+"Sahta",
+"Singhda"
+],
+"Atpara": [
+"Swaramushia",
+"Shunai",
+"Luneshwar",
+"Baniajan",
+"Teligati",
+"Duoj",
+"Sukhari"
+],
+"Madan": [
+"Fatehpur",
+"Naikpur",
+"Tiyashree",
+"Maghan",
+"Gebindashree",
+"Madan",
+"Changaon",
+"Kaital"
+],
+"Kendua": [
+"Ashuzia",
+"Dalpa",
+"Garadoba",
+"Ganda",
+"Sandikona",
+"Maska",
+"Balaishimul",
+"Naopara",
+"Kandiura",
+"Chirang",
+"Royalbari Amtala",
+"Paikura",
+"Mozafarpur"
+],
+"Mohanganj": [
+"Barakashia Birampur",
+"Baratali Banihari",
+"Tetulia",
+"Maghan Siadar",
+"Samaj Sahildeo",
+"Suair",
+"Gaglajur"
+],
+"Kalmakanda": [
+"Kailati",
+"Nazirpur",
+"Pogla",
+"Kalmakanda",
+"Rangchati",
+"Lengura",
+"Barakhapan",
+"Kharnai"
+],
+"Khaliajuri": [
+"Krishnapur",
+"Nagar",
+"Chakua",
+"Khaliajuri",
+"Mendipur",
+"Gazipur"
+]
+},
+"Sherpur": {
+"Sherpur Sadar": [
+"Kamar Char",
+"Charsherpur",
+"Bajitkhila",
+"Ghazir Farm",
+"Dhala",
+"Pakuria",
+"Vatshala",
+"Lachmanpur",
+"Rouha",
+"Kamaria",
+"Charmocharia",
+"Charpakshimari",
+"Betmari",
+"Ghughurakandi",
+"Balairchar"
+],
+"Nakla": [
+"Ganapaddi",
+"Nakla",
+"Urfa",
+"Gaurdwar",
+"Baneshwardi",
+"Pathakata",
+"Talki",
+"Charashtadhar",
+"Chandrakona"
+],
+"Jhenaigati": [
+"Kansha",
+"Dhanshail",
+"Nalkura",
+"Gouripur",
+"Jhenaigati",
+"Hatibanda",
+"Malizhikanda"
+],
+"Nalitabari": [
+"Poragao",
+"Nanni",
+"Morichpuran",
+"Rajnagar",
+"Nayabeel",
+"Ramachandrakura",
+"Kakarkandi",
+"Nalitabari",
+"Yognia",
+"Kalspar",
+"Baghbed",
+"Rupnarayankura"
+],
+"Srivardi": [
+"Ranishimul",
+"Singabaruna",
+"Kakilakura",
+"Tatihati",
+"Goshaipur",
+"Srivardi",
+"Velua",
+"Kharia Kazirchar",
+"Kudikahania",
+"Gadzaripa"
+]
+}
+}
+}
