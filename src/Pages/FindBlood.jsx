@@ -63,6 +63,7 @@ const FindBlood = () => {
     );
   });
 
+  console.log('blood',blood)
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
@@ -142,7 +143,8 @@ const FindBlood = () => {
         <div className="md:col-span-3 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredDonors.length === 0 && (
             <p className="text-gray-500 col-span-full text-center">
-              কোনো donor পাওয়া যায়নি
+                <span className="font-semibold text-red-500"> {blood} </span>
+                <span>এই গ্রুপের কোনো রক্ত দাতা পাওয়া যায়নি</span>
             </p>
           )}
 
