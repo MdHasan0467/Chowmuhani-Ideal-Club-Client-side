@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import PostCard from "../components/AdminPosts/PostCard";
 
 const initialPosts = [
@@ -72,34 +72,54 @@ const initialPosts = [
 
 const AdminPosts = () => {
   const [posts, setPosts] = useState(initialPosts);
-  const [newComments, setNewComments] = useState(0);
-
-  // Count new comments across all posts
-  useEffect(() => {
-    const count = posts.reduce((acc, post) => acc + post.comments.length, 0);
-    setNewComments(count);
-  }, [posts]);
+  const [showAll, setShowAll] = useState(false);
+  const containerRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState("0px");
 
   const updatePost = (updatedPost) => {
     setPosts(posts.map(p => p.id === updatedPost.id ? updatedPost : p));
   };
 
+  // কোন পোস্টগুলো দেখানো হবে
+  const visiblePosts = showAll ? posts : posts.slice(0, 3);
+
+  // Smooth animation জন্য max-height set করা
+  useEffect(() => {
+    if (containerRef.current) {
+      setMaxHeight(`${containerRef.current.scrollHeight}px`);
+    }
+  }, [showAll, posts]);
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-lg md:text-2xl font-semibold">
-          পরিচালকের সকল পোষ্ট
-        </h1>
-        {newComments > 0 && (
-          <span className="badge badge-primary">{newComments} New</span>
-        )}
+      <h1 className="text-lg md:text-2xl font-semibold text-center mb-6">
+        পরিচালকের সকল পোষ্ট
+      </h1>
+
+      {/* Animated container */}
+      <div
+        ref={containerRef}
+        className="overflow-hidden transition-all duration-500 ease-in-out"
+        style={{ maxHeight: showAll ? maxHeight : "1500px" }} // 1500px as fallback for 3 posts
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {visiblePosts.map(post => (
+            <PostCard key={post.id} post={post} updatePost={updatePost} />
+          ))}
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {posts.map(post => (
-          <PostCard key={post.id} post={post} updatePost={updatePost} />
-        ))}
-      </div>
+      {/* Show More / Show Less Button */}
+      {posts.length > 3 && (
+        <div className="flex justify-center mt-4">
+          <button
+            className="btn btn-outline btn-sm sm:btn-md transition transform hover:scale-105"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "কম দেখবো" : "আরো দেখুন..."}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
