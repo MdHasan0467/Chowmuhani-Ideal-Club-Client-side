@@ -20,6 +20,8 @@ import Home from './Pages/Home.jsx'
 import Dashboard from './Layouts/Dashboard.jsx'
 import Profile from './Pages/Profile.jsx'
 import AddMoneySurvey from './Pages/AddMoneySurvey.jsx'
+import ProfileTwo from './Pages/DashboardHome.jsx'
+import DashboardHome from './Pages/DashboardHome.jsx'
 
 
 
@@ -82,11 +84,11 @@ const router = createBrowserRouter ([
   children: [
     {
       path: "dashboard",
-      element: <Profile />,
+      element: <DashboardHome />,
     },
     {
       path: "profile",
-      element: <Profile />,
+      element: <DashboardHome />,
     },
     {
       path: "add/admin/post",

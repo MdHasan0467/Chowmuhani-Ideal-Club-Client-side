@@ -1,5 +1,5 @@
 import bgImage from '../assets/logoBanner.jpg';
-import ProfileTwo from './ProfileTwo';
+import ProfileTwo from './DashboardHome';
 
 const Profile = () => {
     return (
