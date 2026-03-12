@@ -18,7 +18,7 @@ import MemberShipForm from "./MemberShipForm";
 const Home = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <Stat />
       <AdminPosts />
       <RecentWorks />
