@@ -36,9 +36,15 @@ const IncomeAndCostSharePublicly = () => {
         {/* Title */}
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold">আর্থিক স্বচ্ছতা</h2>
+          <h2 className="text-3xl font-bold">Financial Transparency</h2>
 
           <p className="text-gray-500 mt-2">
-            আমাদের সংগঠনে প্রাপ্ত সকল অনুদান এবং করা সকল ব্যয়ের তথ্য এখানে প্রকাশ করা হয়েছে।
+            আমরা সম্পূর্ণ স্বচ্ছতায় বিশ্বাস করি। আমাদের সংগঠনে প্রাপ্ত সকল অনুদান এবং করা সকল ব্যয়ের 
+            তথ্য এখানে সবার জন্য প্রকাশ করা হয়েছে।
+          </p>
+          <p className="text-gray-500 mt-2">
+            We believe in complete transparency. All donations received and 
+            expenses made by our organization are publicly shared here.
           </p>
         </div>
 
