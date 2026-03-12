@@ -1,3 +1,4 @@
+// import { BsFillCircleFill } from "react-icons/bs";
 
 
 const ProfileTwo = () => {
@@ -9,7 +10,7 @@ const ProfileTwo = () => {
     return (
         <main>
             <HeroSection />
-            <ProfileSection modalId={"my-drawer-2"} />
+            <ProfileSection  modalId={"my-drawer-2"} />
         </main>
     );
 };
@@ -34,12 +35,12 @@ const HeroSection = () => {
 };
 
 //* ProfileSection component
-const ProfileSection = () => {
+const ProfileSection = ({ user, logUser, refetch }) => {
 	
     return (
-        <section className="relative -mt-[160px] dark:bg-slate-800">
+        <section className="relative -mt-40 dark:bg-slate-800">
             <div className="container mx-auto px-4">
-                <div className="relative flex flex-col min-w-0 break-words bg-base-200 min-h-screen dark:bg-slate-800 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                <div className="relative flex flex-col min-w-0 wrap-break-word bg-base-200 min-h-screen dark:bg-slate-800 w-full mb-6 shadow-xl rounded-lg -mt-64">
 
                     <div className="px-6">
                         <div className="flex flex-wrap justify-center">
@@ -47,7 +48,7 @@ const ProfileSection = () => {
                             <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
 
                                 <label htmlFor="Profile-Pic-Update" title="Change image" className="relative cursor-pointer group">
-                                <div className="avatar online -m-[78px] -ml-20 lg:-ml-16">
+                                <div className="avatar online -m-19.5 -ml-20 lg:-ml-16">
                                 <div className="w-24 rounded-full border group-hover:border-none ring group-hover:ring-primary ring-offset-base-100 ring-offset-2">
                                 {/* {
                                     user?.photoURL &&
@@ -57,20 +58,7 @@ const ProfileSection = () => {
                                 </div>
                                 </label>
 
-                                {/* {
-                                    !user?.photoURL &&
-                                <label>
-                                <div className="avatar online -m-[78px] -ml-20 lg:-ml-16">
-                                <div className="w-24 rounded-full border group-hover:border-none ring group-hover:ring-primary ring-offset-base-100 ring-offset-2">
                                 
-                                <img
-                                className="shadow-xl rounded-full h-auto w-[200px] align-middle border-none absolute max-w-[150px]"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkA7r1pd3h80Lq9uOByb2ALq5FoOAe-Mq0j3_EZzmOo4tXO0CUkRHQrbXMruyClSGA87E&usqp=CAU"
-                                alt="" />
-                                </div>
-                                </div>
-                                </label>
-                                } */}
 
                             </div>
                         </div>
@@ -80,32 +68,34 @@ const ProfileSection = () => {
                         {/* User Name & Email */}
                         <div className="text-center lg:mt-12">
                             <h3 className="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-                                {/* {user?.displayName} */}MD HASAN
+                                {/* {user?.displayName} */}
                             </h3>
                             <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold ">
                                 <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400">
-                                    {/* {user?.email} */} mdhasan@gmail.com
+                                    {/* {user?.email} */}
                                 </i>
 
                             </div>
                             <div className="mb-2 flex lg:justify-end -ml-52 lg:-ml-0 lg:-mt-10">
                                 {/* More details Button */}
                             <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-                                <label className="cursor-pointer text-orange-600 hover:underline" htmlFor="profile_User_More_Info" >More details</label>
+                                <label className="cursor-pointer text-orange-600 hover:underline" 
+                                htmlFor="profile_User_More_Info" >More details</label>
                             </div>
                             </div>
 
                                 {/* User ID */}
                                 <div>
                                     <div className="lg:py-16 py-5">
-                                        <div className=" text-center flex"> 12510000
-                                            {/* <span className="mx-1">{logUser?.role}</span>
-                                            {user?.uid && <span className="mx-1">ID : </span>}
-                                            <span className="mx-1">{user?.uid?.slice(0,10)}</span> */}
+                                        <div className=" text-center flex">
+                                            {/* <span className="mx-1">{logUser?.role}</span> */}
+                                            {/* {user?.uid && <span className="mx-1">ID : </span>} */}
+                                            {/* <span className="mx-1">{user?.uid?.slice(0,10)}</span> */}
                                         </div>
                                     </div>
                                 </div>
                         </div>
+
 
                                         
                     </div>
@@ -114,12 +104,6 @@ const ProfileSection = () => {
 
 
             
-
-                {/* More Button Modal */}
-                {/* <ProfileUserMoreInfoModal user={user} logUser={logUser} refetch={refetch} /> */}
-
-                {/* Profile Pic Update */}
-                {/* <ProfilePicUpdate /> */}
         </section>
     );
 };

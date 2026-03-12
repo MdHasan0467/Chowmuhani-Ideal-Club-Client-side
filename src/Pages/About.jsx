@@ -1,31 +1,67 @@
 // import LogoBanner from '../assets/logoBanner.jpg'
-import Logo from '../assets/logo.jpg'
+import Logo from '../assets/logo-removebg.png'
 import Footer from '../Shared/Footer/Footer';
 
 const About = () => {
 
     return (
-        <div>
+<div>
 
-            {/* Tittle */}
-            <div className="font-serif">
-                <div className="">
+    {/* Tittle */}
+    <div className="font-serif">
+        <div className="">
+            {/* Diff */}
+            <figure className="diff aspect-16/9 border rounded md:h-96 " tabIndex={0}>
+
+                <div className="diff-item-1" role="img" tabIndex={0}>
+                    <div className="bg-primary text-primary-content md:grid md:grid-cols-3 place-content-center font-black">
+                        {/* Logo */}
+                          <div className="flex justify-center">
+                            <img src={Logo} alt="Logo" 
+                           className='w-20 h-20 md:w-80 md:h-80 mt-2 cursor-no-drop md:col-span-1'
+                           />
+                           </div>
+                           {/* Tittle */}
+                      <div className='col-span-2 px-4'>
+                          <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">চৌমুহনী আইডিয়াল ক্লাব</h1>
+                          <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
+                          <div className='md:mt-5 hidden md:block'>
+                            <p>যুব সমাজকে ধ্বংসাত্মক মাদক দ্রব্য এবং বর্তমানে চলমান সকল অপসংস্কৃতি থেকে দূরে রেখে খেলাধুলা এবং সামাজিক কাজের মাধ্যমে</p>
+                            <br />
+                            <p>সুস্থ সংস্কৃতিতে ফিরিয়ে আনা এবং যুব সমাজকে দেশের জন্য যুব শক্তিতে রুপান্তর করাই আমাদের মূল লক্ষ্য ও উদ্দেশ্য।</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div className="diff-item-2" role="img">
+                    <div className="bg-base-200 md:grid md:grid-cols-3 place-content-center font-black">
+                        {/* Logo */}
+                           <div className="flex justify-center">
+                            <img src={Logo} alt="Logo" 
+                           className='w-20 h-20 md:w-80 md:h-80 mt-2 cursor-no-drop md:col-span-1'
+                           />
+                           </div>
+                           {/* Tittle */}
+                        <div className='md:col-span-2 px-4'>
+                           <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">চৌমুহনী আইডিয়াল ক্লাব</h1>
+                           <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
+                           <div className='md:mt-5 hidden md:block'>
+                            <p>যুব সমাজকে ধ্বংসাত্মক মাদক দ্রব্য এবং বর্তমানে চলমান সকল অপসংস্কৃতি থেকে দূরে রেখে খেলাধুলা এবং সামাজিক কাজের মাধ্যমে</p>
+                            <br />
+                            <p>সুস্থ সংস্কৃতিতে ফিরিয়ে আনা এবং যুব সমাজকে দেশের জন্য যুব শক্তিতে রুপান্তর করাই আমাদের মূল লক্ষ্য ও উদ্দেশ্য।</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="diff-resizer"></div>
+            </figure>
+        </div>
                 
-                <div className='flex justify-center'>
-                <img src={Logo} alt="Logo" 
-                className='w-20 h-20 mt-2 cursor-no-drop'
-                />
-                <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">চৌমুহনী আইডিয়াল ক্লাব</h1>
-                </div>
-                <div>
-                <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
-                </div>
-
-                </div>
-                
 
 
-                        <h3 className="text-2xl m-5 text-center">
+            <h3 className="text-2xl m-5 text-center">
                 <span className="font-bold">
                     এটি একটি অরাজনৈতিক এবং সামাজিক সংগঠন।
                 </span>
