@@ -1,354 +1,98 @@
-// import Shortaboli from "../assets/Shortaboli.jpg"
-
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import PersonalInfo from "../components/MemberShipForm/PersonalInfo";
+import SocialInfo from "../components/MemberShipForm/SocialInfo";
+import ContactInfo from "../components/MemberShipForm/ContactInfo";
+import AddressInfo from "../components/MemberShipForm/AddressInfo";
+import BloodInfo from "../components/MemberShipForm/BloodInfo";
+import ProfileUpload from "../components/MemberShipForm/ProfileUpload";
 
 const MemberShipForm = () => {
 
-  const handleMemberShipForm = (e) => {
-    e.preventDefault()
-    console.log(e.target.name.value)
-  }
-  
+const [success,setSuccess] = useState(false)
 
-  return (
-    <div>
-      <Helmet><title>CIC / MemberShip Form</title></Helmet>
+const handleMemberShipForm = async (e) => {
 
-          <div className="bg-orange-50 p-10">
-      {/* <img src={Shortaboli} alt="Shortaboli" className="w-full" /> */}
+e.preventDefault()
 
-      {/* শর্তসমূহ */}
-      <div className="mx-1 md:mx-5">
-        <h1 className="text-2xl font-bold underline my-5">শর্তাবলিঃ</h1>
-        <p>১। আমি নিজ ইচ্ছায় বিনা স্বার্থে "চৌমুহনী আইডিয়াল ক্লাব" এর সদস্য হিসেবে কাজ করতে আগ্রহী।</p>
-        <p>২। আমি আমার উপর অর্পিত সকল দ্বায়িত্ব, কর্তব্য, নিয়মাবলী ও সকল শর্তাবলি মানতে বাধ্য থাকিব।</p>
-        <p>৩। আমি সংগঠনের সকল কাজের সাথে নিজেকে নিয়োজিত রাখিব এবং অন্যকে উৎসাহিত করিব।</p>
-        <p>৪। উপদেষ্টা পরিষদের সকল সদস্যগণ সংগঠনের প্রতি সৌহার্দপূর্ণ মনোভাব পোষণ করিবেন।</p>
-        <p>৫। পরিচালনা পরিষদের সকল সদস্যগণ নিজ নিজ দ্বায়িত্ব পালনে সচেষ্ট থাকিবেন।</p>
-        <p>৬। প্রত্যেক সদস্য অবশ্যই সৎ থাকবে এবং মানব সেবায় নিয়োজিত সকল কর্মকান্ডে নিজ দ্বায়িত্বে এগিয়ে আসবেন।</p>
-        <p>৭। কাহারো একক কোনো সিদ্ধান্তে সংগঠনের কোনো কর্মকান্ড সম্পাদন করা যাবে না। সংগঠন কর্তৃক প্রকাশিত 
-              দ্বায়িত্বশীল সবার মতামত থাকতে হবে এবং বেশির ভাগ সদস্যগণের মতামতের ভিত্তিতে কাজ সম্পাদন করা হবে।</p>
-        <p>৮। উপযুক্ত কারণ ছাড়া সংগঠনের নির্ধারিত সকল সভায় প্রত্যেক সদস্যকে উপস্থিত থাকতে হবে।</p>
-        <p>৯ (ক)। যেহেতু "চৌমুহনী আইডিয়াল ক্লাব" একটি অরাজনৈতিক, অমুনাফাভোগী এবং সেচ্ছাসেবক মূলক সংগঠন। 
-            তাই এখানে দেশের যে কোনো ব্যক্তি (সকল রাজনৈতিক দলের ব্যক্তি সদস্য হিসেবে থাকতে পারবেন, অথবা রাজনীতি করেন না এমন ব্যক্তিও থাকতে পারবেন)
-            অতএব এখানে কেউ কাউকে রাজনৈতিক ভাবে হেয় বা অপদস্থ করা যাবে না এবং এটি একটি শাস্তিযোগ্য অপরাধ হিসেবে গণ্য হবে।
-        </p>
-        <p>৯ (খ)। ক্লাবটি অমুনাফাভোগী এবং সেচ্ছাসেবক মূলক হওয়ায় এখানে কেউ কোনো আর্থিক সুবিধা পাবেন না। সকল শ্রম (মানসিক/শারিরীক) 
-              সেচ্ছায় এবং বিনামূল্যে দিতে হবে।</p>
-        <p>৯ (গ)। কোনো সদস্যের রাজনৈতিক কোনো খারাপ কাজে লিপ্ত থাকা বা আবেগ বশত হয়ে লোভ লালসায় বা চরিত্রহীনতা জনিত কোনো কাজের দায়ভার 
-           "চৌমুহনী আইডিয়াল ক্লাব" বা তার কোনো কর্তৃপক্ষ নিবে না।
-        </p>
-        <p>১০। "চৌমুহনী আইডিয়াল ক্লাব"এর আয়ের উৎস হবে যথাক্রমে- সকল সদস্য, উপদেষ্টা বা সহযোগী সদস্যদের থেকে প্রাপ্ত অর্থ (দান) থেকে।
-                যা মাসিক, বাৎসরিক বা এককালীনও হতে পারে।
-        </p>
-        <p>১১। কোনো সদস্যের বিরুদ্ধে "চৌমুহনী আইডিয়াল ক্লাব" এর গঠনতন্ত্র পরিপন্থি কোনো কাজ প্রমাণিত হলে ওই সদস্যের সদস্য পদ বাতিল বলে গণ্য হবে।</p>
-        <p>১২। সংগঠন কর্তৃক ধার্য্যকৃত মাসিক টাকা প্রতি মাসের ৫ তারিখের মধ্যে নিজ দ্বায়িত্বে পরিশোধ করিতে হবে।</p>
+const form = e.target
 
-      </div>
+const formData = new FormData(form)
 
-      {/* Online Form */}
-      <form onSubmit={handleMemberShipForm} className="md:w-1/2 md:mx-auto md:mt-20 mt-7 bg-amber-100 md:p-10 p-5">
-      <h1 className="text-orange-500 font-serif text-xl md:text-2xl font-bold text-center">অনলাইন সদস্য ফরম</h1>
+const data = Object.fromEntries(formData.entries())
 
-      <p className="md:m-5 m-1">এই মর্মে প্রত্যয়ন করিতেছি যে, আমি...</p>
+console.log(data)
 
-        <h2 className="text-2xl bold">ব্যক্তিগত তথ্যঃ</h2>
-        <div className="space-y-4">
-            <div className="group-card md:flex">
-             <div className="form-control">
-               <label className="label">
-                 <span className="label-text">নামঃ</span>
-               </label>
-               <input
-                 type="text"
-                 name="name"
-                 className="input input-bordered md:w-80"
-                 placeholder="আপনার পুরো নাম লিখুন"
-               />
-             </div>
+try{
 
-             <div className="form-control mx-2">
-               <label className="label">
-                 <span className="label-text">পিতার নামঃ</span>
-               </label>
-               <input
-                 type="text"
-                 className="input input-bordered  md:w-80"
-                 placeholder="আপনার পিতার নাম লিখুন"
-               />
-             </div>
-           </div>
+const res = await fetch("http://localhost:5000/membership",{
+method:"POST",
+headers:{
+"content-type":"application/json"
+},
+body:JSON.stringify(data)
+})
 
-           <div className="group-card md:flex">
-             <div className="form-control">
-               <label className="label">
-                   <span className="label-text">মাতার নামঃ</span>
-               </label>
-               <input
-                   type="text"
-                   className="input input-bordered md:w-80"
-                   placeholder="আপনার মাতার নাম লিখুন"
-               />
-             </div>
-                                 <div className="form-control">
-          <label className="label">
-            <span className="label-text">জন্ম তারিখঃ </span>
-          </label>
-          <input
-            type="date"
-            className="input block input-bordered md:w-80"
-            placeholder="আপনার জন্ম তারিখটি লিখুন (ইংরেজীতে)"
-          />
-        </div>
-           </div>
-        </div>
+const result = await res.json()
 
-        <br /><br />
+if(result.insertedId){
+setSuccess(true)
+form.reset()
+}
 
+}catch(err){
+console.log(err)
+}
 
-        <h2 className="text-2xl bold">সামাজিক তথ্যঃ</h2>
-         <div className="space-y-4">
-           <div className="group-card md:flex">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">ফেসবুক আইডি-র নামঃ</span>
-              </label>
-              <input
-                type="text"
-                className="input input-bordered md:w-80"
-                placeholder="মেসেঞ্জার গ্রুপ রিকুয়েস্ট একসেপ্ট করার সুবিধার্থে -"
-              />
-            </div>
-            <div className="form-control mx-2">
-              <label className="label">
-                <span className="label-text">ফেসবুক আই ডি-র প্রোফাইল লিংকঃ</span>
-              </label>
-              <input
-                type="text"
-                className="input input-bordered  md:w-80"
-                placeholder="সঠিক আইডি নিশ্চিত করার জন্য"
-              />
-            </div>
-        </div>     
-            <div className="group-card md:flex">
-            <div className="form-control md:w-96">
-          <label className="label">
-            <span className="label-text">আপনার পেশা কি?</span>
-          </label>
-          <select defaultValue="Pick a color" className="select">
-            <option disabled={true}>পেশা নির্বাচন করুন</option>
-            <option>ছাত্র ছাত্রী</option>
-            <option>চাকরী</option>
-            <option>ব্যবসা</option>
-            <option>বেকার</option>
-          </select>
-        </div>
-          <div className="form-control mx-2">
-            <label className="label">
-              <span className="label-text">ধর্মঃ আপনার ধর্ম নির্বাচন করুন</span>
-            </label>
-                    <form className="filter flex">
-<div className="flex">
-      <input className="btn btn-square" type="reset" value="×"/>
-  <input className="btn" type="radio" name="frameworks" aria-label="ইসলাম"/>
-  <input className="btn" type="radio" name="frameworks" aria-label="সনাতন"/>
-  <input className="btn" type="radio" name="frameworks" aria-label="অন্যান্য"/>
+}
+
+return (
+
+<div className="bg-orange-50 py-10 px-4">
+
+<Helmet>
+<title>CIC / Membership Form</title>
+</Helmet>
+
+<form
+onSubmit={handleMemberShipForm}
+className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-lg space-y-10"
+>
+
+<h1 className="text-xl md:text-3xl font-bold text-center text-orange-500">
+অনলাইন সদস্য ফরম
+</h1>
+
+{success && (
+<div className="alert alert-success">
+আপনার ফরম সফলভাবে জমা হয়েছে
 </div>
+)}
+
+
+<PersonalInfo/>
+
+<SocialInfo/>
+
+<ContactInfo/>
+
+<AddressInfo/>
+
+<BloodInfo/>
+
+<ProfileUpload/>
+
+
+<button className="btn w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0 text-lg">
+জমা দিন
+</button>
+
 </form>
-          </div>
-      </div>
-         </div>
 
-        <br /><br />
+</div>
 
-        <h2 className="text-2xl bold">যোগাযোগ (মোবাইল নাম্বার দিন)</h2>
-        <div className="group-card md:flex space-y-4">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">মোবাইল নাম্বারঃ</span>
-          </label>
-          <input
-            type="number"
-            className="input input-bordered md:w-80"
-            placeholder="01*********"
-          />
-        </div>
+)
 
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text">ইমেইলঃ</span>
-          </label>
-          <input
-            type="email"
-            className="input input-bordered  md:w-80"
-            placeholder="****@gmail.com"
-          />
-        </div>
-        </div>
+}
 
-        <br /><br />
-
-
-        <h2 className="text-2xl bold">বর্তমান ঠিকানা</h2>
-        <div className="group-card md:flex space-y-4">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">🏕️ আপনার গ্রামের নাম কি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered md:w-80"
-            placeholder="গ্রামের নাম লিখুন"
-          />
-        </div>
-
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text">📬 আপনার গ্রামের পোষ্ট অফিস কোনটি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered  md:w-80"
-            placeholder="পোষ্ট অফিসের নাম লিখুন"
-          />
-        </div>
-        </div>
-        <div className="group-card md:flex space-y-4">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">👮‍♂️ আপনার থানার নাম কি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered md:w-80"
-            placeholder="থানার নাম লিখুন"
-          />
-        </div>
-
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text">📬 আপনার জেলা কোনটি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered  md:w-80"
-            placeholder="জেলার নাম লিখুন"
-          />
-        </div>
-      </div>
-
-        <br /><br />
-
-
-        <h2 className="text-2xl bold">স্থায়ী ঠিকানা</h2>
-        <div className="group-card md:flex space-y-4">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">🏕️ আপনার গ্রামের নাম কি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered md:w-80"
-            placeholder="গ্রামের নাম লিখুন"
-          />
-        </div>
-
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text">📬 আপনার গ্রামের পোষ্ট অফিস কোনটি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered  md:w-80"
-            placeholder="পোষ্ট অফিসের নাম লিখুন"
-          />
-        </div>
-        </div>
-        <div className="group-card md:flex space-y-4">
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">👮‍♂️ আপনার থানার নাম কি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered md:w-80"
-            placeholder="থানার নাম লিখুন"
-          />
-        </div>
-
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text">📬 আপনার জেলা কোনটি?</span>
-          </label>
-          <input
-            type="text"
-            className="input input-bordered  md:w-80"
-            placeholder="জেলার নাম লিখুন"
-          />
-        </div>
-      </div>
-
-        <br /><br />
-
-
-        <h2 className="text-2xl bold">সামাজিক কাজ</h2>
-        <div className="group-card md:flex space-y-4">
-        <div className="form-control md:w-96">
-          <label className="label">
-            <span className="label-text">🩸আপনার রক্তের গ্রুপ কি? </span>
-          </label>
-          <select defaultValue="Pick a color" className="select">
-              <option disabled={true}>রক্তের গ্রুপ নির্বাচন করুন</option>
-              <option>A (+ ve)</option>
-              <option>A (- ve)</option>
-              <option>B (+ ve)</option>
-              <option>B (- ve)</option>              
-              <option>AB (+ ve)</option>         
-              <option>AB (- ve)</option>
-              <option>AB (- ve)</option>
-              <option>O (+ ve)</option>
-              <option>O (- ve)</option>
-              <option>জানা নেই</option>
-          </select>
-        </div>
-      </div>
-        <div className="group-card md:flex mt-5">
-          <div className="form-control">
-          <label className="label">
-            <span className="label-text">🩸সর্বশেষ কবে রক্ত দান করেছেন?</span>
-          </label>
-          <input
-            type="date"
-            className="input block input-bordered md:w-80"
-          />
-        </div>
-
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text">🩸সর্বমোট কতবার রক্ত দান করেছেন?</span>
-          </label>
-          <input
-            type="number"
-            className="input input-bordered  md:w-80"
-            placeholder="মোট কতবার রক্ত দান করেছেন?"
-          />
-        </div>
-      </div>
-
-      <p className="m-5"> এই সংগঠনের উপরিউক্ত সকল শর্তাবলি জেনে-বুঝে, মেনে, নিজ ইচ্ছায় সকল কার্যক্রমে স্বতঃস্ফুর্ত ভাবে অংশ গ্রহণ করার এবং সকলের সাথে সৌহার্দপূর্ণ সম্পর্ক বজায় রাখার অঙ্গীকার পোষণ করিতেছি। </p>
-      <p className="font-semibold m-5">সৃষ্টিকর্তা আমাকে সেই শক্তি এবং সুযোগ করে দিক। (আমিন)</p>
-
-        <input
-          className="btn mx-2 w-full bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 border-0 text-white md:mt-9"
-          value="জমা দিন"
-          type="submit"
-        />
-    </form>
-
-    
-    </div>
-    </div>
-  );
-};
-
-export default MemberShipForm;
+export default MemberShipForm
