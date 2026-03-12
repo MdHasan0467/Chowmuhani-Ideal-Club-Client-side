@@ -11,7 +11,7 @@ const DashboardTopNavbar = ({ sidebarOpen, setSidebarOpen }) => {
         >
           <FiMenu className="w-6 h-6" />
         </button>
-        <h1 className="text-2xl font-semibold">
+        <h1 className="text-2xl hidden md:flex font-semibold">
           CIC Dashboard Panel
         </h1>
       </div>
