@@ -7,6 +7,14 @@ const transactions = [
   { id: 2, type: "Cost", title: "Blood Donation Campaign Banner", amount: 1200, date: "09 Mar 2026" },
   { id: 3, type: "Income", title: "Donation from Karim Uddin", amount: 3000, date: "08 Mar 2026" },
   { id: 4, type: "Cost", title: "Food Distribution Program", amount: 2500, date: "07 Mar 2026" },
+  { id: 5, type: "Cost", title: "Food Distribution Program", amount: 500, date: "07 Mar 2026" },
+  { id: 6, type: "Income", title: "Donation from Karim Uddin", amount: 30000, date: "08 Mar 2026" },
+  { id: 7, type: "Cost", title: "Food Distribution Program", amount: 500, date: "07 Mar 2026" },
+  { id: 8, type: "Income", title: "Donation from Karim Uddin", amount: 10000, date: "08 Mar 2026" },
+  { id: 9, type: "Cost", title: "Food Distribution Program", amount: 15000, date: "07 Mar 2026" },
+  { id: 10, type: "Income", title: "Donation from Karim Uddin", amount: 30000, date: "08 Mar 2026" },
+  { id: 11, type: "Cost", title: "Food Distribution Program", amount: 15000, date: "07 Mar 2026" },
+  { id: 12, type: "Cost", title: "Food Distribution Program", amount: 15000, date: "07 Mar 2026" },
 ];
 
 const IncomeAndCostSharePublicly = () => {
@@ -40,7 +48,7 @@ const IncomeAndCostSharePublicly = () => {
           {/* Income */}
           <button
             onClick={() => setModalType("income")}
-            className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-left"
+            className="bg-white p-6 cursor-pointer rounded-xl shadow hover:shadow-lg transition text-left"
           >
             <p className="text-gray-500">Total Income</p>
             <h3 className="text-2xl font-bold text-green-600 mt-2">
@@ -51,7 +59,7 @@ const IncomeAndCostSharePublicly = () => {
           {/* Cost */}
           <button
             onClick={() => setModalType("cost")}
-            className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-left"
+            className="bg-white p-6 cursor-pointer rounded-xl shadow hover:shadow-lg transition text-left"
           >
             <p className="text-gray-500">Total Cost</p>
             <h3 className="text-2xl font-bold text-red-600 mt-2">
