@@ -1,17 +1,15 @@
-import bgImage from '../assets/logoBanner.jpg';
-import ProfileTwo from './ProfileTwo';
 
-const Profile = () => {
+
+const ProfileTwo = () => {
+
+
+
+
+
     return (
         <main>
-            <div className="md:block hidden">
-                <HeroSection />
+            <HeroSection />
             <ProfileSection modalId={"my-drawer-2"} />
-            </div>
-
-            <div className="md:hidden flex">
-                <ProfileTwo />
-            </div>
         </main>
     );
 };
@@ -20,8 +18,8 @@ const Profile = () => {
 const HeroSection = () => {
     return (
         <section className="relative block h-100 overflow-hidden">
-            <div className="absolute -top-15 w-full h-full bg-center bg-cover" style={{
-                backgroundImage: `url(${bgImage})`
+            <div className="absolute -top-44 w-full h-full bg-center bg-cover" style={{
+                backgroundImage: "url('https://i.ibb.co/gSx3cV9/324630363-1613319555768416-1155609400335834060-n.jpg')"
             }
             }>
                 <span id="blackOverlay" className="w-full absolute opacity-50 bg-black"></span>
@@ -36,12 +34,12 @@ const HeroSection = () => {
 };
 
 //* ProfileSection component
-const ProfileSection = ({ user, logUser, refetch }) => {
+const ProfileSection = () => {
 	
     return (
-        <section className="relative dark:bg-slate-800">
-            <div className="container mx-auto ">
-                <div className="relative -mt-34 flex flex-col min-w-0 wrap-break-word bg-base-200 min-h-screen dark:bg-slate-800 w-full shadow-xl rounded-lg">
+        <section className="relative -mt-[160px] dark:bg-slate-800">
+            <div className="container mx-auto px-4">
+                <div className="relative flex flex-col min-w-0 break-words bg-base-200 min-h-screen dark:bg-slate-800 w-full mb-6 shadow-xl rounded-lg -mt-64">
 
                     <div className="px-6">
                         <div className="flex flex-wrap justify-center">
@@ -49,7 +47,7 @@ const ProfileSection = ({ user, logUser, refetch }) => {
                             <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
 
                                 <label htmlFor="Profile-Pic-Update" title="Change image" className="relative cursor-pointer group">
-                                <div className="avatar online -m-19.5 -ml-20 lg:-ml-16">
+                                <div className="avatar online -m-[78px] -ml-20 lg:-ml-16">
                                 <div className="w-24 rounded-full border group-hover:border-none ring group-hover:ring-primary ring-offset-base-100 ring-offset-2">
                                 {/* {
                                     user?.photoURL &&
@@ -82,11 +80,11 @@ const ProfileSection = ({ user, logUser, refetch }) => {
                         {/* User Name & Email */}
                         <div className="text-center lg:mt-12">
                             <h3 className="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-                                {/* {user?.displayName} */} Hasan
+                                {/* {user?.displayName} */}MD HASAN
                             </h3>
                             <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold ">
                                 <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400">
-                                    {/* {user?.email} */} hasan@gmail.com
+                                    {/* {user?.email} */} mdhasan@gmail.com
                                 </i>
 
                             </div>
@@ -98,29 +96,16 @@ const ProfileSection = ({ user, logUser, refetch }) => {
                             </div>
 
                                 {/* User ID */}
-                                {/* <div>
+                                <div>
                                     <div className="lg:py-16 py-5">
-                                        <div className=" text-center flex">
-                                            <span className="mx-1">{logUser?.role}</span>
+                                        <div className=" text-center flex"> 12510000
+                                            {/* <span className="mx-1">{logUser?.role}</span>
                                             {user?.uid && <span className="mx-1">ID : </span>}
-                                            <span className="mx-1">{user?.uid?.slice(0,10)}</span>
+                                            <span className="mx-1">{user?.uid?.slice(0,10)}</span> */}
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                         </div>
-
-
-
-                        {/* Payment List */}
-                       
-
-
-                            {/* {
-                                logUser?.role === 'Admin' &&
-                                <Settings />
-                            } */}
-
-
 
                                         
                     </div>
@@ -139,4 +124,6 @@ const ProfileSection = ({ user, logUser, refetch }) => {
     );
 };
 
-export default Profile;
+
+
+export default ProfileTwo;

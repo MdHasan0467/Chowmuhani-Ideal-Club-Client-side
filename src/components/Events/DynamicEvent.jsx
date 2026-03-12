@@ -18,7 +18,9 @@ const DynamicEvent = ({dynamicEvents, eventList}) => {
                         <p className="text-center font-normal text-gray-400">{dynamicEvents?.description}</p>
 
                         <p className="mt-auto text-xs dark:text-gray-400">{dynamicEvents?.uploadedTime?.slice(0,15)}
-                            <a rel="noopener noreferrer" href="#" className="block dark:text-blue-400 lg:ml-2 lg:inline hover:underline">{dynamicEvents?.uploadedDay?.slice(0,15)}</a>
+                            <a rel="noopener noreferrer" href="#" className="block dark:text-blue-400 lg:ml-2 lg:inline hover:underline">
+                                {dynamicEvents?.uploadedDay?.slice(0,15)}
+                            </a>
                         </p>
                     </div>
                     {/* Images */}

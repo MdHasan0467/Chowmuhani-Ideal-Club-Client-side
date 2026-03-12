@@ -18,25 +18,18 @@ const LargeNavbar = () => {
       <div className="hidden md:flex md:mx-auto gap-6">
         <Link to="/" className="btn btn-ghost btn-sm">হোম</Link>
         <Link to="/servey" className="btn btn-ghost btn-sm">টাকার হিসেব</Link>
-        <Link to="/about" className="btn btn-ghost btn-sm">আমাদের সম্পর্কে জানুন</Link>
         <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
-        <Link to="/find-blood" className="btn btn-ghost btn-sm">রক্ত অনুসন্ধান করুন</Link>
+        <Link to="/find-blood" className="btn btn-ghost btn-sm text-red-500">রক্ত অনুসন্ধান করুন</Link>
         <Link to="/add-new-member"className="btn btn-sm" style={{ backgroundColor: "#ec6737", color: "white" }}>
           নতুন সদস্য হোন
         </Link>
-
-      </div>
-
-
-      {/* Mobile Menu */}
-        <div className="flex mx-auto gap-1 md:hidden">
-        <Link to="/servey" className="btn btn-ghost btn-sm">টাকার হিসেব</Link>
         <Link to="/about" className="btn btn-ghost btn-sm">আমাদের সম্পর্কে জানুন</Link>
-        <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
-        <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
-        <Link to="/find-blood" className="btn btn-ghost btn-sm">রক্ত খুজুন</Link>
+
       </div>
+
+
+
 
       {/* Mobile Hamburger */}
       {/* <div className="dropdown dropdown-end md:hidden">
@@ -58,11 +51,21 @@ const LargeNavbar = () => {
             <span className="badge">New</span>
           </a>
         </li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/events">Events</Link></li>
-          <li><Link to="/dashboard">Dashboard</Link></li>
-          <li></li>
-        <li><a>Settings</a></li>
+          <li>
+            <Link to="/servey" className="btn btn-ghost btn-sm">টাকার হিসেব</Link>
+          </li>
+          <li>
+            <Link to="/about" className="btn btn-ghost btn-sm">আমাদের সম্পর্কে জানুন</Link>
+          </li>
+          <li>
+             <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
+          </li>
+          <li>
+            <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
+          </li>
+        <li>
+          <Link to="/find-blood" className="btn btn-ghost btn-sm">রক্ত অনুসন্ধান করুন</Link>
+        </li>
         <li><a>Logout</a></li>
       </ul>
     </div>

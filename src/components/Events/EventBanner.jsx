@@ -32,7 +32,10 @@ const EventBanner = () => {
                     এটি একটি অরাজনৈতিক এবং সামাজিক সংগঠন
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <Link to='/dashboard/add/event' className="px-8 py-3 text-lg font-semibold rounded bg-orange-400 text-gray-100 hover:bg-black hover:text-white hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] dark:bg-white dark:text-black dark:hover:shadow-[0_20px_50px_rgb(255_88_12)] hover:-translate-y-2 duration-700 transition-all">
+                        <Link to='/dashboard/add/event' 
+                        className="px-8 py-3 text-lg font-semibold rounded bg-orange-400 text-gray-100 hover:bg-black hover:text-white 
+                        hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] dark:bg-white dark:text-black dark:hover:shadow-[0_20px_50px_rgb(255_88_12)] 
+                        hover:-translate-y-2 duration-700 transition-all">
                         Add An Event
                         </Link>
 

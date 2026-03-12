@@ -4,6 +4,7 @@ import { Outlet } from "react-router";
 // import '../CSS/Loader.css';
 import TopLargeNavbar from "../Shared/Navs/Desktop/TopLargeNavbar";
 import LargeNavbar from "../Shared/Navs/Desktop/LargeNavbar";
+import MobileNavbar from "../Shared/Navs/Mobile/MobileNavbar";
 
 const Main = () => {
 //   const [isLoading, setIsLoading] = useState(true);
@@ -19,7 +20,12 @@ const Main = () => {
   return (
     <div className="">
         <TopLargeNavbar />
-        <LargeNavbar />
+        <div className="hidden md:flex">
+          <LargeNavbar />
+        </div>
+        <div className="flex md:hidden">
+          <MobileNavbar />
+        </div>
         <Outlet />
     </div>
   );

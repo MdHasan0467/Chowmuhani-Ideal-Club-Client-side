@@ -71,8 +71,8 @@ const TopLargeNavbar = () => {
             <span className="badge">নতুন</span>
           </a>
         </li>
+          <li><Link to="/dashboard/add/money/survey">টাকার হিসেব</Link></li>
           <li><Link to="/about">আমাদের সম্পর্কে জানুন</Link></li>
-          <li><Link to="/events">ইভেন্ট সমূহ</Link></li>
           <li></li>
         <li><a>লগ আউট</a></li>
       </ul>
