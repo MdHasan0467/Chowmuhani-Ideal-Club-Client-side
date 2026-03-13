@@ -84,7 +84,6 @@ const TopLargeNavbar = () => {
         </li>
           <li className="border-b"><Link to="/events">ইভেন্ট সমূহ</Link></li>
           <li className="border-b"><Link to="/gallery">গ্যালারী</Link></li>
-          <li></li>
         <li className="border-b"><a>লগ আউট</a></li>
       </ul>
     </div>
