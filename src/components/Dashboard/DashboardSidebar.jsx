@@ -1,59 +1,125 @@
-import { Link } from "react-router";
-import { FiUsers, FiUser, FiActivity, FiUserCheck, FiEdit, FiX } from "react-icons/fi";
-import { AiOutlineFundProjectionScreen, AiOutlineLineChart } from "react-icons/ai";
-import { GiSoccerBall } from "react-icons/gi";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import {
+  FiUser,
+  FiCalendar,
+  FiDroplet,
+  FiActivity,
+  FiImage,
+  FiFileText,
+  FiMessageSquare,
+  FiDollarSign,
+  FiInfo,
+  FiUserX,
+  FiTrash2,
+  FiHome,
+  FiX
+} from "react-icons/fi";
+import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
+import { FaMessage } from "react-icons/fa6";
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+
+const menuItems = [
+  { title: "Home", path: "/", icon: <FiHome /> },
+  { title: "Profile", path: "/dashboard/profile", icon: <FiUser /> },
+  { title: "Add Event", path: "/dashboard/add/event", icon: <FiCalendar /> },
+  { title: "Admin Post", path: "/dashboard/add/admin/post", icon: <FaMessage /> },
+  { title: "Add Blood Donor", path: "/dashboard/add/blood/donor", icon: <FiDroplet /> },
+  { title: "Add Play Game", path: "/dashboard/add/play/game", icon: <FiActivity /> },
+  { title: "Control Carousel", path: "/dashboard/carousel", icon: <FiImage /> },
+  { title: "Next Plan", path: "/dashboard/next/plan", icon: <FiFileText /> },
+  { title: "User Advices", path: "/dashboard/controle/user/advices", icon: <FiMessageSquare /> },
+  { title: "Finance", path: "/dashboard/add/money/survey", icon: <FiDollarSign /> },
+  { title: "Add Member", path: "/dashboard/add/new/member", icon: <FiDollarSign /> },
+  { title: "About", path: "/dashboard/controle/about/Page", icon: <FiInfo /> },
+  { title: "Ban User", path: "/dashboard/ban/user", icon: <FiUserX /> },
+  { title: "Trash", path: "/dashboard/trash", icon: <FiTrash2 /> },
+];
 
 const DashboardSidebar = ({ sidebarOpen, setSidebarOpen }) => {
-  const summaryCards = [
-    { title: "Blood Donors", icon: <FiUsers className="mr-3" /> },
-    { title: "Blood Donates (Bags)", icon: <AiOutlineFundProjectionScreen className="mr-3" /> },
-    { title: "Volunteers", icon: <FiUser className="mr-3" /> },
-    { title: "Events", icon: <FiActivity className="mr-3" /> },
-    { title: "Users", icon: <FiUserCheck className="mr-3" /> },
-    { title: "Admin Posts", icon: <FiEdit className="mr-3" /> },
-    { title: "Reports", icon: <AiOutlineLineChart className="mr-3" /> },
-    { title: "Total Play (খেলাধুলা)", icon: <GiSoccerBall className="mr-3" /> },
-  ];
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div
-      className={`fixed inset-y-0 left-0 transform ${
-        sidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } md:translate-x-0 transition-transform duration-300 ease-in-out bg-white w-64 shadow-lg z-50`}
+    <aside
+      className={`fixed top-0 left-0 h-full bg-white shadow-lg z-50
+        transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} 
+        md:translate-x-0 transition-all duration-300
+        ${collapsed ? "w-20" : "w-64"} flex flex-col`}
     >
-      {/* Mobile Close Button */}
-      <div className="flex justify-end p-2 md:hidden">
+
+      {/* Desktop Toggle Button (overflow outside sidebar) */}
+      <div className="hidden md:flex justify-start relative">
         <button
-          onClick={() => setSidebarOpen(false)}
-          className="text-gray-600 hover:text-gray-900"
+          onClick={() => setCollapsed(!collapsed)}
+          className="absolute -right-4 top-4 w-8 h-8 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center
+                     hover:bg-blue-500 hover:scale-110 transition-transform duration-200 cursor-pointer"
+          title={collapsed ? "Expand Sidebar" : "Collapse Sidebar"}
         >
-          <FiX className="w-6 h-6" />
+          {collapsed ? 
+          <BsArrowRightSquareFill />
+          :
+          <BsArrowLeftSquareFill />
+          }
         </button>
       </div>
 
-      {/* Branding */}
-      <div className="flex items-center justify-center p-1 shadow-md bg-white">
-        <Link to="/" className="p-6 hover:text-orange-500 text-center text-blue-600">
-          <span>CHOWMUHANI IDEAL CLUB</span>
-          <br />
-          <span>চৌমুহনী আইডিয়াল ক্লাব</span>
-        </Link>
+      {/* Mobile Close & Collapse Buttons */}
+      <div className="flex justify-between items-center p-3 border-b md:hidden">
+        <button
+          onClick={() => setSidebarOpen(false)}
+          className="text-gray-600 hover:text-red-500 transition"
+        >
+          <FiX size={24} />
+        </button>
+        <button
+          onClick={() => setCollapsed(!collapsed)}
+          className="text-gray-600 hover:text-blue-500 transition"
+        >
+          {collapsed ? 
+          <BsArrowRightSquareFill />
+          :
+          <BsArrowLeftSquareFill />
+          }
+        </button>
       </div>
 
-      {/* Sidebar Links */}
-      <nav className="mt-6">
-        {summaryCards.map((card, idx) => (
-          <a
-            key={idx}
-            href="#"
-            className="flex items-center px-6 py-2 text-gray-700 hover:bg-gray-200 rounded-md mb-2"
-            onClick={() => setSidebarOpen(false)} // close sidebar on mobile link click
-          >
-            {card.icon} <span className="ml-3">{card.title}</span>
-          </a>
+      {/* Logo */}
+      <div className={`flex items-center justify-center p-5 border-b ${collapsed ? 'justify-center' : ''}`}>
+        <div>
+          <h1 className={`font-bold text-blue-600 text-center transition-all duration-300 ${collapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100'}`}>
+            CHOWMUHANI IDEAL CLUB
+          </h1>
+          <h1 className={`font-bold text-blue-600 text-center transition-all duration-300 ${collapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100'}`}>
+            চৌমুহনী আইডিয়াল ক্লাব
+          </h1>
+        </div>
+      </div>
+
+      {/* Scrollable Menu */}
+      <nav className="flex-1 p-3 space-y-1 overflow-y-auto overscroll-contain touch-auto">
+        {menuItems.map((item, index) => (
+          <Tippy key={index} content={collapsed ? item.title : ""} placement="right">
+            <NavLink
+              to={item.path}
+              onClick={() => setSidebarOpen(false)}
+              className={({ isActive }) =>
+                `flex items-center gap-3 p-3 rounded-lg transition ${
+                  isActive
+                    ? "bg-blue-600 text-white"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`
+              }
+            >
+              <span className="text-lg">{item.icon}</span>
+              <span className={`text-sm font-medium transition-all duration-300 ${collapsed ? 'hidden' : 'block'}`}>
+                {item.title}
+              </span>
+            </NavLink>
+          </Tippy>
         ))}
       </nav>
-    </div>
+    </aside>
   );
 };
 

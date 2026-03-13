@@ -56,7 +56,7 @@ import Dashboard from "../../Pages/Dashboard";
           element: <About />
         },
         {
-          path: '/servey',
+          path: 'income/and/cost/share/publicly',
           element: <IncomeAndCostSharePublicly />
         },
         {

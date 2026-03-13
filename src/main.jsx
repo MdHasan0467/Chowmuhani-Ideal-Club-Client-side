@@ -22,6 +22,14 @@ import Profile from './Pages/Profile.jsx'
 import AddMoneySurvey from './Pages/AddMoneySurvey.jsx'
 import ProfileTwo from './Pages/DashboardHome.jsx'
 import DashboardHome from './Pages/DashboardHome.jsx'
+import AddBloodDonor from './Pages/AddBloodDonor.jsx'
+import AddPlayGame from './Pages/AddPlayGame.jsx'
+import ControlCarousel from './Pages/ControlCarousel.jsx'
+import OurNextPlan from './Pages/OurNextPlan.jsx'
+import ControleUserAdvices from './Pages/ControleUserAdvices.jsx'
+import ControleAboutPage from './Pages/ControleAboutPage.jsx'
+import BanUser from './Pages/BanUser.jsx'
+import Trash from './Pages/Trash.jsx'
 
 
 
@@ -31,80 +39,108 @@ const router = createBrowserRouter ([
   Component: Main,
   children : [
      {
-    path: '/',
-    element: <Home />
+    index: true,
+    Component: Home
   },
   {
-    path: '/home',
-    element: <Home />
+    path: 'home',
+    Component: Home
   },
   {
-    path: '/add-new-member',
-    element: <AddNewMember />
+    path: 'add-new-member',
+    Component: AddNewMember
   },
   {
-    path: '/events',
-    element: <Events />
+    path: 'events',
+    Component: Events
   },
   {
-    path: '/find-blood',
-    element: <FindBlood />
+    path: 'find-blood',
+    Component: FindBlood
   },
   {
-    path: '/gallery',
-    element: <Gallery />
+    path: 'gallery',
+    Component: Gallery
   },
   {
-    path: '/events',
-    element: <Events />
+    path: 'about',
+    Component: About
   },
   {
-    path: '/about',
-    element: <About />
-  },
-  {
-    path: '/servey',
-    element: <IncomeAndCostSharePublicly />
+    path: 'income/and/cost/share/publicly',
+    Component: IncomeAndCostSharePublicly
   },
 
     {
-    path: '/login',
-    element: <LogIn />
+    path: 'login',
+    Component: LogIn
   },
   {
-    path: '/signup',
-    element: <SignUp />
+    path: 'signup',
+    Component: SignUp
   },
   ]
  },
 
 {
-  path: "/dashboard",
-  element: <Dashboard />,
+  path: "dashboard",
+  Component: Dashboard,
   children: [
     {
       path: "dashboard",
-      element: <DashboardHome />,
+      Component: DashboardHome
     },
     {
       path: "profile",
-      element: <DashboardHome />,
+      Component: DashboardHome
     },
     {
       path: "add/admin/post",
-      element: <AddAdminPost />,
+      Component: AddAdminPost
     },
     {
     path: 'add/event',
-    element: <AddEvent />
+    Component: AddEvent
+  },
+    {
+    path: 'add/play/game',
+    Component: AddPlayGame
   },
   {
     path: 'add/new/member',
-    element: <AddNewMember />
+    Component: AddNewMember
   },
     {
     path: 'add/money/survey',
-    element: <AddMoneySurvey />
+    Component: AddMoneySurvey
+  },
+    {
+    path: 'add/blood/donor',
+    Component: AddBloodDonor
+  },
+  {
+    path: 'carousel',
+    Component: ControlCarousel
+  },
+  {
+    path: 'next/plan',
+    Component: OurNextPlan
+  },
+  {
+    path: 'controle/user/advices',
+    Component: ControleUserAdvices
+  },
+  {
+    path: 'controle/about/Page',
+    Component: ControleAboutPage
+  },
+  {
+    path: 'ban/user',
+    Component: BanUser
+  },
+  {
+    path: 'trash',
+    Component: Trash
   },
   ],
 }
