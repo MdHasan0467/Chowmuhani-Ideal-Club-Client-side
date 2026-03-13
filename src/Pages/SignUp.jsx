@@ -88,7 +88,7 @@ const SignUp = () => {
           type="submit"
         />
       </div>
-      <Link to={'/'} className="btn bg-orange-500">Home</Link>
+      <Link to={'/'} className="btn bg-blue-500">Home</Link>
     </form>
 
     

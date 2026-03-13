@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const TopLargeNavbar = () => {
   return (
-    <div className="navbar bg-orange-500 shadow-md px-4 md:px-8">
+    <div className="navbar bg-blue-500 shadow-md px-4 md:px-8">
       
       {/* Logo */}
       <div className="flex-1">
@@ -22,12 +22,13 @@ const TopLargeNavbar = () => {
       <div className="hidden md:flex gap-6">
         <Link 
           to="/login" 
-          className="btn btn-sm" 
-          style={{ backgroundColor: "#ac6735", color: "white" }}
+          className="btn btn-sm hover:scale-110 transition-all duration-300 ease-in-out" 
+          style={{ backgroundColor: "#2b7fff", color: "white" }}
         >
           লগইন
         </Link>
 
+        {/* Avatar Menu */}
         <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
@@ -52,7 +53,17 @@ const TopLargeNavbar = () => {
       </div>
 
       {/* Mobile Hamburger */}
-      <div className="dropdown dropdown-end md:hidden">
+      <div className="md:hidden flex gap-6">
+        <Link 
+          to="/login" 
+          className="btn btn-sm hover:scale-110 transition-all duration-300 ease-in-out" 
+          style={{ backgroundColor: "#2b7fff", color: "white" }}
+        >
+          লগইন
+        </Link>
+
+        {/* Avatar Menu */}
+        <div className="dropdown dropdown-end md:hidden text-blue-500">
 
         <div className="dropdown dropdown-end mx-5">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
@@ -65,19 +76,22 @@ const TopLargeNavbar = () => {
       <ul
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li>
+        <li className="border-b">
           <a href="/dashboard/profile" className="justify-between">
             প্রোফাইল
             <span className="badge">নতুন</span>
           </a>
         </li>
-          <li><Link to="/dashboard/add/money/survey">টাকার হিসেব</Link></li>
-          <li><Link to="/about">আমাদের সম্পর্কে জানুন</Link></li>
+          <li className="border-b"><Link to="/events">ইভেন্ট সমূহ</Link></li>
+          <li className="border-b"><Link to="/gallery">গ্যালারী</Link></li>
           <li></li>
-        <li><a>লগ আউট</a></li>
+        <li className="border-b"><a>লগ আউট</a></li>
       </ul>
     </div>
       </div>
+      </div>
+
+      
     </div>
   );
 };

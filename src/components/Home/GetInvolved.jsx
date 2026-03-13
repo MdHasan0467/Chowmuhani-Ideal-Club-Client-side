@@ -20,7 +20,7 @@ const items = [
 
 const GetInvolved = () => {
   return (
-    <section className="py-9 border h-1/2 bg-orange-50 w-96 flex mx-auto">
+    <section className="py-9 border h-1/2 bg-blue-50 w-96 flex mx-auto">
       <div className=" mx-auto px-6">
 
         <h2 className="text-3xl font-bold mb-8">

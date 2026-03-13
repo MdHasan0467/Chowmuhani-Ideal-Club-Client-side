@@ -13,6 +13,9 @@ import Footer from "../Shared/Footer/Footer";
 import BloodBloog from "../components/Home/BloodBloog";
 import AdminPosts from "./AdminPosts";
 import MemberShipForm from "./MemberShipForm";
+import UpcomingEvents from "../components/Home/UpcomingEvents";
+import DonationSupport from "./DonationSupport";
+import EmergencyBloodRequest from "./EmergencyBloodRequest";
 
 
 const Home = () => {
@@ -20,8 +23,11 @@ const Home = () => {
     <div>
       <Hero />
       <Stat />
+      <EmergencyBloodRequest />
+      <DonationSupport />
       <AdminPosts />
       <RecentWorks />
+      <UpcomingEvents />
       <NextWorkPlan />
       <UserAdviceForNextPlan />
       <BloodBloog />

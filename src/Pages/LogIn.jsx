@@ -10,7 +10,7 @@ const LogIn = () => {
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
             <Link to={'/'}
-    className="btn bg-orange-500"
+    className="btn bg-blue-500"
     >Home</Link>
       <h1 className="text-5xl font-bold">Login now!</h1>
       <p className="py-6">

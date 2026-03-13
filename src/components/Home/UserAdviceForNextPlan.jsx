@@ -8,7 +8,7 @@ const UserAdviceForNextPlan = () => {
             </h1>
 
 
-                  <form className="md:w-1/2 md:mx-auto md:mt-20 mt-7 bg-amber-100 md:p-10 p-5">
+                  <form className="md:w-1/2 md:mx-auto md:mt-20 mt-7 bg-blue-50 md:p-10 p-5">
                      <h2 className="text-2xl bold">আপনার ব্যক্তিগত তথ্যঃ</h2>
              <div className="form-control">
                <label className="label">
@@ -129,7 +129,8 @@ const UserAdviceForNextPlan = () => {
 
 
         <input
-          className="btn mx-2 bg-linear-to-r w-full from-indigo-500 via-purple-500 to-pink-500 border-0 text-white  md:mt-9"
+          className="btn mx-2 bg-linear-to-r w-full hover:scale-90 transition-all duration-300 ease-in-out 
+          from-indigo-500 via-blue-500 to-white border-0 text-white md:mt-9"
           value="জমা দিন"
           type="submit"
         />

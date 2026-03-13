@@ -21,7 +21,7 @@ const LargeNavbar = () => {
         <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
         <Link to="/find-blood" className="btn btn-ghost btn-sm text-red-500">রক্ত অনুসন্ধান করুন</Link>
-        <Link to="/add-new-member"className="btn btn-sm" style={{ backgroundColor: "#ec6737", color: "white" }}>
+        <Link to="/add-new-member"className="btn btn-sm" style={{ backgroundColor: "#2b7fff", color: "white" }}>
           নতুন সদস্য হোন
         </Link>
         <Link to="/about" className="btn btn-ghost btn-sm">আমাদের সম্পর্কে জানুন</Link>

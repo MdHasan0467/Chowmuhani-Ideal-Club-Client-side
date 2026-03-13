@@ -31,8 +31,8 @@ const Hero = () => {
             আমাদের প্রতিটি কাজ  হোক একমাত্র আল্লাহ কে রাজি খুশি করার জন্য।
           </motion.p>
           <motion.div className="flex gap-4">
-            <Link to={'/'} className="btn btn-primary hover:text-black">সদস্য হোন</Link>
-            <Link to={'/'} className="btn bg-orange-600 hover:text-white">দান করুন</Link>
+            <a href={'#addMember'} className="btn btn-primary hover:text-black">সদস্য হোন</a>
+            <a href={'#donateTaka'} className="btn bg-blue-600 hover:bg-blue-800 text-white ">দান করুন</a>
           </motion.div>
         </div>
         <motion.div className="flex-1"

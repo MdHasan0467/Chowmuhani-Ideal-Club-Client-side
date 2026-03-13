@@ -51,7 +51,7 @@ const DashboardHome = () => {
     {
       title: "Play game",
       value: 10,
-      bg: "bg-orange-500",
+      bg: "bg-blue-500",
       detailsTable: [
         { label: "Blood Camp", value: 4 },
         { label: "Sports Event", value: 6 },

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import {
   FiUser,
   FiCalendar,
-  FiDroplet,
+  // FiDroplet,
   FiActivity,
   FiImage,
   FiFileText,
@@ -19,13 +19,16 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 import { FaMessage } from "react-icons/fa6";
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { FaHandHoldingWater } from "react-icons/fa";
+import { GiWaterDrop } from "react-icons/gi";
 
 const menuItems = [
   { title: "Home", path: "/", icon: <FiHome /> },
   { title: "Profile", path: "/dashboard/profile", icon: <FiUser /> },
   { title: "Add Event", path: "/dashboard/add/event", icon: <FiCalendar /> },
   { title: "Admin Post", path: "/dashboard/add/admin/post", icon: <FaMessage /> },
-  { title: "Add Blood Donor", path: "/dashboard/add/blood/donor", icon: <FiDroplet /> },
+  { title: "Blood Requests", path: "/dashboard/emergency/blood/requests/admin", icon: <FaHandHoldingWater /> },
+  { title: "Add Blood Donor", path: "/dashboard/add/blood/donor", icon: <GiWaterDrop /> },
   { title: "Add Play Game", path: "/dashboard/add/play/game", icon: <FiActivity /> },
   { title: "Control Carousel", path: "/dashboard/carousel", icon: <FiImage /> },
   { title: "Next Plan", path: "/dashboard/next/plan", icon: <FiFileText /> },

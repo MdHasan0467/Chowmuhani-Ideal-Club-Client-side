@@ -48,7 +48,7 @@ console.log(err)
 
 return (
 
-<div className="bg-orange-50 py-10 px-4">
+<div className="bg-blue-50 py-10 px-4" id="addMember">
 
 <Helmet>
 <title>CIC / Membership Form</title>
@@ -59,7 +59,7 @@ onSubmit={handleMemberShipForm}
 className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-lg space-y-10"
 >
 
-<h1 className="text-xl md:text-3xl font-bold text-center text-orange-500">
+<h1 className="text-xl md:text-3xl font-bold text-center text-blue-500">
 অনলাইন সদস্য ফরম
 </h1>
 
@@ -83,7 +83,8 @@ className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-lg space-y-1
 <ProfileUpload/>
 
 
-<button className="btn w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0 text-lg">
+<button className="btn w-full bg-blue-500 text-white 
+hover:scale-90 transition-all duration-300 ease-in-out text-lg">
 জমা দিন
 </button>
 

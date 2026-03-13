@@ -156,7 +156,7 @@ const images = [
         <div className="flex justify-center mt-6">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-[#ec6737] text-white px-6 py-2 rounded-lg hover:opacity-90 transition"
+            className="btn btn-outline btn-sm sm:btn-md transition transform hover:scale-105"
           >
             আরো দেখুন...
           </button>

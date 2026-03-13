@@ -17,7 +17,7 @@ const Stat = () => {
           <p>সর্বমোট ইভেন্ট</p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.5 }} className="p-6 bg-orange-50 rounded-lg shadow">
-          <h2 className="text-3xl font-bold text-orange-600">১৫০০০+</h2>
+          <h2 className="text-3xl font-bold text-blue-600">১৫০০০+</h2>
           <p>মোট সাহায্য পেয়েছেন</p>
         </motion.div>
       </motion.section>

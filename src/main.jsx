@@ -18,9 +18,9 @@ import { HelmetProvider } from 'react-helmet-async'
 import Main from './Layouts/Main.jsx'
 import Home from './Pages/Home.jsx'
 import Dashboard from './Layouts/Dashboard.jsx'
-import Profile from './Pages/Profile.jsx'
+// import Profile from './Pages/Profile.jsx'
 import AddMoneySurvey from './Pages/AddMoneySurvey.jsx'
-import ProfileTwo from './Pages/DashboardHome.jsx'
+// import ProfileTwo from './Pages/DashboardHome.jsx'
 import DashboardHome from './Pages/DashboardHome.jsx'
 import AddBloodDonor from './Pages/AddBloodDonor.jsx'
 import AddPlayGame from './Pages/AddPlayGame.jsx'
@@ -30,6 +30,7 @@ import ControleUserAdvices from './Pages/ControleUserAdvices.jsx'
 import ControleAboutPage from './Pages/ControleAboutPage.jsx'
 import BanUser from './Pages/BanUser.jsx'
 import Trash from './Pages/Trash.jsx'
+import EmergencyBloodRequestsAdmin from './Pages/EmergencyBloodRequestsAdmin.jsx'
 
 
 
@@ -125,6 +126,10 @@ const router = createBrowserRouter ([
   {
     path: 'next/plan',
     Component: OurNextPlan
+  },
+  {
+    path: 'emergency/blood/requests/admin',
+    Component: EmergencyBloodRequestsAdmin
   },
   {
     path: 'controle/user/advices',
