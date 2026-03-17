@@ -21,6 +21,7 @@ import EmergencyBloodRequest from "./EmergencyBloodRequest";
 // import DonorStoryPost from "../components/Home/DonorStoryPost";
 import WhyDonateBlood from "../components/Home/WhyDonateBlood";
 import BloodTypeGuide from "../components/Home/BloodTypeGuide";
+import ImpactSection from "../components/Home/ImpactSection";
 // import DonationAndVolunteerCTA from "../components/Home/DonationAndVolunteerCTA";
 // import VolunteerCTA from "../components/Home/VolunteerCTA";
 
@@ -30,6 +31,7 @@ const Home = () => {
     <div>
       <Hero />
       <DonationSupport />
+      <ImpactSection />
       {/* <DonationAndVolunteerCTA /> */}
       {/* <Stat /> */}
       {/* <VolunteerCTA /> */}

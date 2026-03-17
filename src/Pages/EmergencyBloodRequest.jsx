@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { FaTint, FaHospital, FaPhone, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { BsGenderAmbiguous } from "react-icons/bs";
 import { MdFamilyRestroom, MdAccessTime } from "react-icons/md";
+import BloodRequestCTA from "../components/EmergencyBloodRequest/BloodRequestCTA";
 
 const EmergencyBloodRequest = () => {
-
+  // ফর্ম ডাটা হোল্ড করার জন্য স্টেট
   const [formData, setFormData] = useState({
     patientName: "",
     gender: "",
@@ -21,6 +22,7 @@ const EmergencyBloodRequest = () => {
     note: "",
   });
 
+  // ইনপুট পরিবর্তনের হ্যান্ডলার
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -28,50 +30,48 @@ const EmergencyBloodRequest = () => {
     });
   };
 
+  // ফর্ম সাবমিশনের হ্যান্ডলার
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    alert("Emergency Blood Request Submitted!");
+    alert("ইমারজেন্সি রক্তের অনুরোধ সাবমিট করা হয়েছে!");
+    // এখানে API-তে ডেটা পাঠানো যায়
   };
 
   return (
     <section className="bg-red-50 py-16">
       <div className="max-w-5xl mx-auto px-4">
 
-        {/* Title */}
+        {/* শিরোনাম */}
         <div className="text-center mb-10">
           <FaTint className="text-red-500 text-5xl mx-auto mb-4" />
-          <h2 className="text-3xl font-bold text-gray-800">
-            Emergency Blood Request
-          </h2>
-          <p className="text-gray-500 mt-2">
-            Fill the form below to request blood urgently.
-          </p>
+          <h2 className="text-3xl font-bold text-gray-800">ইমারজেন্সি রক্তের অনুরোধ</h2>
+          <p className="text-gray-500 mt-2">রক্ত জরুরি প্রয়োজন হলে নিচের ফর্মটি পূরণ করুন।</p>
         </div>
 
-        {/* Form */}
+        {/* ফর্ম */}
         <form
           onSubmit={handleSubmit}
           className="bg-white shadow-xl rounded-2xl p-8 grid md:grid-cols-2 gap-5"
         >
 
-          {/* Patient Name */}
+          {/* রোগীর নাম */}
           <div>
-            <label className="text-sm text-gray-600">Patient Name</label>
+            <label className="text-sm text-gray-600">রোগীর নাম</label>
             <input
               type="text"
               name="patientName"
-              placeholder="Enter patient name"
+              placeholder="রোগীর নাম লিখুন"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             />
           </div>
 
-          {/* Gender */}
+          {/* লিঙ্গ */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <BsGenderAmbiguous /> Gender
+              <BsGenderAmbiguous /> লিঙ্গ
             </label>
             <select
               name="gender"
@@ -79,22 +79,22 @@ const EmergencyBloodRequest = () => {
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             >
-              <option value="">Select Gender</option>
-              <option>Male</option>
-              <option>Female</option>
+              <option value="">লিঙ্গ নির্বাচন করুন</option>
+              <option>পুরুষ</option>
+              <option>মহিলা</option>
             </select>
           </div>
 
-          {/* Blood Group */}
+          {/* রক্তের গ্রুপ */}
           <div>
-            <label className="text-sm text-gray-600">Blood Group</label>
+            <label className="text-sm text-gray-600">রক্তের গ্রুপ</label>
             <select
               name="bloodGroup"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             >
-              <option value="">Select Blood Group</option>
+              <option value="">রক্তের গ্রুপ নির্বাচন করুন</option>
               <option>A+</option>
               <option>B+</option>
               <option>O+</option>
@@ -106,65 +106,65 @@ const EmergencyBloodRequest = () => {
             </select>
           </div>
 
-          {/* Hemoglobin */}
+          {/* হিমোগ্লোবিন */}
           <div>
-            <label className="text-sm text-gray-600">Hemoglobin (g/dL)</label>
+            <label className="text-sm text-gray-600">হিমোগ্লোবিন (g/dL)</label>
             <input
               type="text"
               name="hemoglobin"
-              placeholder="Example: 13.5"
+              placeholder="উদাহরণ: 13.5"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
             />
           </div>
 
-          {/* Hospital Name */}
+          {/* হাসপাতালের নাম */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <FaHospital /> Hospital Name
+              <FaHospital /> হাসপাতালের নাম
             </label>
             <input
               type="text"
               name="hospitalName"
-              placeholder="Example: Dhaka Medical College Hospital"
+              placeholder="উদাহরণ: ঢাকা মেডিকেল কলেজ হাসপাতাল"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             />
           </div>
 
-          {/* Hospital Location */}
+          {/* হাসপাতালের লোকেশন */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <FaMapMarkerAlt /> Hospital Location
+              <FaMapMarkerAlt /> হাসপাতালের ঠিকানা
             </label>
             <input
               type="text"
               name="hospitalLocation"
-              placeholder="Example: Dhanmondi, Dhaka"
+              placeholder="উদাহরণ: ধানমন্ডি, ঢাকা"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             />
           </div>
 
-          {/* Bag Quantity */}
+          {/* ব্যাগের সংখ্যা */}
           <div>
-            <label className="text-sm text-gray-600">Bag Quantity</label>
+            <label className="text-sm text-gray-600">রক্তের ব্যাগ সংখ্যা</label>
             <input
               type="number"
               name="bags"
-              placeholder="Number of blood bags"
+              placeholder="রক্তের ব্যাগের সংখ্যা লিখুন"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             />
           </div>
 
-          {/* Required Date */}
+          {/* প্রয়োজনীয় তারিখ */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <FaCalendarAlt /> Required Date
+              <FaCalendarAlt /> প্রয়োজনীয় তারিখ
             </label>
             <input
               type="date"
@@ -175,10 +175,10 @@ const EmergencyBloodRequest = () => {
             />
           </div>
 
-          {/* Required Time */}
+          {/* প্রয়োজনীয় সময় */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <MdAccessTime /> Required Time
+              <MdAccessTime /> প্রয়োজনীয় সময়
             </label>
             <input
               type="time"
@@ -189,25 +189,25 @@ const EmergencyBloodRequest = () => {
             />
           </div>
 
-          {/* Guardian Name */}
+          {/* অভিভাবকের নাম */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <MdFamilyRestroom /> Guardian Name
+              <MdFamilyRestroom /> অভিভাবকের নাম
             </label>
             <input
               type="text"
               name="guardianName"
-              placeholder="Guardian name"
+              placeholder="অভিভাবকের নাম লিখুন"
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
               required
             />
           </div>
 
-          {/* Guardian Number */}
+          {/* অভিভাবকের ফোন নম্বর */}
           <div>
             <label className="flex items-center gap-1 text-sm text-gray-600">
-              <FaPhone /> Guardian Number
+              <FaPhone /> অভিভাবকের ফোন নম্বর
             </label>
             <input
               type="tel"
@@ -219,9 +219,9 @@ const EmergencyBloodRequest = () => {
             />
           </div>
 
-          {/* Priority */}
+          {/* জরুরি অগ্রাধিকার */}
           <div className="md:col-span-2">
-            <label className="text-sm text-gray-600">Emergency Priority</label>
+            <label className="text-sm text-gray-600">জরুরি অগ্রাধিকার</label>
             <select
               name="priority"
               onChange={handleChange}
@@ -233,25 +233,27 @@ const EmergencyBloodRequest = () => {
             </select>
           </div>
 
-          {/* Note */}
+          {/* অতিরিক্ত নোট */}
           <div className="md:col-span-2">
-            <label className="text-sm text-gray-600">Additional Note</label>
+            <label className="text-sm text-gray-600">অতিরিক্ত তথ্য</label>
             <textarea
               name="note"
               rows="3"
-              placeholder="Write additional details..."
+              placeholder="যদি প্রয়োজন হয় অতিরিক্ত তথ্য লিখুন..."
               onChange={handleChange}
               className="w-full border rounded-lg p-3 mt-1 focus:ring-2 focus:ring-red-300"
             />
           </div>
 
-          {/* Submit */}
+          {/* সাবমিট বাটন */}
           <button
             type="submit"
             className="md:col-span-2 bg-red-500 text-white py-3 rounded-xl font-semibold hover:bg-red-600 transition"
           >
-            Submit Emergency Request
+            ইমারজেন্সি রক্তের অনুরোধ পাঠান
           </button>
+          {/* তথ্য ও CTA - প্রফেশনাল ভার্সন */}
+          <BloodRequestCTA />
 
         </form>
       </div>
