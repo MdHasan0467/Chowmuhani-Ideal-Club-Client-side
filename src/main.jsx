@@ -31,6 +31,8 @@ import ControleAboutPage from './Pages/ControleAboutPage.jsx'
 import BanUser from './Pages/BanUser.jsx'
 import Trash from './Pages/Trash.jsx'
 import EmergencyBloodRequestsAdmin from './Pages/EmergencyBloodRequestsAdmin.jsx'
+import HospitalPartners from './Pages/HospitalPartners.jsx'
+import DonationCertificate from './Pages/DonationCertificate.jsx'
 
 
 
@@ -62,6 +64,10 @@ const router = createBrowserRouter ([
   {
     path: 'gallery',
     Component: Gallery
+  },
+  {
+    path: 'hospital/partners',
+    Component: HospitalPartners
   },
   {
     path: 'about',
@@ -142,6 +148,10 @@ const router = createBrowserRouter ([
   {
     path: 'ban/user',
     Component: BanUser
+  },
+  {
+    path: 'blood/donation/certificate',
+    Component: DonationCertificate
   },
   {
     path: 'trash',

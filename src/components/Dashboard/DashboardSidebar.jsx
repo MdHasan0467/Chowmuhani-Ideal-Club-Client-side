@@ -21,11 +21,13 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { FaHandHoldingWater } from "react-icons/fa";
 import { GiWaterDrop } from "react-icons/gi";
+import { PiCertificateFill } from "react-icons/pi";
 
 const menuItems = [
   { title: "Home", path: "/", icon: <FiHome /> },
   { title: "Profile", path: "/dashboard/profile", icon: <FiUser /> },
   { title: "Add Event", path: "/dashboard/add/event", icon: <FiCalendar /> },
+  { title: "Blood Donation Certificate", path: "/dashboard/blood/donation/certificate", icon: <PiCertificateFill /> },
   { title: "Admin Post", path: "/dashboard/add/admin/post", icon: <FaMessage /> },
   { title: "Blood Requests", path: "/dashboard/emergency/blood/requests/admin", icon: <FaHandHoldingWater /> },
   { title: "Add Blood Donor", path: "/dashboard/add/blood/donor", icon: <GiWaterDrop /> },

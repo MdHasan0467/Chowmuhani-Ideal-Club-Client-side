@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import Carousel from "./Carousel";
-import { Link } from "react-router";
+import VolunteerCTA from "./VolunteerCTA";
 
 const Hero = () => {
   return (
@@ -31,10 +31,18 @@ const Hero = () => {
             আমাদের প্রতিটি কাজ  হোক একমাত্র আল্লাহ কে রাজি খুশি করার জন্য।
           </motion.p>
           <motion.div className="flex gap-4">
-            <a href={'#addMember'} className="btn btn-primary hover:text-black">সদস্য হোন</a>
+            {/* <a href={'#addMember'} className="btn btn-primary hover:text-black">সদস্য হোন</a> */}
             <a href={'#donateTaka'} className="btn bg-blue-600 hover:bg-blue-800 text-white ">দান করুন</a>
           </motion.div>
+
+
+          <VolunteerCTA />
         </div>
+
+
+
+         
+         {/* Right Side Carousel */}
         <motion.div className="flex-1"
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -42,28 +50,6 @@ const Hero = () => {
 
 
         >
-          {/* <img 
-            src="https://nirmawebsite.s3.ap-south-1.amazonaws.com/wp-content/uploads/sites/25/2019/05/SU4SW_LOGO-400x300.jpg" 
-            alt="Social Work" 
-            className="rounded-lg shadow-lg"
-          /> */}
-
-
-
-          {/* <figure className="diff aspect-16/9" tabIndex={0}>
-            <div className="diff-item-1" role="img" tabIndex={0}>
-              <div className="bg-orange-200 text-primary-content grid place-content-center text-5xl font-black">
-                CHOWMUHANI IDEAL CLUB
-              </div>
-            </div>
-            <div className="diff-item-2" role="img">
-              <div className="bg-base-200 grid place-content-center text-5xl font-black">CHOWMUHANI IDEAL CLUB</div>
-            </div>
-            <div className="diff-resizer"></div>
-          </figure> */}
-
-
-
           <Carousel />
         </motion.div>
       </motion.div>

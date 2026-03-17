@@ -1,142 +1,118 @@
+import { useState } from "react";
+
+import MemberVerification from "../UserAdviceForNextPlan/MemberVerification";
+import PersonalInfo from "../UserAdviceForNextPlan/PersonalInfo";
+import AddressInfo from "../UserAdviceForNextPlan/AddressInfo";
+import PlanInfo from "../UserAdviceForNextPlan/PlanInfo";
+import ImageUpload from "../UserAdviceForNextPlan/ImageUpload";
+import FormSubmit from "../UserAdviceForNextPlan/FormSubmit";
 
 const UserAdviceForNextPlan = () => {
-    return (
-        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16 space-y-10">
-            <h1 className="text-lg md:text-2xl font-semibold">আপনিও চাইলে আপনার কোনো পরিকল্পনা আমদের সাথে শেয়ার করতে পারেন। 
-                যা সামাজিক কাজের একটা অংশ হবে। হয়তো আপনি একা সেটা করতে পারছেন না। 
-                একটা টীম হলে আপনারও সেটা করার ইচ্ছে আছে। 
-            </h1>
 
+  const [verifiedMember, setVerifiedMember] = useState(null);
 
-                  <form className="md:w-1/2 md:mx-auto md:mt-20 mt-7 bg-blue-50 md:p-10 p-5">
-                     <h2 className="text-2xl bold">আপনার ব্যক্তিগত তথ্যঃ</h2>
-             <div className="form-control">
-               <label className="label">
-                 <span className="label-text mr-2">নামঃ</span>
-               </label>
-               <input
-                 type="text"
-                 className="input input-ghost underline focus:outline-0 focus:bg-transparent"
-                 placeholder="আপনার পুরো নাম লিখুন"
-               />
-             </div>
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    village: "",
+    post: "",
+    thana: "",
+    district: "",
+    title: "",
+    details: "",
+  });
 
-             <div className="my-5">
-                <label className="label">
-                 <span className="label-text mr-2">মোবাইলঃ</span>
-               </label>
-              <input
-                type="tel"
-                className="input validator input-ghost underline focus:outline-0 focus:bg-transparent"
-                required
-                placeholder="01*********"
-                pattern="[0-9]*"
-                minLength="11"
-                maxLength="11"
-                title="Must be 11 digits"
-              />
-             </div>
+  const [image, setImage] = useState(null);
+  const [preview, setPreview] = useState(null);
+  const [wordCount, setWordCount] = useState(0);
+  const [success, setSuccess] = useState(false);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
+    if (name === "details") {
+      const words = value.trim().split(/\s+/).filter(Boolean);
+      setWordCount(words.length);
+    }
 
-        <br /><br />
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
+    const submissionData = {
+      ...formData,
+      memberId: verifiedMember,
+      image,
+    };
 
-        <h2 className="text-2xl bold">আপনার বর্তমান ঠিকানা</h2>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text mr-2">🏕️গ্রামঃ</span>
-          </label>
-          <input
-            type="text"
-            className="input input-ghost underline focus:outline-0 focus:bg-transparent"
-            placeholder="গ্রামের নাম লিখুন"
-          />
-        </div>
+    console.log(submissionData);
 
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text mr-2">📬পোষ্ট অফিসঃ</span>
-          </label>
-          <input
-            type="text"
-            className="input input-ghost underline focus:outline-0 focus:bg-transparent"
-            placeholder="পোষ্ট অফিসের নাম লিখুন"
-          />
-        </div>
+    setSuccess(true);
+  };
 
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text mr-2">👮‍♂️থানাঃ</span>
-          </label>
-          <input
-            type="text"
-            className="input input-ghost underline focus:outline-0 focus:bg-transparent"
-            placeholder="থানার নাম লিখুন"
-          />
-        </div>
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-16">
 
-        <div className="form-control mx-2">
-          <label className="label">
-            <span className="label-text mr-2">জেলাঃ</span>
-          </label>
-          <input
-            type="text"
-            className="input input-ghost underline focus:outline-0 focus:bg-transparent"
-            placeholder="জেলার নাম লিখুন"
-          />
-        </div>
+      <h1 className="text-lg md:text-2xl font-semibold mb-10">
+        আপনার পরিকল্পনা আমাদের সাথে শেয়ার করুন (সদস্যদের জন্য)
+      </h1>
 
-        <br /><br />
+      <form
+        onSubmit={handleSubmit}
+        className="md:w-1/2 mx-auto bg-blue-50 p-8 rounded-xl shadow-lg space-y-6"
+      >
 
+        {/* Member Verification */}
 
-        <h1 className="text-2xl bold">আপনার পরিকল্পনার বিষয়</h1>
+        {!verifiedMember && (
+          <MemberVerification onVerified={setVerifiedMember} />
+        )}
 
-    
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text mr-2">শিরোনামঃ</span>
-          </label>
-          <input
-            type="text"
-            className="input input-ghost underline focus:outline-0 focus:bg-transparent"
-            placeholder="শিরোনাম নাম লিখুন ( খাল পরিষ্কার কর্মসূচী )"
-          />
-        </div>
+        {/* Form Sections */}
 
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text mr-2">বিস্তারিতঃ</span>
-          </label>
-          <textarea
-            type="text"
-            className="textarea bg-transparent focus:outline-0 focus:bg-transparent"
-            placeholder="বিস্তারিত লিখুন (১-১০০ শব্দে)"
-          />
-        </div>
+        {verifiedMember && (
+          <>
 
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text mr-2">যে বিষয়ে জানাতে চান তার নমুনা ছবি</span>
-          </label>
-          <input type="file" 
-          className="file-input file-input-neutral" 
-          />
-        </div>
+            <p className="text-green-600 font-semibold">
+              ✔ মেম্বার আইডি যাচাই সম্পন্ন
+            </p>
 
-        <br /><br />
+            <PersonalInfo
+              formData={formData}
+              handleChange={handleChange}
+            />
 
+            <AddressInfo
+              formData={formData}
+              handleChange={handleChange}
+            />
 
-        <input
-          className="btn mx-2 bg-linear-to-r w-full hover:scale-90 transition-all duration-300 ease-in-out 
-          from-indigo-500 via-blue-500 to-white border-0 text-white md:mt-9"
-          value="জমা দিন"
-          type="submit"
-        />
-    </form>
-            
-        </div>
-    )
+            <PlanInfo
+              formData={formData}
+              handleChange={handleChange}
+              wordCount={wordCount}
+            />
+
+            <ImageUpload
+              setImage={setImage}
+              preview={preview}
+              setPreview={setPreview}
+            />
+
+            <FormSubmit success={success} />
+
+          </>
+        )}
+
+      </form>
+
+    </div>
+  );
 };
-export default UserAdviceForNextPlan
+
+export default UserAdviceForNextPlan;

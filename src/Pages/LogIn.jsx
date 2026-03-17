@@ -1,8 +1,31 @@
 import { div } from "framer-motion/client";
 import { Link } from "react-router";
 
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../firebase.init";
+
+
+
 const LogIn = () => {
-  return (
+const provider = new GoogleAuthProvider();
+
+
+
+
+const handleGoogleHandler = () => {
+  // alert('handleGoogleHandler')
+
+  signInWithPopup(auth, provider)
+  .then ((result) => {
+    console.log(result)
+  })
+  .error(err => {
+    alert(err.message)
+  })
+}
+
+
+return (
 <div>
 
       
@@ -39,12 +62,8 @@ const LogIn = () => {
             <p className="ml-10 my-5">------- Or continue with -------</p>
 
             <div className="flex space-x-2">
-                <div className="tooltip">
-                   <div className="tooltip-content">
-                     <div className="animate-bounce text-orange-400 -rotate-10 text-2xl font-black">Coming Soon!</div>
-                   </div>
-                   <button className="btn border hover:bg-orange-100 cursor-pointer">Google</button>
-                </div>
+                <button onClick={handleGoogleHandler}
+                className="btn border hover:bg-orange-100 cursor-pointer">Google</button>
 
                 <div className="tooltip">
                    <div className="tooltip-content">

@@ -18,6 +18,7 @@ const LargeNavbar = () => {
       <div className="hidden md:flex md:mx-auto gap-6">
         <Link to="/" className="btn btn-ghost btn-sm">হোম</Link>
         <Link to="income/and/cost/share/publicly" className="btn btn-ghost btn-sm">টাকার হিসেব</Link>
+        <Link to="hospital/partners" className="btn btn-ghost btn-sm">হসপিটাল</Link>
         <Link to="/events" className="btn btn-ghost btn-sm">ইভেন্ট সমূহ</Link>
         <Link to="/gallery" className="btn btn-ghost btn-sm">গ্যালারী</Link>
         <Link to="/find-blood" className="btn btn-ghost btn-sm text-red-500">রক্ত অনুসন্ধান করুন</Link>
