@@ -129,7 +129,7 @@ const DonationSupport = () => {
                     Donate {selectedAmount ? `${selectedAmount}৳` : ""}
                   </button> */}
 
-                  <p className="font-semibold mt-2">দয়া করে আপনার বিকাশ অ্যাপ থেকে সেন্ডমানি করুন।</p>
+                  <p className="font-semibold mt-2">দয়া করে আপনার মোবাইল অ্যাপ থেকে সেন্ডমানি করুন।</p>
                   <p>পেমেন্ট মেথড এর কাজ চলমান...</p>
                 </div>
               );

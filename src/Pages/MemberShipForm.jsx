@@ -122,7 +122,7 @@ const MemberShipForm = () => {
   };
 
   return (
-    <div className="bg-blue-50 py-10 px-4">
+    <div id="addMember" className="bg-blue-50 py-10 px-4">
       {/* Page title */}
       <Helmet>
         <title>CIC / Membership Form</title>
