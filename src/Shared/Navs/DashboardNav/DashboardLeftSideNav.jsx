@@ -1,4 +1,3 @@
-import React from 'react';
 import Scrollbars from 'react-custom-scrollbars';
 import { BsPersonBadge } from 'react-icons/bs';
 import { Link } from 'react-router';

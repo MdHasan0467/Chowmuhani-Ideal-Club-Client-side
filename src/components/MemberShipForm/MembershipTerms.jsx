@@ -62,6 +62,7 @@ const MembershipTerms = ({ agree, setAgree }) => {
 
         {/* 🔹 Checkbox */}
         <input
+        className="cursor-pointer"
           type="checkbox"
           checked={agree} // parent থেকে আসা state
           onChange={(e) => 

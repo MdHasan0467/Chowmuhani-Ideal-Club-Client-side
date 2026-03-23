@@ -4,39 +4,59 @@ import "react-image-crop/dist/ReactCrop.css";
 import { FaCamera } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
-const ProfileUpload = () => {
-  const [image, setImage] = useState(null);
+const ProfileUpload = ({ setCroppedImage: setParentImage }) => {
+  const [image, setImage] = useState(null); // original image
   const [crop, setCrop] = useState({ aspect: 1 });
-  const [croppedImage, setCroppedImage] = useState(null);
+  const [croppedImage, setCroppedImage] = useState(null); // cropped preview
   const [progress, setProgress] = useState(0);
 
   const imgRef = useRef(null);
+  const fileInputRef = useRef(null); // 🔥 important
 
+  // ✅ image load handler
   const handleImage = (file) => {
     const reader = new FileReader();
-    reader.onload = () => setImage(reader.result);
+
+    reader.onload = () => {
+      setImage(reader.result);
+
+      // 🔥 crop না করলেও parent-এ image যাবে
+      setParentImage(reader.result);
+    };
+
     reader.readAsDataURL(file);
   };
 
+  // ✅ file input change
   const handleChange = (e) => {
     const file = e.target.files[0];
     if (file) handleImage(file);
   };
 
+  // ✅ drag & drop
   const handleDrop = (e) => {
     e.preventDefault();
     const file = e.dataTransfer.files[0];
     if (file) handleImage(file);
   };
 
+  // ✅ remove image
   const removeImage = () => {
     setImage(null);
     setCroppedImage(null);
+    setParentImage(null);
     setProgress(0);
+
+    // 🔥 same image re-upload fix
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
   };
 
+  // ✅ crop image
   const getCroppedImg = () => {
     if (!imgRef.current) return;
+
     const canvas = document.createElement("canvas");
     const imageElement = imgRef.current;
 
@@ -47,6 +67,7 @@ const ProfileUpload = () => {
     canvas.height = crop.height;
 
     const ctx = canvas.getContext("2d");
+
     ctx.drawImage(
       imageElement,
       crop.x * scaleX,
@@ -60,14 +81,16 @@ const ProfileUpload = () => {
     );
 
     const base64Image = canvas.toDataURL("image/jpeg");
-    setCroppedImage(base64Image);
+
+    setCroppedImage(base64Image); // preview
+    setParentImage(base64Image);  // 🔥 parent update
     setImage(null);
   };
 
+  // (optional) fake upload progress
   const uploadImage = () => {
-    if (!croppedImage) return;
+    if (!croppedImage && !image) return;
 
-    // Simulate upload progress (or replace with Cloudinary/XHR)
     setProgress(0);
     const interval = setInterval(() => {
       setProgress((prev) => {
@@ -82,7 +105,9 @@ const ProfileUpload = () => {
 
   return (
     <div className="max-w-lg mx-auto bg-white p-6 rounded-xl shadow">
-      <h2 className="text-xl font-bold text-center mb-6">Upload Profile Photo</h2>
+      <h2 className="text-xl font-bold text-center mb-6">
+        প্রোফাইল ছবি আপলোড করুন
+      </h2>
 
       {/* Upload Area */}
       <div
@@ -91,6 +116,7 @@ const ProfileUpload = () => {
         className="flex justify-center"
       >
         <div className="relative">
+          {/* Preview */}
           {croppedImage ? (
             <img
               src={croppedImage}
@@ -98,7 +124,7 @@ const ProfileUpload = () => {
             />
           ) : image ? (
             <ReactCrop crop={crop} onChange={setCrop} aspect={1}>
-              <img ref={imgRef} src={image} alt="crop" className="max-w-full" />
+              <img ref={imgRef} src={image} alt="crop" />
             </ReactCrop>
           ) : (
             <div className="w-40 h-40 border-2 border-dashed rounded-full flex items-center justify-center text-gray-400">
@@ -106,10 +132,11 @@ const ProfileUpload = () => {
             </div>
           )}
 
-          {/* Upload Button */}
+          {/* Upload button */}
           <label className="absolute bottom-0 right-0 bg-blue-600 p-2 rounded-full cursor-pointer">
             <FaCamera className="text-white" />
             <input
+              ref={fileInputRef}
               type="file"
               onChange={handleChange}
               accept="image/*"
@@ -117,11 +144,11 @@ const ProfileUpload = () => {
             />
           </label>
 
-          {/* Remove Button */}
+          {/* Remove button */}
           {(image || croppedImage) && (
             <button
               onClick={removeImage}
-              className="absolute top-0 right-0 cursor-pointer bg-red-500 p-1 rounded-full"
+              className="absolute top-0 right-0 bg-red-500 p-1 rounded-full"
             >
               <MdDelete className="text-white" />
             </button>
@@ -129,18 +156,18 @@ const ProfileUpload = () => {
         </div>
       </div>
 
-      {/* Crop Button */}
+      {/* Crop button (optional) */}
       {image && !croppedImage && (
         <button
           onClick={getCroppedImg}
           className="mt-4 w-full bg-green-600 text-white py-2 rounded-lg"
         >
-          Crop Image
+          Crop (ঐচ্ছিক)
         </button>
       )}
 
-      {/* Upload Button */}
-      {croppedImage && (
+      {/* Upload button (optional visual) */}
+      {(image || croppedImage) && (
         <button
           onClick={uploadImage}
           className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg"
@@ -149,14 +176,21 @@ const ProfileUpload = () => {
         </button>
       )}
 
-      {/* Upload Progress */}
+      {/* Status */}
+      {(image || croppedImage) && (
+        <p className="text-green-600 text-center mt-2 text-sm">
+          ✅ ছবি প্রস্তুত
+        </p>
+      )}
+
+      {/* Progress */}
       {progress > 0 && (
         <div className="mt-4">
           <div className="bg-gray-200 h-3 rounded">
             <div
               className="bg-blue-600 h-3 rounded"
               style={{ width: `${progress}%` }}
-            ></div>
+            />
           </div>
           <p className="text-center text-sm mt-1">{progress}%</p>
         </div>

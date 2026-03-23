@@ -1,69 +1,126 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import bdLocations from "../../data/bdLocations";
 
 const AddressInfo = ({ formData, setFormData }) => {
-  const [step, setStep] = useState(1); // কোন ফিল্ড দেখানো হবে তা step দিয়ে control
+  const [division, setDivision] = useState(formData.division || "");
+  const [district, setDistrict] = useState(formData.district || "");
+  const [thana, setThana] = useState(formData.thana || "");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const [districts, setDistricts] = useState([]);
+  const [thanas, setThanas] = useState([]);
 
-    // আগের ফিল্ড পূরণ হলে step বাড়ানো
-    if (value.trim() !== "") {
-      if (step === 1) setStep(2);
-      else if (step === 2) setStep(3);
-      else if (step === 3) setStep(4);
+  // Update districts when division changes
+  useEffect(() => {
+    if (division) {
+      const selectedDiv = bdLocations.find(d => d[division]);
+      setDistricts(selectedDiv ? Object.keys(selectedDiv[division]) : []);
+      setDistrict("");
+      setThana("");
+      setThanas([]);
+      setFormData(prev => ({ ...prev, division, district: "", thana: "" }));
     }
-  };
+  }, [division]);
+
+  // Update thanas when district changes
+  useEffect(() => {
+    if (division && district) {
+      const selectedDiv = bdLocations.find(d => d[division]);
+      const thanaList = selectedDiv[division][district] || [];
+      setThanas(thanaList);
+      setThana("");
+      setFormData(prev => ({ ...prev, district, thana: "" }));
+    }
+  }, [district, division]);
+
+  // Update formData when thana changes
+  useEffect(() => {
+    setFormData(prev => ({ ...prev, thana }));
+  }, [thana]);
 
   return (
     <div>
       <h2 className="text-xl font-bold mb-4">বর্তমান ঠিকানা</h2>
       <div className="grid md:grid-cols-2 gap-4">
-        {/* Step 1: গ্রাম */}
-        <input
-          name="village"
-          type="text"
-          placeholder="গ্রাম"
+
+        {/* Division */}
+        <select
           className="input input-bordered w-full"
-          value={formData.village || ""}
-          onChange={handleChange}
-        />
+          required
+          value={division}
+          onChange={(e) => setDivision(e.target.value)}
+        >
+          <option value="">বিভাগ নির্বাচন করুন</option>
+          {bdLocations.map(d => Object.keys(d)).flat().map(div => (
+            <option key={div} value={div}>{div}</option>
+          ))}
+        </select>
 
-        {/* Step 2: পোস্ট অফিস */}
-        {step >= 2 && (
-          <input
-            name="postOffice"
-            type="text"
-            placeholder="পোস্ট অফিস"
-            className="input input-bordered w-full"
-            value={formData.postOffice || ""}
-            onChange={handleChange}
-          />
+        {/* District */}
+        <select
+          className="input input-bordered w-full"
+          required
+          value={district}
+          onChange={(e) => setDistrict(e.target.value)}
+          disabled={!division}
+        >
+          <option value="">জেলা নির্বাচন করুন</option>
+          {districts.map(dist => (
+            <option key={dist} value={dist}>{dist}</option>
+          ))}
+        </select>
+
+        {/* Thana */}
+        <select
+          className="input input-bordered w-full"
+          required
+          value={thana}
+          onChange={(e) => setThana(e.target.value)}
+          disabled={!district}
+        >
+          <option value="">থানা নির্বাচন করুন</option>
+          {thanas.map(th => (
+            <option key={th} value={th}>{th}</option>
+          ))}
+        </select>
+
+        {/* Show Union, Village, Ward, Home only when thana is selected */}
+        {thana && (
+          <>
+            <input
+              name="union"
+              type="text"
+              placeholder="ইউনিয়ন"
+              className="input input-bordered w-full"
+              value={formData.union || ""}
+              onChange={(e) => setFormData({ ...formData, union: e.target.value })}
+            />
+            <input
+              name="village"
+              type="text"
+              placeholder="গ্রাম"
+              className="input input-bordered w-full"
+              value={formData.village || ""}
+              onChange={(e) => setFormData({ ...formData, village: e.target.value })}
+            />
+            <input
+              name="ward"
+              type="text"
+              placeholder="ওয়ার্ড"
+              className="input input-bordered w-full"
+              value={formData.ward || ""}
+              onChange={(e) => setFormData({ ...formData, ward: e.target.value })}
+            />
+            <input
+              name="home"
+              type="text"
+              placeholder="বাড়ি নাম্বার / ঠিকানা"
+              className="input input-bordered w-full"
+              value={formData.home || ""}
+              onChange={(e) => setFormData({ ...formData, home: e.target.value })}
+            />
+          </>
         )}
 
-        {/* Step 3: থানা */}
-        {step >= 3 && (
-          <input
-            name="thana"
-            type="text"
-            placeholder="থানা"
-            className="input input-bordered w-full"
-            value={formData.thana || ""}
-            onChange={handleChange}
-          />
-        )}
-
-        {/* Step 4: জেলা */}
-        {step >= 4 && (
-          <input
-            name="district"
-            type="text"
-            placeholder="জেলা"
-            className="input input-bordered w-full"
-            value={formData.district || ""}
-            onChange={handleChange}
-          />
-        )}
       </div>
     </div>
   );

@@ -8,10 +8,10 @@ const SummaryCards = ({ summaryCards, openModal }) => {
           onClick={() => openModal(card)}
         >
           <div>
-            <p className="text-gray-500">{card.title}</p>
-            <p className="text-2xl font-bold text-gray-800">{card.value}</p>
+            <p className="text-gray-500">{card?.title}</p>
+            <p className="text-2xl font-bold text-gray-800">{card?.value}</p>
           </div>
-          <div className={`p-4 rounded-lg ${card.bg}`}>{card.icon}</div>
+          <div className={`p-4 rounded-lg ${card?.bg}`}>{card?.icon}</div>
         </div>
       ))}
     </div>

@@ -1,4 +1,5 @@
 // import LogoBanner from '../assets/logoBanner.jpg'
+import { Helmet } from 'react-helmet-async';
 import Logo from '../assets/logo-removebg.png'
 import Footer from '../Shared/Footer/Footer';
 
@@ -6,9 +7,13 @@ const About = () => {
 
     return (
 <div>
+      {/* Page title */}
+      <Helmet>
+        <title>CIC / About</title>
+      </Helmet>
 
     {/* Tittle */}
-    <div className="font-serif">
+    <div className="font-serif md:pt-2 pt-16">
         <div className="">
             {/* Diff */}
             <figure className="diff aspect-16/9 border rounded md:h-96 " tabIndex={0}>

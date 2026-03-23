@@ -1,4 +1,5 @@
 import { colgroup } from "framer-motion/client";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 
 
@@ -19,6 +20,10 @@ const SignUp = () => {
 
   return (
     <div className="">
+      {/* Page title */}
+      <Helmet>
+        <title>CIC / Signup</title>
+      </Helmet>
         <form onSubmit={handlRegisterHandler} className="w-1/2 mx-auto mt-20 bg-amber-100 p-10">
 
         <h2>Sign Up Now</h2>

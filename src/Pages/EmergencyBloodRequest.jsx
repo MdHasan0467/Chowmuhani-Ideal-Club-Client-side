@@ -82,6 +82,7 @@ const EmergencyBloodRequest = () => {
               <option value="">লিঙ্গ নির্বাচন করুন</option>
               <option>পুরুষ</option>
               <option>মহিলা</option>
+              <option>হিজড়া</option>
             </select>
           </div>
 
@@ -245,6 +246,15 @@ const EmergencyBloodRequest = () => {
             />
           </div>
 
+          
+          {/* তথ্য ও CTA - প্রফেশনাল ভার্সন */}
+          <BloodRequestCTA />
+
+
+
+
+
+
           {/* সাবমিট বাটন */}
           <button
             type="submit"
@@ -252,8 +262,6 @@ const EmergencyBloodRequest = () => {
           >
             ইমারজেন্সি রক্তের অনুরোধ পাঠান
           </button>
-          {/* তথ্য ও CTA - প্রফেশনাল ভার্সন */}
-          <BloodRequestCTA />
 
         </form>
       </div>

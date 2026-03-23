@@ -28,7 +28,7 @@ import Dashboard from "../../Pages/Dashboard";
           element: <Home />,
         },
         {
-          path: '/add-new-member',
+          path: '/add/new/member',
           element: <AddNewMember />
         },
         {

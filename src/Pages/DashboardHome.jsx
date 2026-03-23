@@ -4,6 +4,7 @@ import DashboardAnalytics from "../components/Dashboard/DashboardAnalytics";
 import ActivityTimeline from "../components/Dashboard/ActivityTimeline";
 import RecentActivities from "../components/Dashboard/RecentActivities";
 import CardModal from "../Modals/DashboardHome/CardModal";
+import { Helmet } from "react-helmet-async";
 
 const DashboardHome = () => {
 
@@ -77,6 +78,10 @@ const DashboardHome = () => {
   return (
 
     <div className="space-y-6">
+            {/* Page title */}
+            <Helmet>
+              <title>CIC / Dashboard</title>
+            </Helmet>
 
       {/* Charts */}
       <DashboardAnalytics />

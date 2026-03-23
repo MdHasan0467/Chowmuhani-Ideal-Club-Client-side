@@ -1,19 +1,22 @@
 import { motion } from "motion/react";
-import Carousel from "./Carousel";
 import VolunteerCTA from "./VolunteerCTA";
+import MoneyIcon from "../../IconSVG/MoneyHandToHand.svg"
+import MoneyIcon2 from "../../IconSVG/MoneyBigBag.svg"
 
 const Hero = () => {
-  return (
-    <div className="px-4 md:px-16 py-10">
+  
 
-      {/* Hero Section */}
+  return (
+    <div className="px-4 md:px-16 py-10 pt-28 md:pt-32">
+      {/* Hero Section - Home Left Side Component */}
       <motion.div
-        className="flex flex-col md:flex-row items-center gap-10 mb-16"
+        className="items-center gap-10 mb-16"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         <div className="flex-1">
+          {/* Text */}
           <motion.h1
             className="text-4xl md:text-5xl font-bold mb-4 text-blue-600"
             initial={{ x: -50, opacity: 0 }}
@@ -30,18 +33,22 @@ const Hero = () => {
           >
             আমাদের প্রতিটি কাজ  হোক একমাত্র আল্লাহ কে রাজি খুশি করার জন্য।
           </motion.p>
+
+          {/* Donation Button */}
           <motion.div className="flex gap-4">
-            {/* <a href={'#addMember'} className="btn btn-primary hover:text-black">সদস্য হোন</a> */}
-            <a href={'#donateTaka'} className="btn bg-blue-600 hover:bg-blue-800 text-white ">দান করুন</a>
+            <a
+              href="#donateTaka"
+              className="btn bg-amber-300 hover:bg-amber-500 w-full flex items-center gap-2 px-4 py-2 rounded"
+            >
+              <img src={MoneyIcon} alt="money" className="w-7 h-7" />
+              মানব সেবায় সহযোগিতা করুন
+              <img src={MoneyIcon2} alt="Money Bag" className="w-7 h-7" />
+            </a>
           </motion.div>
 
-
+          {/* Volunteer Button */}
           <VolunteerCTA />
         </div>
-
-
-
-         
          {/* Right Side Carousel */}
         <motion.div className="flex-1"
           initial={{ x: 50, opacity: 0 }}
@@ -50,15 +57,9 @@ const Hero = () => {
 
 
         >
-          <Carousel />
+          {/* <Carousel /> */}
         </motion.div>
       </motion.div>
-
-      
-      
-      
-
-
     </div>
   );
 };

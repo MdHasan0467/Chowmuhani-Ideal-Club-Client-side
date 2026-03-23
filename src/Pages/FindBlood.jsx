@@ -1,5 +1,5 @@
 // FindBlood.jsx (Star badges below image)
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import bdLocations from "../data/bdLocations";
 import FindBloodDonarInfoModal from "../Modals/FindBlood/FindBloodDonarInfoModal";
 
@@ -43,37 +43,38 @@ const FindBlood = () => {
   const [selectedDonor, setSelectedDonor] = useState(null);
   const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
 
-  const divisions = bdLocations.map((item) => Object.keys(item)).flat();
-  const districts = division ? Object.keys(bdLocations.find((item) => item[division])[division]) : [];
-  const upazilas = division && district ? bdLocations.find((item) => item[division])[division][district] : [];
+  const divisions = bdLocations?.map((item) => Object?.keys(item))?.flat();
+  const districts = division ? Object?.keys(bdLocations?.find((item) => item[division])[division]) : [];
+  const upazilas = division && district ? bdLocations?.find((item) => item[division])[division][district] : [];
 
   const filteredDonors = useMemo(() => {
     return donorsData.filter((donor) => {
       return (
-        (division ? donor.division === division : true) &&
-        (district ? donor.district === district : true) &&
-        (upazila ? donor.upazila === upazila : true) &&
-        (blood ? donor.blood === blood : true) &&
-        (search ? donor.name.toLowerCase().includes(search.toLowerCase()) || donor.mobile.includes(search) : true)
+        (division ? donor?.division === division : true) &&
+        (district ? donor?.district === district : true) &&
+        (upazila ? donor?.upazila === upazila : true) &&
+        (blood ? donor?.blood === blood : true) &&
+        (search ? donor?.name.toLowerCase()?.includes(search?.toLowerCase()) || donor?.mobile?.includes(search) : true)
       );
     });
   }, [division, district, upazila, blood, search]);
 
-  const donorsToShow = filteredDonors.slice(0, visibleCount);
+  const donorsToShow = filteredDonors?.slice(0, visibleCount);
   const handleLoadMore = () => setVisibleCount((prev) => prev + INITIAL_LOAD);
+  
   const handleFilterChange = (setter) => (value) => {
     setter(value);
     setVisibleCount(INITIAL_LOAD);
   };
 
   const renderStars = (totalDonate) => {
-    const starCount = Math.min(totalDonate, 5);
+    const starCount = Math?.min(totalDonate, 5);
     const stars = [];
     for (let i = 0; i < starCount; i++) {
-      stars.push(<span key={i} className="text-yellow-400 text-lg">⭐</span>);
+      stars?.push(<span key={i} className="text-yellow-400 text-lg">⭐</span>);
     }
     if (totalDonate > 5) {
-      stars.push(<span key="extra" className="text-green-500 text-lg ml-1">🏆</span>);
+      stars?.push(<span key="extra" className="text-green-500 text-lg ml-1">🏆</span>);
     }
     return stars;
   };
@@ -86,72 +87,75 @@ const FindBlood = () => {
         <div className="bg-white p-6 rounded-xl shadow space-y-4 h-fit">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">রক্তদাতাকে খুঁজুন</h2>
 
-          <select className="select select-bordered w-full" value={division} onChange={(e) => handleFilterChange(setDivision)(e.target.value) & setDistrict("") & setUpazila("")}>
+          <select className="select select-bordered w-full" value={division} onChange={(e) => handleFilterChange(setDivision)(e?.target?.value) & setDistrict("") & setUpazila("")}>
             <option value="">নির্বাচন করুন Division</option>
-            {divisions.map((d) => <option key={d} value={d}>{d}</option>)}
+            {divisions?.map((d) => <option key={d} value={d}>{d}</option>)}
           </select>
 
-          <select className="select select-bordered w-full" value={district} onChange={(e) => handleFilterChange(setDistrict)(e.target.value) & setUpazila("")} disabled={!division}>
+          <select className="select select-bordered w-full" value={district} onChange={(e) => handleFilterChange(setDistrict)(e?.target?.value) & setUpazila("")} disabled={!division}>
             <option value="">নির্বাচন করুন District</option>
-            {districts.map((d) => <option key={d} value={d}>{d}</option>)}
+            {districts?.map((d) => <option key={d} value={d}>{d}</option>)}
           </select>
 
-          <select className="select select-bordered w-full" value={upazila} onChange={(e) => handleFilterChange(setUpazila)(e.target.value)} disabled={!district}>
+          <select className="select select-bordered w-full" value={upazila} onChange={(e) => handleFilterChange(setUpazila)(e?.target?.value)} disabled={!district}>
             <option value="">নির্বাচন করুন Upazila</option>
-            {upazilas.map((u) => <option key={u} value={u}>{u}</option>)}
+            {upazilas?.map((u) => <option key={u} value={u}>{u}</option>)}
           </select>
 
-          <select className="select select-bordered w-full" value={blood} onChange={(e) => handleFilterChange(setBlood)(e.target.value)}>
+          <select className="select select-bordered w-full" value={blood} onChange={(e) => handleFilterChange(setBlood)(e?.target?.value)}>
             <option value="">নির্বাচন করুন Blood Group</option>
-            {bloodGroups.map((b) => <option key={b} value={b}>{b}</option>)}
+            {bloodGroups?.map((b) => <option key={b} value={b}>{b}</option>)}
           </select>
         </div>
 
         {/* RIGHT SEARCH + RESULTS */}
         <div className="md:col-span-3 flex flex-col">
-          <div className="flex justify-end mb-4">
+
+          {/* SEARCH BOX */}
+          <div className="flex md:justify-end justify-center mb-4">
             <input type="text" placeholder="Donor Name বা Mobile দিয়ে খুঁজুন"
               value={search}
-              onChange={(e) => { setSearch(e.target.value); setVisibleCount(INITIAL_LOAD); }}
+              onChange={(e) => { setSearch(e?.target?.value); setVisibleCount(INITIAL_LOAD); }}
               className="input input-bordered w-72"
             />
           </div>
 
-          {filteredDonors.length === 0 && (
+          {filteredDonors?.length === 0 && (
             <p className="text-gray-500 text-center py-10 bg-white rounded-xl shadow">কোনো রক্তদাতা পাওয়া যায়নি!</p>
           )}
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {donorsToShow.map((donor) => (
-              <div key={donor.id} className="bg-white shadow rounded-xl p-5 flex flex-col items-center hover:scale-105 transition-transform duration-300 ease-in-out">
+            {donorsToShow?.map((donor) => (
+              <div key={donor?.id} className="bg-white shadow rounded-xl p-5 flex flex-col items-center hover:scale-105 transition-transform duration-300 ease-in-out">
                 
-                <img src={donor.image} alt={donor.name} className="w-24 h-24 rounded-full object-cover mb-2"/>
+                <img src={donor?.image} alt={donor?.name} className="w-24 h-24 rounded-full object-cover mb-2"/>
                 
                 {/* Stars below image */}
                 <div className="flex items-center mb-2">
-                  {renderStars(donor.totalDonate)}
+                  {renderStars(donor?.totalDonate)}
                 </div>
 
-                <h3 className="text-lg font-bold text-center">{donor.name}</h3>
-                <p className="text-gray-500 text-center text-sm">{donor.division} | {donor.district} | {donor.upazila}</p>
-                <p className="text-red-500 font-semibold mt-1">{donor.blood}</p>
-                <p className="text-gray-600 text-sm mt-1">📞 {donor.mobile}</p>
+                <h3 className="text-lg font-bold text-center">{donor?.name}</h3>
+                <p className="text-gray-500 text-center text-sm">{donor?.division} | {donor?.district} | {donor?.upazila}</p>
+                <p className="text-red-500 font-semibold mt-1">{donor?.blood}</p>
+                <p className="text-gray-600 text-sm mt-1">📞 {donor?.mobile}</p>
 
                 <div className="flex gap-3 mt-3">
-                  <a href={`tel:${donor.mobile}`} className="btn btn-success btn-sm">Call</a>
+                  <a href={`tel:${donor?.mobile}`} className="btn btn-success btn-sm">Call</a>
                   <button onClick={() => setSelectedDonor(donor)} className="btn btn-primary btn-sm">Info</button>
                 </div>
               </div>
             ))}
           </div>
 
-          {visibleCount < filteredDonors.length && (
+          {visibleCount < filteredDonors?.length && (
             <div className="flex justify-center mt-6">
               <button onClick={handleLoadMore} className="btn btn-outline btn-sm">Load More</button>
             </div>
           )}
 
         </div>
+
       </div>
 
       {selectedDonor && (

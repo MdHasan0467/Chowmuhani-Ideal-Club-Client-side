@@ -1,9 +1,10 @@
-import MemberShipForm from "./MemberShipForm";
+// import MemberShipForm from "./MemberShipForm";
+import NewMemberShip from "./NewMemberShip";
 
 const AddNewMember = () => {
     return (
         <div>
-            <MemberShipForm />
+            <NewMemberShip />
         </div>
     )
 }

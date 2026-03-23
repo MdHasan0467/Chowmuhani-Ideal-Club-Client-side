@@ -1,25 +1,95 @@
-// Volunteer Call-to-Action Section
-import React from "react";
+import { useEffect, useState } from "react";
 
 const VolunteerCTA = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById("volunteer-cta");
+      if (!section) return;
+
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight - 100) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-<section className="py-5 px-4 bg-red-500 text-white text-center rounded-xl shadow-lg my-8">
-  <h2 className="text-xl md:text-2xl font-bold mb-4">
-    স্বেচ্ছাসেবক হিসেবে যুক্ত হোন
-  </h2>
+    <section
+      id="volunteer-cta"
+      className={`relative my-20 px-4 transition-all duration-1000 ${
+        isVisible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-12"
+      }`}
+    >
+      {/* 🌈 Animated Gradient Background */}
+      <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradient"></div>
 
-  <p className="text-lg md:text-xl mb-6">
-    আমাদের সাথে স্বেচ্ছাসেবক হিসেবে যোগ দিন এবং রক্তের প্রয়োজন এমন মানুষের কাছে 
-    দ্রুত সহায়তা পৌঁছে দিতে আমাদের সাথে কাজ করার জন্য আপনাকে আহ্বান জানাচ্ছি।
-  </p>
+      {/* ✨ Glow Effect */}
+      <div className="absolute inset-0 rounded-3xl blur-3xl opacity-30 bg-purple-400"></div>
 
-  <a
-    href={"#addMember"}
-    className="bg-white text-red-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
-  >
+      {/* 💎 Glass Container */}
+      <div className="relative text-white text-center py-14 px-6 md:px-10 rounded-3xl backdrop-blur-xl border border-white/20 overflow-hidden shadow-2xl">
+        
+        {/* 🎈 Floating Blobs */}
+        <div className="absolute -top-16 -left-16 w-40 h-40 bg-white/10 rounded-full animate-pulse"></div>
+        <div className="absolute -bottom-16 -right-16 w-40 h-40 bg-white/10 rounded-full animate-pulse"></div>
+
+        {/* 🏷 Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
+          স্বেচ্ছাসেবক হিসেবে যুক্ত হোন
+        </h2>
+
+        {/* 📄 Description */}
+        <p className="text-white/90 max-w-2xl mx-auto mb-10 text-base md:text-lg leading-relaxed">
+          আমাদের সাথে যুক্ত হয়ে রক্তের প্রয়োজন এমন মানুষের পাশে দাঁড়ান।
+          আপনার একটি উদ্যোগ একটি জীবন বাঁচাতে পারে।
+        </p>
+
+        {/* 🔘 Premium CTA Button */}
+        <a
+  href="#addMember"
+  className="relative inline-block hover:shadow-xl hover:shadow-white/30 bg-white/90 backdrop-blur-md text-gray-900 px-10 py-3 rounded-full font-semibold text-lg overflow-hidden group shadow-lg hover:scale-105 transition duration-300"
+>
+  {/* 👉 Button Text */}
+  <span className="relative z-10">
     এখনই যোগ দিন
-  </a>
-</section>
+  </span>
+
+  {/* 👉 Shine Effect (Improved) */}
+  <span className="pointer-events-none absolute top-0 left-[-75%] w-[50%] h-full bg-gradient-to-r from-transparent via-white/80 to-transparent skew-x-12 group-hover:left-[125%] transition-all duration-700 ease-in-out"></span>
+</a>
+
+        {/* 📝 Note */}
+        <p className="text-sm text-white/70 mt-5">
+          সম্পূর্ণ বিনামূল্যে • কোনো রেজিস্ট্রেশন ফি নেই
+        </p>
+      </div>
+
+      {/* 🎬 Animation CSS */}
+      <style>
+        {`
+          .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradientMove 8s ease infinite;
+          }
+
+          @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}
+      </style>
+    </section>
   );
 };
 

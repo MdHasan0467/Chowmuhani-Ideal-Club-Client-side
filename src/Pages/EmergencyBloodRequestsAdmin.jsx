@@ -206,16 +206,16 @@ const EmergencyBloodRequestsAdmin = () => {
             </tr>
           </thead>
           <tbody>
-            {currentData.map((req) => (
-              <tr key={req.id} className={`border-t hover:shadow-md transition-shadow ${getPriorityStyle(req.priority)}`}>
-                <td className="px-4 py-3 wrap-break-word">{req.patient}</td>
-                <td className="px-4 py-3">{req.gender}</td>
+            {currentData?.map((req) => (
+              <tr key={req?.id} className={`border-t hover:shadow-md transition-shadow ${getPriorityStyle(req?.priority)}`}>
+                <td className="px-4 py-3 wrap-break-word">{req?.patient}</td>
+                <td className="px-4 py-3">{req?.gender}</td>
                 <td className="px-4 py-3 items-center"> 
                     <p className="flex gap-1"> 
                         <span className="mt-1">
                             <FaTint className="text-red-500" /> 
                         </span> 
-                        <span>{req.blood}</span> 
+                        <span>{req?.blood}</span> 
                     </p>
                 </td> 
                 <td className="px-4 py-3 items-center wrap-break-word"> 
@@ -223,32 +223,32 @@ const EmergencyBloodRequestsAdmin = () => {
                         <span className="mt-1">
                             <FaHospital />
                         </span> 
-                        <span>{req.hospitalName}</span> 
+                        <span>{req?.hospitalName}</span> 
                     </p> 
                 </td>
-                <td className="px-4 py-3 wrap-break-word">{req.hospitalLocation}</td>
+                <td className="px-4 py-3 wrap-break-word">{req?.hospitalLocation}</td>
                 <td className="px-4 py-3">
-                  {req.date}
-                  <div className="text-gray-400 text-xs">{req.time}</div>
+                  {req?.date}
+                  <div className="text-gray-400 text-xs">{req?.time}</div>
                 </td>
-                <td className="px-4 py-3">{req.bags}</td>
+                <td className="px-4 py-3">{req?.bags}</td>
                 <td className="px-4 py-3">
-                  <span className={`px-3 py-1 text-xs font-medium rounded-full ${getPriorityStyle(req.priority)}`}>
-                    {req.priority}
+                  <span className={`px-3 py-1 text-xs font-medium rounded-full ${getPriorityStyle(req?.priority)}`}>
+                    {req?.priority}
                   </span>
                 </td>
                 <td className="px-4 py-3 wrap-break-word flex justify-between items-center">
                   <span>
-                    {req.guardian}
-                    <div className="text-gray-400 text-xs">{req.phone}</div>
+                    {req?.guardian}
+                    <div className="text-gray-400 text-xs">{req?.phone}</div>
                   </span>
-                  <button onClick={() => copyToClipboard(req.phone)} className="text-gray-500 hover:text-gray-700 ml-2">
+                  <button onClick={() => copyToClipboard(req?.phone)} className="text-gray-500 hover:text-gray-700 ml-2">
                     <FaCopy />
                   </button>
                 </td>
                 <td className="px-4 py-3 flex-wrap gap-2">
                   <a
-                    href={`tel:${req.phone}`}
+                    href={`tel:${req?.phone}`}
                     className="bg-green-500 text-white px-3 py-1 rounded-md text-xs hover:bg-green-600 flex justify-center items-center gap-1"
                   >
                     <span><FaPhone /></span>

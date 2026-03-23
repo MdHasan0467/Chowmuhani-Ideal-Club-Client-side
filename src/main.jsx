@@ -33,6 +33,12 @@ import Trash from './Pages/Trash.jsx'
 import EmergencyBloodRequestsAdmin from './Pages/EmergencyBloodRequestsAdmin.jsx'
 import HospitalPartners from './Pages/HospitalPartners.jsx'
 import DonationCertificate from './Pages/DonationCertificate.jsx'
+import DonationSupport from './Pages/DonationSupport.jsx'
+import EmergencyBloodRequest from './Pages/EmergencyBloodRequest.jsx'
+import UserAdviceForNextPlan from './components/Home/UserAdviceForNextPlan.jsx'
+import BecomeABloodDonor from './Pages/BecomeABloodDonor.jsx'
+import NewDonorForm from './components/NewMemberShip/NewDonorForm.jsx'
+import BloodVolunteers from './Pages/BloodVolunteers.jsx'
 
 
 
@@ -50,8 +56,24 @@ const router = createBrowserRouter ([
     Component: Home
   },
   {
-    path: 'add-new-member',
-    Component: AddNewMember
+    path: 'add/new/member',
+    Component: AddNewMember // ভিতরে NewMemberShip কম্পোনেন্ট দেওয়া আছে।
+  },
+  {
+    path: 'donation/support',
+    Component: DonationSupport
+  },
+  {
+    path: 'blood/volunteers',
+    Component: BloodVolunteers
+  },
+  {
+    path: 'emergency/blood/Request',
+    Component: EmergencyBloodRequest
+  },
+  {
+    path: 'user/advice/for/next/plan',
+    Component: UserAdviceForNextPlan
   },
   {
     path: 'events',
@@ -64,6 +86,10 @@ const router = createBrowserRouter ([
   {
     path: 'gallery',
     Component: Gallery
+  },
+  {
+    path: 'become/a/blood/donor',
+    Component: NewDonorForm
   },
   {
     path: 'hospital/partners',

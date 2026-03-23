@@ -22,6 +22,11 @@ import EmergencyBloodRequest from "./EmergencyBloodRequest";
 import WhyDonateBlood from "../components/Home/WhyDonateBlood";
 import BloodTypeGuide from "../components/Home/BloodTypeGuide";
 import ImpactSection from "../components/Home/ImpactSection";
+import { Helmet } from "react-helmet-async";
+import ScrollTopButton from "../components/Home/ScrollTopButton";
+import NewMemberShip from "./NewMemberShip";
+import LgDeviceRightSide from "../components/Home/LgDeviceRightSide";
+import BloodGroupSelector from "../components/LgDeviceRightSide/BloodGroupSelector";
 // import DonationAndVolunteerCTA from "../components/Home/DonationAndVolunteerCTA";
 // import VolunteerCTA from "../components/Home/VolunteerCTA";
 
@@ -29,7 +34,17 @@ import ImpactSection from "../components/Home/ImpactSection";
 const Home = () => {
   return (
     <div>
-      <Hero />
+            {/* Page title */}
+            <Helmet>
+              <title>CIC / Home</title>
+            </Helmet>
+      <div className="md:grid md:grid-cols-4">
+        <div className="md:col-span-3"><Hero /></div>
+        <div className="md:col-span-1 md:flex hidden">
+          <LgDeviceRightSide />
+        </div>
+      </div>
+      <div className="md:hidden"><BloodGroupSelector /></div>
       <DonationSupport />
       <ImpactSection />
       {/* <DonationAndVolunteerCTA /> */}
@@ -51,12 +66,13 @@ const Home = () => {
       <BloodBloog />
       <YouthSocialWork />
       {/* <CricketBlood /> */}
-      <MemberShipForm />
+      <NewMemberShip />
       {/* <Carousel /> */}
       {/* <OurMission />
         <OurCauses /> */}
           {/* <GetInvolved /> */}
           <Footer />
+          <ScrollTopButton />
     </div>
   );
 };

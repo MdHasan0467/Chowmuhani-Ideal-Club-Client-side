@@ -27,10 +27,24 @@ const DonationSupport = () => {
   };
 
   const payments = [
-    { name: "bKash", number: "01690058503", logo: bkashLogo, color: "pink", recommended: true },
-    { name: "Nagad", number: "01690058503", logo: nagadLogo, color: "orange" },
-    { name: "Bank Account", number: "1234567890123456", logo: bankLogo, color: "blue" },
+    { name: "bKash", number: "01690058503", logo: bkashLogo, p:"আপনার বিকাশ অ্যাপ থেকে সেন্ডমানি করুন।", color: "pink", recommended: true },
+    { name: "Nagad", number: "01690058503", logo: nagadLogo, p:"আপনার নগদ অ্যাপ থেকে সেন্ডমানি করুন।", color: "orange" },
+    { name: "Bank Account", number: "1234567890123456", logo: bankLogo, p:"আপনার মোবাইল ব্যাংক অ্যাপ থেকে সেন্ডমানি করুন।", color: "blue" },
   ];
+
+
+  const getTextColor = color => {
+        switch (color) {
+      case "pink":
+        return `text-pink-700`;
+      case "orange":
+        return `text-orange-700`;
+      case "blue":
+        return `text-blue-700`;
+      default:
+        return base;
+    }
+  }
 
   const getButtonClasses = (color) => {
     const base = "mt-4 px-4 py-2 rounded-full w-full text-white font-semibold shadow-md transition-transform duration-200 transform hover:-translate-y-1 active:translate-y-0 active:scale-95";
@@ -68,45 +82,50 @@ const DonationSupport = () => {
 
           {/* Payment Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {payments.map((item) => {
-              const uniqueId = `${item.name}-${item.number}`;
+            {payments?.map((item) => {
+              const uniqueId = `${item?.name}-${item?.number}`;
               const selectedAmount = selectedAmounts[uniqueId];
 
               return (
-                <div key={uniqueId} className={getCardClasses(item.recommended)}>
+                <div key={uniqueId} className={getCardClasses(item?.recommended)}>
                   {/* Recommended Badge */}
-                  {item.recommended && (
+                  {item?.recommended && (
                     <span className="absolute top-2 right-2 bg-pink-500 text-white text-xs px-2 py-1 rounded-full">
                       Recommended
                     </span>
+                     
                   )}
+                  {copiedId === uniqueId && (
+                      <p className="absolute top-10 right-2 text-green-600 text-sm font-semibold z-10">
+                      <span className={getTextColor(item.color)}>{item?.name}</span>
+                      <br />
+                      <span>number Copied!</span>
+                      </p>
+                    )}
 
                   {/* Logo */}
-                  <img src={item.logo} alt={`${item.name} Logo`} className="h-10 mx-auto mb-2" />
+                  <img src={item?.logo} alt={`${item?.name} Logo`} className="h-10 mx-auto mb-2" />
+                  
 
                   {/* Payment Info */}
-                  <h3 className="text-xl font-semibold">{item.name}</h3>
+                  <h3 className="text-xl font-semibold">{item?.name}</h3>
                   <p className="text-gray-500 mt-1">Send Donation</p>
 
                   {/* Number + Copy */}
                   <div className="flex flex-col items-center justify-center mt-2 relative">
                     <div className="flex items-center gap-2">
-                      <p className="text-lg font-bold">{item.number}</p>
+                      <p className="text-lg font-bold">{item?.number}</p>
                       <FaCopy
                         className="cursor-pointer text-gray-500 hover:text-black"
-                        onClick={() => handleCopy(item.number, uniqueId)}
+                        onClick={() => handleCopy(item?.number, uniqueId)}
                       />
                     </div>
-                    {copiedId === uniqueId && (
-                      <span className="absolute -top-6 text-green-600 text-sm font-semibold z-10">
-                        Copied!
-                      </span>
-                    )}
+                   
                   </div>
 
                   {/* Suggested Amount */}
                   <div className="flex justify-center gap-2 mt-3 flex-wrap">
-                    {suggestedAmounts.map((amt) => (
+                    {suggestedAmounts?.map((amt) => (
                       <button
                         key={amt}
                         className={`px-3 py-1 rounded-full border transition ${
@@ -129,7 +148,8 @@ const DonationSupport = () => {
                     Donate {selectedAmount ? `${selectedAmount}৳` : ""}
                   </button> */}
 
-                  <p className="font-semibold mt-2">দয়া করে আপনার মোবাইল অ্যাপ থেকে সেন্ডমানি করুন।</p>
+                  <p className="font-semibold mt-2">{item?.p}</p>
+
                   <p>পেমেন্ট মেথড এর কাজ চলমান...</p>
                 </div>
               );
