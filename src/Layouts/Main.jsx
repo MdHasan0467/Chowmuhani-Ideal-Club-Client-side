@@ -6,6 +6,8 @@ import TopLargeNavbar from "../Shared/Navs/Desktop/TopLargeNavbar";
 import LargeNavbar from "../Shared/Navs/Desktop/LargeNavbar";
 import MobileNavbar from "../Shared/Navs/Mobile/MobileNavbar";
 import MobileBottomNavbar from "../Shared/Navs/Mobile/MobileBottomNavbar";
+// import CursorLight from "../Shared/CursorEffect/CursorLight";
+// import CursorSpotlight from "../Shared/CursorEffect/CursorSpotlight";
 
 const Main = () => {
 //   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +38,8 @@ const Main = () => {
         <div className="pb-20">
           <MobileBottomNavbar />
         </div>
+        {/* <CursorLight /> */}
+        {/* <CursorSpotlight /> */}
     </div>
   );
 };

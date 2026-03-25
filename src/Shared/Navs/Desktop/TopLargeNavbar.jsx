@@ -41,9 +41,10 @@ const TopLargeNavbar = () => {
             to="/"
             className="text-xl font-bold cursor-pointer font-serif"
           >
-            সি আই সি
+            ডি আই সি
           </Link>
-          <span className="text-xs">একটি সামাজিক এবং মানবিক সংস্থা</span>
+          {/* <span className="text-xs">একটি সামাজিক এবং মানবিক সংস্থা</span> */}
+          <span className="text-xs">দুর্গাপুর ইউনিয়ন ব্লাড ফাউন্ডেশন</span>
         </div>
 
         {/* Desktop Logo + Tagline */}
@@ -52,9 +53,9 @@ const TopLargeNavbar = () => {
             to="/"
             className="text-xl font-bold cursor-pointer font-serif"
           >
-            চৌমুহনী আইডিয়াল ক্লাব
+            দুর্গাপুর আইডিয়াল ক্লাব
           </Link>
-          <span className="text-xs text-white/50">একটি সামাজিক এবং মানবিক সংস্থা</span>
+          <span className="text-xs">দুর্গাপুর ইউনিয়ন ব্লাড ফাউন্ডেশন</span>
         </div>
       </div>
 

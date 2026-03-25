@@ -43,7 +43,7 @@ const MemberVerification = ({ onVerified }) => {
       <input
         value={memberId}
         onChange={(e) => setMemberId(e.target.value)}
-        placeholder="আপনার CIC আইডি"
+        placeholder="আপনার DIC আইডি"
         className="input input-bordered w-full"
       />
 

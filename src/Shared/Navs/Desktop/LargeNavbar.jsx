@@ -8,9 +8,9 @@ const LargeNavbar = () => {
       {/* Logo */}
       {/* <div className="flex-1"> */}
         {/* <Link className="text-xl font-bold text-primary cursor-pointer flex md:hidden">
-          CIC
+          DIC
         </Link> */}
-        {/* <Link className="text-xl font-bold text-primary cursor-pointer ">Chowmuhani Ideal Club</Link> */}
+        {/* <Link className="text-xl font-bold text-primary cursor-pointer ">DURGAPUR IDEAL CLUB</Link> */}
       {/* </div> */}
 
     

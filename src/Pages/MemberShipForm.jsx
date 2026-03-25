@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // 🔥 তোমার আগের সব import থাকবে
-import useGenerateCIC from "../Hooks/useGenerateCIC";
+import useGenerateDIC from "../Hooks/useGenerateDIC";
 
 import PersonalInfo from "../components/MemberShipForm/PersonalInfo";
 import SocialInfo from "../components/MemberShipForm/SocialInfo";
@@ -13,7 +13,7 @@ import MonthlyDonation from "../components/MemberShipForm/MonthlyDonation";
 import MembershipTerms from "../components/MemberShipForm/MembershipTerms";
 
 const MemberShipForm = () => {
-  const { generateUniqueCIC, generating } = useGenerateCIC();
+  const { generateUniqueDIC, generating } = useGenerateDIC();
 
   // 🔥 role selection
   const [role, setRole] = useState("volunteer");
@@ -85,11 +85,11 @@ const MemberShipForm = () => {
     setLoading(true);
 
     try {
-      const cicId = await generateUniqueCIC(formData.phone);
+      const DICId = await generateUniqueDIC(formData.phone);
 
       const dataToSend = {
         ...formData,
-        cicId,
+        DICId,
         monthlyDonation: donationChoice === "yes" ? donationAmount : donationAmount,
       };
 
@@ -165,7 +165,7 @@ const MemberShipForm = () => {
             </h1>
 
             {success && <p className="text-green-500 text-center">সফল হয়েছে</p>}
-            {generating && <p className="text-center">CIC তৈরি হচ্ছে...</p>}
+            {generating && <p className="text-center">DIC তৈরি হচ্ছে...</p>}
 
             {/* 🔥 তোমার original components */}
             <PersonalInfo formData={formData} setFormData={setFormData} />

@@ -22,7 +22,7 @@ const SignUp = () => {
     <div className="">
       {/* Page title */}
       <Helmet>
-        <title>CIC / Signup</title>
+        <title>DIC / Signup</title>
       </Helmet>
         <form onSubmit={handlRegisterHandler} className="w-1/2 mx-auto mt-20 bg-amber-100 p-10">
 

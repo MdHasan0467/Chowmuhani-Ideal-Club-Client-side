@@ -27,6 +27,7 @@ import ScrollTopButton from "../components/Home/ScrollTopButton";
 import NewMemberShip from "./NewMemberShip";
 import LgDeviceRightSide from "../components/Home/LgDeviceRightSide";
 import BloodGroupSelector from "../components/LgDeviceRightSide/BloodGroupSelector";
+import ShareButton from "../components/Home/ShareButton";
 // import DonationAndVolunteerCTA from "../components/Home/DonationAndVolunteerCTA";
 // import VolunteerCTA from "../components/Home/VolunteerCTA";
 
@@ -36,7 +37,7 @@ const Home = () => {
     <div>
             {/* Page title */}
             <Helmet>
-              <title>CIC / Home</title>
+              <title>DIC / Home</title>
             </Helmet>
       <div className="md:grid md:grid-cols-4">
         <div className="md:col-span-3"><Hero /></div>
@@ -69,10 +70,11 @@ const Home = () => {
       <NewMemberShip />
       {/* <Carousel /> */}
       {/* <OurMission />
-        <OurCauses /> */}
-          {/* <GetInvolved /> */}
-          <Footer />
-          <ScrollTopButton />
+      <OurCauses /> */}
+      {/* <GetInvolved /> */}
+      <Footer />
+      <ShareButton />
+      <ScrollTopButton />
     </div>
   );
 };

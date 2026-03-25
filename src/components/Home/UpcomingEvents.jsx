@@ -9,7 +9,7 @@ const eventsData = [
     location: "Chowmuhani Central Park",
     image: "https://picsum.photos/id/1011/500/300",
     description:
-      "Chowmuhani Ideal Club is organizing a voluntary blood donation camp to support local hospitals and emergency patients.",
+      "DURGAPUR IDEAL CLUB is organizing a voluntary blood donation camp to support local hospitals and emergency patients.",
   },
   {
     id: 2,

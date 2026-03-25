@@ -9,7 +9,7 @@ const About = () => {
 <div>
       {/* Page title */}
       <Helmet>
-        <title>CIC / About</title>
+        <title>DIC / About</title>
       </Helmet>
 
     {/* Tittle */}
@@ -22,14 +22,14 @@ const About = () => {
                     <div className="bg-primary text-primary-content md:grid md:grid-cols-3 place-content-center font-black">
                         {/* Logo */}
                           <div className="flex justify-center">
-                            <img src={Logo} alt="Logo" 
+                            {/* <img src={Logo} alt="Logo" 
                            className='w-20 h-20 md:w-80 md:h-80 mt-2 cursor-no-drop md:col-span-1'
-                           />
+                           /> */}
                            </div>
                            {/* Tittle */}
                       <div className='col-span-2 px-4'>
-                          <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">চৌমুহনী আইডিয়াল ক্লাব</h1>
-                          <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
+                          <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">দুর্গাপুর আইডিয়াল ক্লাব</h1>
+                          <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">DURGAPUR IDEAL CLUB (DIC) </h1>
                           <div className='md:mt-5 hidden md:block'>
                             <p>যুব সমাজকে ধ্বংসাত্মক মাদক দ্রব্য এবং বর্তমানে চলমান সকল অপসংস্কৃতি থেকে দূরে রেখে খেলাধুলা এবং সামাজিক কাজের মাধ্যমে</p>
                             <br />
@@ -43,14 +43,14 @@ const About = () => {
                     <div className="bg-base-200 md:grid md:grid-cols-3 place-content-center font-black">
                         {/* Logo */}
                            <div className="flex justify-center">
-                            <img src={Logo} alt="Logo" 
+                            {/* <img src={Logo} alt="Logo" 
                            className='w-20 h-20 md:w-80 md:h-80 mt-2 cursor-no-drop md:col-span-1'
-                           />
+                           /> */}
                            </div>
                            {/* Tittle */}
                         <div className='md:col-span-2 px-4'>
-                           <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">চৌমুহনী আইডিয়াল ক্লাব</h1>
-                           <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">CHOWMUHANI IDEAL CLUB (CIC) </h1>
+                           <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">দুর্গাপুর আইডিয়াল ক্লাব</h1>
+                           <h1 className="font-bold text-xl md:text-5xl mt-5 text-center">DURGAPUR IDEAL CLUB (DIC) </h1>
                            <div className='md:mt-5 hidden md:block'>
                             <p>যুব সমাজকে ধ্বংসাত্মক মাদক দ্রব্য এবং বর্তমানে চলমান সকল অপসংস্কৃতি থেকে দূরে রেখে খেলাধুলা এবং সামাজিক কাজের মাধ্যমে</p>
                             <br />

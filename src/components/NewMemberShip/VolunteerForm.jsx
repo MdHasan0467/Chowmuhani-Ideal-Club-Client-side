@@ -6,12 +6,12 @@ import BloodInfo from "../MemberShipForm/BloodInfo";
 import ProfileUpload from "../MemberShipForm/ProfileUpload";
 import MonthlyDonation from "../MemberShipForm/MonthlyDonation";
 import MembershipTerms from "../MemberShipForm/MembershipTerms";
-import useGenerateCIC from "../../Hooks/useGenerateCIC";
+import useGenerateDIC from "../../Hooks/useGenerateDIC";
 import PersonalInfo from "../MemberShipForm/PersonalInfo";
 
 
 const VolunteerForm = () => {
-  const { generateUniqueCIC, generating } = useGenerateCIC();
+  const { generateUniqueDIC, generating } = useGenerateDIC();
 
   const [success, setSuccess] = useState(false);
   const [agree, setAgree] = useState(false);
@@ -52,14 +52,14 @@ const VolunteerForm = () => {
     setLoading(true);
 
     try {
-      const cicId = await generateUniqueCIC(formData.phone);
+      const DICId = await generateUniqueDIC(formData.phone);
 
       const res = await fetch("http://localhost:5000/membership", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           ...formData,
-          cicId,
+          DICId,
           monthlyDonation: donationAmount,
         }),
       });
@@ -82,7 +82,7 @@ const VolunteerForm = () => {
       </h1>
 
       {success && <p className="text-green-500 text-center">সফল হয়েছে</p>}
-      {generating && <p className="text-center">CIC তৈরি হচ্ছে...</p>}
+      {generating && <p className="text-center">DIC তৈরি হচ্ছে...</p>}
 
       <PersonalInfo formData={formData} setFormData={setFormData} />
       <SocialInfo formData={formData} setFormData={setFormData} />

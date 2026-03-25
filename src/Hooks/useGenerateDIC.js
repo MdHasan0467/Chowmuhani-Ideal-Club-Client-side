@@ -2,25 +2,25 @@
 import { useState } from "react";
 
 /*
-  Custom Hook: useGenerateCIC
+  Custom Hook: useGenerateDIC
   কাজ:
-  - ফোন নম্বর থেকে একটি ইউনিক CIC আইডি তৈরি করা
+  - ফোন নম্বর থেকে একটি ইউনিক DIC আইডি তৈরি করা
   - সার্ভারে গিয়ে চেক করা আইডি আগে থেকে আছে কিনা
   - না থাকলে সেই আইডি রিটার্ন করা
 */
-const useGenerateCIC = () => {
+const useGenerateDIC = () => {
 
-  // generating state → CIC তৈরি করার সময় loading দেখাতে কাজে লাগবে
+  // generating state → DIC তৈরি করার সময় loading দেখাতে কাজে লাগবে
   const [generating, setGenerating] = useState(false);
 
   /*
-    Function: generateUniqueCIC
+    Function: generateUniqueDIC
     Parameter:
       phone → ইউজারের ফোন নম্বর
     Return:
-      Promise → ইউনিক CIC ID
+      Promise → ইউনিক DIC ID
   */
-  const generateUniqueCIC = async (phone) => {
+  const generateUniqueDIC = async (phone) => {
 
     // ৪ ডিজিটের random সংখ্যা তৈরি করার helper function
     const randomDigits = () => Math.floor(1000 + Math.random() * 9000);
@@ -31,23 +31,23 @@ const useGenerateCIC = () => {
     // ইউনিক হয়েছে কিনা track করার জন্য variable
     let unique = false;
 
-    // final CIC ID এখানে store হবে
-    let cicId = "";
+    // final DIC ID এখানে store হবে
+    let DICId = "";
 
-    // CIC generate শুরু → loading true
+    // DIC generate শুরু → loading true
     setGenerating(true);
 
     // যতক্ষণ পর্যন্ত ইউনিক আইডি না পাওয়া যায় loop চলবে
     while (!unique) {
 
-      // CIC format তৈরি
-      // উদাহরণ: cic48351234
-      cicId = `cic${randomDigits()}${last4}`;
+      // DIC format তৈরি
+      // উদাহরণ: DIC48351234
+      DICId = `DIC${randomDigits()}${last4}`;
 
       try {
 
         // সার্ভারে গিয়ে check করা হচ্ছে এই আইডি আগে আছে কিনা
-        const res = await fetch(`http://localhost:5000/api/check-cic/${cicId}`);
+        const res = await fetch(`http://localhost:5000/api/check-DIC/${DICId}`);
 
         // response JSON এ convert
         const data = await res.json();
@@ -60,7 +60,7 @@ const useGenerateCIC = () => {
       } catch (err) {
 
         // error হলে console এ দেখানো
-        console.log("CIC check error:", err);
+        console.log("DIC check error:", err);
 
         // error হলেও loop break করার জন্য unique true করা
         unique = true;
@@ -68,19 +68,19 @@ const useGenerateCIC = () => {
 
     }
 
-    // CIC generate শেষ → loading false
+    // DIC generate শেষ → loading false
     setGenerating(false);
 
-    // final CIC ID return
-    return cicId;
+    // final DIC ID return
+    return DICId;
   };
 
   // Hook থেকে function এবং loading state return
   return {
-    generateUniqueCIC,
+    generateUniqueDIC,
     generating,
   };
 };
 
 // Hook export করা হচ্ছে
-export default useGenerateCIC;
+export default useGenerateDIC;

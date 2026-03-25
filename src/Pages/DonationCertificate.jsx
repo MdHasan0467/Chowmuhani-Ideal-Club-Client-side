@@ -83,7 +83,7 @@ const DonationCertificate = () => {
           {/* Company Logo in center */}
           <img src="/logo-removebg.png" alt="Logo" className="company-logo-center" />
 
-          <div className="organization">CHOWMUHANI IDEAL CLUB (CIC)</div>
+          <div className="organization">DURGAPUR IDEAL CLUB (DIC)</div>
           <h1>Donation Certificate</h1>
           <p>This certificate is proudly presented to</p>
           <h2>{donor.name || "Donor Name"}</h2>

@@ -80,7 +80,7 @@ const DashboardHome = () => {
     <div className="space-y-6">
             {/* Page title */}
             <Helmet>
-              <title>CIC / Dashboard</title>
+              <title>DIC / Dashboard</title>
             </Helmet>
 
       {/* Charts */}

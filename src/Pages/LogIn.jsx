@@ -30,7 +30,7 @@ return (
 <div>
       {/* Page title */}
       <Helmet>
-        <title>CIC / Login</title>
+        <title>DIC / Login</title>
       </Helmet>
       
       <div className="hero bg-base-200 min-h-screen">

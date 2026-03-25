@@ -26,7 +26,7 @@ const EventBanner = () => {
             <div className="container grid grid-cols-1 lg:grid-cols-2">
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <h1 className="text-4xl font-bold leading-none text-orange-600">
-                        চৌমুহনী আইডিয়াল ক্লাব
+                        দুর্গাপুর আইডিয়াল ক্লাব
                     </h1>
                     <p className="mt-6 mb-8 text-lg sm:mb-12">
                     এটি একটি অরাজনৈতিক এবং সামাজিক সংগঠন
