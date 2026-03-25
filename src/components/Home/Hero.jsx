@@ -30,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="px-4 md:px-16 py-10 pt-28 md:pt-32 bg-gradient-to-br from-blue-50 via-white to-gray-100">
+    <div className="px-4 md:px-16 py-10 pt-28 md:pt-32 bg-linear-to-br from-blue-50 via-white to-gray-100">
       <motion.div
         className="flex flex-col md:flex-row items-center gap-10 mb-16"
         initial={{ opacity: 0, y: -20 }}
@@ -66,7 +66,7 @@ const Hero = () => {
           </motion.p>
 
           {/* Donate Button */}
-     <div className="border border-gray-100 bg-white/50 p-6 rounded-full">
+     <div className="border border-gray-100 bg-white/50 p-6 rounded-xl">
         <motion.div
           className="w-full flex justify-center"
           style={{ x: springX, y: springY }}
@@ -79,7 +79,7 @@ const Hero = () => {
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             className="relative overflow-hidden w-full md:w-auto flex items-center gap-3 px-7 py-3.5 
-              transition-all duration-300 bg-white text-gray-800 font-semibold rounded-full
+              transition-all duration-300 bg-white text-gray-800 text-xs font-semibold rounded-full
               shadow-[0_0_15px_rgba(255,255,255,0.5),0_0_25px_rgba(0,0,255,0.15)]"
           >
             {/* Shine */}
@@ -125,6 +125,7 @@ const Hero = () => {
             />
           </motion.a>
         </motion.div>
+        <p className="text-sx text-gray-500 pb-2 pt-4">🔒 আপনার অনুদান সম্পূর্ণ নিরাপদ এবং স্বচ্ছভাবে ব্যবহৃত হবে।</p>
      </div>
           {/* Volunteer Button */}
           <VolunteerCTA />
