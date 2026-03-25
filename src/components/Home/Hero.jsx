@@ -66,7 +66,7 @@ const Hero = () => {
           </motion.p>
 
           {/* Donate Button */}
-     <div className="border border-gray-100 bg-white/60 p-4 rounded-full">
+     <div className="border border-gray-100 bg-white/50 p-6 rounded-full">
         <motion.div
           className="w-full flex justify-center"
           style={{ x: springX, y: springY }}
