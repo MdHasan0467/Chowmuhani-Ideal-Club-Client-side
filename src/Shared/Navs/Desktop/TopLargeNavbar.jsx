@@ -85,14 +85,14 @@ const TopLargeNavbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a href="/dashboard/profile" className="justify-between">
+            <li className="hover:text-green-600">
+              <a href="#" className="justify-between">
                 প্রোফাইল
-                <span className="badge">নতুন</span>
+                <span className="badge">user</span>
               </a>
             </li>
             <li><a href="/dashboard/add/admin/post">পোষ্ট করুন</a></li>
-            <li><a>লগ আউট</a></li>
+            <li className="hover:text-red-600"><a>লগ আউট</a></li>
           </ul>
         </div>
       </div>
@@ -132,15 +132,15 @@ const TopLargeNavbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-linear-to-br from-red-200 to-green-200 rounded-box z-50 mt-3 w-52 p-2 shadow over"
           >
-            <li className="border-b">
-              <a href="/dashboard/profile" className="justify-between">
+            <li className="border-b hover:text-green-600">
+              <a href="#" className="justify-between">
                 প্রোফাইল
                 <span className="badge">user</span>
               </a>
             </li>
             {/* <li className="border-b"><Link to="/events">ইভেন্ট সমূহ</Link></li>
             <li className="border-b"><Link to="/gallery">গ্যালারী</Link></li> */}
-            <li className="border-b"><a>লগ আউট</a></li>
+            <li className="border-b hover:text-red-600"><a>লগ আউট</a></li>
           </ul>
         </div>
       </div>
