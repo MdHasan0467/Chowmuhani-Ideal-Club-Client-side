@@ -21,7 +21,7 @@ const Main = () => {
 
 
   return (
-    <div className="">
+    <div>
         <TopLargeNavbar />
 
         {/* Large Device */}
@@ -34,7 +34,10 @@ const Main = () => {
           <MobileNavbar />
         </div>
         
-        <Outlet />
+        <div className="pt-20">
+          <Outlet />
+        </div>
+
         <div className="pb-20">
           <MobileBottomNavbar />
         </div>

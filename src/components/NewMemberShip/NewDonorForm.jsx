@@ -147,7 +147,8 @@ const NewDonorForm = () => {
     }`;
 
   return (
-    <form
+    <div className="pb-10">
+      <form
       onSubmit={handleSubmit}
       className="max-w-3xl mx-auto space-y-5 bg-white p-6 rounded-xl shadow-lg"
     >
@@ -250,9 +251,10 @@ const NewDonorForm = () => {
 
       {/* Submit */}
       <button type="submit" disabled={loading} className="w-full py-3 text-white rounded bg-red-500">
-        {loading ? "সাবমিট হচ্ছে..." : "রক্তদাতা হিসেবে যোগ দিন ❤️"}
+        {loading ? "সাবমিট হচ্ছে..." : "রক্তদাতা হিসেবে যোগ দিন 💛"}
       </button>
     </form>
+    </div>
   );
 };
 

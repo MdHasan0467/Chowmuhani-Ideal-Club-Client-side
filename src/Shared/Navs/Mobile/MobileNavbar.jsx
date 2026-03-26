@@ -15,6 +15,7 @@ import {
   BsSearchHeart,
   BsUbuntu,
 } from "react-icons/bs";
+import { MdLocalHospital } from "react-icons/md";
 
 const MobileNavbar = () => {
   // 👉 Sidebar open/close করার state
@@ -76,6 +77,7 @@ const MobileNavbar = () => {
     { title: "দান করুন", path: "/donation/support", icon: <FaHandHoldingWater /> },
     { title: "রক্ত খুজুন", path: "/find-blood", icon: <BsSearchHeart /> },
     { title: "সেচ্ছাসেবীগণ", path: "/blood/volunteers", icon: <BsUbuntu /> },
+    { title: "হসপিটাল সেবা", path: "hospital/partners", icon: <MdLocalHospital /> },
     { title: "ছবি সমূহ", path: "/gallery", icon: <FaImages /> },
     { title: "ইভেন্ট সমূহ", path: "/events", icon: <BsCalendarEventFill /> },
     { title: "আমাদের সম্পর্কে", path: "/about", icon: <BsFillInfoCircleFill /> },

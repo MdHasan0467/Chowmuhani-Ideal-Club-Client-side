@@ -30,19 +30,6 @@ import ControleAboutPage from "../../Pages/ControleAboutPage"
 import BanUser from "../../Pages/BanUser"
 import DonationCertificate from "../../Pages/DonationCertificate"
 import Trash from "../../Pages/Trash"
-// import AddNewMember from "../../Pages/AddNewMember";
-// import AddEvent from "../../Pages/AddEvent";
-// import Events from "../../Pages/Events";
-// import FindBlood from "../../Pages/FindBlood";
-// import Gallery from "../../Pages/Gallery";
-// import About from "../../Pages/About";
-// import IncomeAndCostSharePublicly from "../../Pages/IncomeAndCostSharePublicly";
-// import AddAdminPost from "../../Pages/AddAdminPost";
-// import Main from "../../Layouts/Main";
-// import Home from "../../Pages/Home";
-// import LogIn from "../../Pages/LogIn";
-// import SignUp from "../../Pages/SignUp";
-// import Dashboard from "../../Pages/Dashboard";
 
 
 export const router = createBrowserRouter ([

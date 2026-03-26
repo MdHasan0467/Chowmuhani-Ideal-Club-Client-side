@@ -4,21 +4,21 @@ import { FiCalendar, FiMapPin } from "react-icons/fi";
 const eventsData = [
   {
     id: 1,
-    title: "Blood Donation Camp",
-    date: "25 March 2026",
-    location: "Chowmuhani Central Park",
-    image: "https://picsum.photos/id/1011/500/300",
+    title: "রক্তদান ক্যাম্প",
+    date: "২৫ মার্চ ২০২৬",
+    location: "চৌমুহানী সেন্ট্রাল পার্ক",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
     description:
-      "DURGAPUR IDEAL CLUB is organizing a voluntary blood donation camp to support local hospitals and emergency patients.",
+      "দুর্গাপুর আইডিয়াল ক্লাব স্থানীয় হাসপাতাল ও জরুরি রোগীদের সহায়তার জন্য একটি স্বেচ্ছায় রক্তদান ক্যাম্পের আয়োজন করছে।",
   },
   {
     id: 2,
-    title: "Tree Plantation Program",
-    date: "10 April 2026",
-    location: "Ideal School Field",
-    image: "https://picsum.photos/id/1043/500/300",
+    title: "বৃক্ষরোপণ কর্মসূচি",
+    date: "১০ এপ্রিল ২০২৬",
+    location: "আইডিয়াল স্কুল মাঠ",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
     description:
-      "Join our tree plantation drive to make our community greener and healthier.",
+      "আমাদের কমিউনিটিকে আরও সবুজ ও স্বাস্থ্যকর করতে বৃক্ষরোপণ কর্মসূচিতে যোগ দিন।",
   },
 ];
 
@@ -28,7 +28,7 @@ const UpcomingEvents = () => {
   return (
     <div className="bg-gray-50 py-10 px-4">
       <h2 className="text-3xl font-bold text-center mb-8">
-        Upcoming Events
+        পরবর্তী ইভেন্ট
       </h2>
 
       <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
@@ -63,11 +63,11 @@ const UpcomingEvents = () => {
                   onClick={() => setSelectedEvent(event)}
                   className="bg-blue-500 text-white px-4 py-2 rounded-lg"
                 >
-                  View Details
+                  বিস্তারিত দেখুন
                 </button>
 
                 <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-lg">
-                  Join Event
+                  ইভেন্টে যুক্ত হতে
                 </button>
               </div>
             </div>
@@ -91,7 +91,7 @@ const UpcomingEvents = () => {
               onClick={() => setSelectedEvent(null)}
               className="bg-red-500 text-white px-4 py-2 rounded"
             >
-              Close
+              বন্ধ
             </button>
           </div>
         </div>

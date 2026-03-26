@@ -5,38 +5,38 @@ import WorkDetailsModal from "../RecentWorks/WorkDetailsModal";
 const recentWorksData = [
   {
     id: 1,
-    title: "Blood Donation Camp",
-    date: "12/03/2026",
-    description: "Organized a blood donation camp at Chowmuhani central park.",
+    title: "রক্তদান ক্যাম্প",
+    date: "১২/০৩/২০২৬",
+    description: "চৌমুহানী সেন্ট্রাল পার্কে একটি রক্তদান ক্যাম্প আয়োজন করা হয়।",
     link: "#",
     images: [
-      "https://images.news18.com/ibnlive/uploads/2025/09/1758867219_Blood-Donation-6-2025-09-69f32f11f50b9c0fd7a680e38a8f2bb0-16x9.jpg",
-      "https://img.freepik.com/free-vector/human-blood-donate-white-background_1308-111266.jpg?semt=ais_rp_progressive&w=740&q=80",
-      "https://www.shutterstock.com/image-vector/set-illustration-blood-donation-equipment-260nw-2551001649.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s"
     ],
   },
   {
     id: 2,
-    title: "Club Annual Meeting",
-    date: "05/03/2026",
-    description: "Held the annual general meeting with all members present.",
+    title: "ক্লাবের বার্ষিক সভা",
+    date: "০৫/০৩/২০২৬",
+    description: "সকল সদস্যদের উপস্থিতিতে বার্ষিক সাধারণ সভা অনুষ্ঠিত হয়।",
     link: "#",
     images: [
-      "https://www.clubjournal.co.uk/uploads/News/CIU%20AGM%202024_DSC0759_1.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-ez-u7I1L2oE5nM7OQXQZ09A8tP6u1hxQA&s",
-      "https://thebuddypost.hkbu.edu.hk/web/dec16/images/inner-treasures3a.png"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s"
     ],
   },
   {
     id: 3,
-    title: "Tree Plantation Drive",
-    date: "20/02/2026",
-    description: "Planted 200+ trees in collaboration with local schools.",
+    title: "বৃক্ষরোপণ কর্মসূচি",
+    date: "২০/০২/২০২৬",
+    description: "স্থানীয় স্কুলগুলোর সহযোগিতায় ২০০+ গাছ রোপণ করা হয়েছে।",
     link: "#",
     images: [
-      "https://i.brecorder.com/primary/2024/08/66bec6af2ea90.jpg", // tree planting
-      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80", // saplings
-      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80", // volunteers planting
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oghbsuzggpkknQSSU-Ch_xep_9v3m6EeBQ&s",
     ],
   },
 ];
@@ -58,7 +58,7 @@ const RecentWorks = () => {
   return (
     <div className="bg-gray-50 py-10 px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-        Recent Works
+        আমাদের সর্বশেষ কাজ
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,7 +95,7 @@ const RecentWorks = () => {
                 onClick={() => openModal(work)}
                 className="mt-4 inline-flex items-center justify-center px-4 py-2 bg-blue-500 text-white font-medium text-sm rounded-xl hover:bg-blue-600 transition-colors"
               >
-                View Details <FiExternalLink className="ml-2 w-4 h-4" />
+                বিস্তারিত দেখুন <FiExternalLink className="ml-2 w-4 h-4" />
               </button>
             </div>
           </div>

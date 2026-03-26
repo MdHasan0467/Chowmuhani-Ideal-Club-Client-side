@@ -21,7 +21,8 @@ const Footer = () => {
         <div className="flex gap-5 text-lg">
           
           <a
-            href="#"
+            href="https://www.facebook.com/profile.php?id=61585897920019"
+            target="_blank"
             className="hover:scale-125 hover:text-blue-500 transition duration-300"
           >
             <FaFacebook />
@@ -29,6 +30,7 @@ const Footer = () => {
 
           <a
             href="#"
+            target="_blank"
             className="hover:scale-125 hover:text-green-500 transition duration-300"
           >
             <FaWhatsappSquare />
@@ -36,6 +38,7 @@ const Footer = () => {
 
           <a
             href="#"
+            target="_blank"
             className="hover:scale-125 hover:text-blue-400 transition duration-300"
           >
             <BsMessenger />
@@ -50,7 +53,7 @@ const Footer = () => {
             href="https://mdhasan-portfolio.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative inline-block"
+            className="relative inline-block cursor-pointer"
           >
             © 2026 MD Hasan
 
@@ -58,6 +61,10 @@ const Footer = () => {
             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-linear-to-r from-cyan-400 to-purple-500 transition-all duration-500 group-hover:w-full"></span>
           </a>
 
+        </p>
+        <p>
+          <span>Last updated 26/03/2026</span>
+          <span className="mx-2">Versions 2.4.1</span>
         </p>
 
       </div>
