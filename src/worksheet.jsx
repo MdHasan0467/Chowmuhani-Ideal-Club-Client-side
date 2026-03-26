@@ -1,10 +1,7 @@
+// FindBlood.jsx (Star badges below image)
 import { useState, useMemo } from "react";
-import useDebounce from "../Hooks/useDebounce";
-import SearchBar from "../components/FindBlood/SearchBar";
-import FilterBar from "../components/FindBlood/FilterBar";
-import DonorCard from "../components/FindBlood/DonorCard";
-import DonorTable from "../components/FindBlood/DonorTable";
 import bdLocations from "../data/bdLocations";
+import FindBloodDonarInfoModal from "../Modals/FindBlood/FindBloodDonarInfoModal";
 
 const donorsData = [
   { id: 1, name: "Rahim Ahmed", division: "Dhaka (ঢাকা)", district: "Dhaka (ঢাকা)", upazila: "Savar (সাভার)", blood: "A+", mobile: "01700000001", image: "https://i.pravatar.cc/150?img=1", email: "rahim1@example.com", totalDonate: 5 },
@@ -34,107 +31,137 @@ const donorsData = [
   { id: 23, name: "Nusrat Jahan", division: "Chattogram (চট্টগ্রাম)", district: "Noakhali (নোয়াখালী)", upazila: "Begumganj (বেগমগঞ্জ)", blood: "O+", mobile: "01700000023", image: "https://i.pravatar.cc/150?img=23", email: "nusrat23@example.com", totalDonate: 2 },
 ];
 
+const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+const INITIAL_LOAD = 6;
+
 const FindBlood = () => {
-  const [search, setSearch] = useState("");
-  const [blood, setBlood] = useState([]);
   const [division, setDivision] = useState("");
   const [district, setDistrict] = useState("");
   const [upazila, setUpazila] = useState("");
-  const [view, setView] = useState("card");
+  const [blood, setBlood] = useState("");
+  const [search, setSearch] = useState("");
+  const [selectedDonor, setSelectedDonor] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_LOAD);
 
-  const debouncedSearch = useDebounce(search, 400);
+  const divisions = bdLocations?.map((item) => Object?.keys(item))?.flat();
+  const districts = division ? Object?.keys(bdLocations?.find((item) => item[division])[division]) : [];
+  const upazilas = division && district ? bdLocations?.find((item) => item[division])[division][district] : [];
 
-  // 🔹 divisions, districts, upazilas
-  // const divisions = bdLocations.map((item) => Object.keys(item)[0]);
-    const divisions = bdLocations?.map((item) => Object?.keys(item))?.flat();
-
-  const districts = division
-    ? Object.keys(bdLocations.find((item) => item[division])[division])
-    : [];
-
-  const upazilas = division && district
-    ? bdLocations.find((item) => item[division])[division][district] || []
-    : [];
-
-  // 🔍 search only
-  const searchResult = useMemo(() => {
-    if (!debouncedSearch) return donorsData;
-
-    return donorsData.filter((d) => {
-      const text = debouncedSearch.toLowerCase();
+  const filteredDonors = useMemo(() => {
+    return donorsData.filter((donor) => {
       return (
-        d.name.toLowerCase().includes(text) ||
-        d.mobile.includes(debouncedSearch)
+        (division ? donor?.division === division : true) &&
+        (district ? donor?.district === district : true) &&
+        (upazila ? donor?.upazila === upazila : true) &&
+        (blood ? donor?.blood === blood : true) &&
+        (search ? donor?.name.toLowerCase()?.includes(search?.toLowerCase()) || donor?.mobile?.includes(search) : true)
       );
     });
-  }, [debouncedSearch]);
+  }, [division, district, upazila, blood, search]);
 
-  // 🎯 filter only
-  const filterResult = useMemo(() => {
-    return donorsData.filter((d) => {
-      if (blood.length && !blood.includes(d.blood)) return false;
-      if (division && d.district !== district) return false;
-      return true;
-    });
-  }, [blood, division, district]);
+  const donorsToShow = filteredDonors?.slice(0, visibleCount);
+  const handleLoadMore = () => setVisibleCount((prev) => prev + INITIAL_LOAD);
+  
+  const handleFilterChange = (setter) => (value) => {
+    setter(value);
+    setVisibleCount(INITIAL_LOAD);
+  };
 
-  // 🧠 final combine search + filter
-  const finalResult = useMemo(() => {
-    return donorsData.filter((d) => {
-      if (blood.length && !blood.includes(d.blood)) return false;
-      if (division && d.district !== district) return false;
-
-      if (debouncedSearch) {
-        const text = debouncedSearch.toLowerCase();
-        if (!d.name.toLowerCase().includes(text) && !d.mobile.includes(debouncedSearch)) {
-          return false;
-        }
-      }
-      return true;
-    });
-  }, [blood, division, district, debouncedSearch]);
+  const renderStars = (totalDonate) => {
+    const starCount = Math?.min(totalDonate, 5);
+    const stars = [];
+    for (let i = 0; i < starCount; i++) {
+      stars?.push(<span key={i} className="text-yellow-400 text-lg">⭐</span>);
+    }
+    if (totalDonate > 5) {
+      stars?.push(<span key="extra" className="text-green-500 text-lg ml-1">🏆</span>);
+    }
+    return stars;
+  };
 
   return (
-    <div className="max-w-6xl mx-auto p-4">
-      {/* 🔍 Search */}
-      <SearchBar
-        search={search}
-        setSearch={setSearch}
-        resultCount={searchResult.length}
-        view={view}
-        setView={setView}
-        resetPagination={() => {}}
-      />
+    <section className="py-16 bg-gray-50">
+      <div className="mx-auto grid md:grid-cols-4 gap-8">
 
-      {/* 🎯 Filter */}
-      <FilterBar
-        division={division}
-        setDivision={setDivision}
-        district={district}
-        setDistrict={setDistrict}
-        upazila={upazila}
-        setUpazila={setUpazila}
-        blood={blood}
-        setBlood={setBlood}
-        divisions={divisions}
-        districts={districts}
-        upazilas={upazilas}
-        resultCount={filterResult.length}
-        resetPagination={() => {}}
-        search={search}
-      />
+        {/* LEFT FILTER */}
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">রক্তদাতাকে খুঁজুন</h2>
+        <div className="bg-white p-6 rounded-xl shadow space-x-4 h-fit flex">
 
-      {/* 🧾 View */}
-      {view === "card" ? (
-        <div className="grid md:grid-cols-3 gap-4">
-          {finalResult.map((d) => (
-            <DonorCard key={d.id} donor={d} />
-          ))}
+          <select className="select select-bordered w-full" value={division} onChange={(e) => handleFilterChange(setDivision)(e?.target?.value) & setDistrict("") & setUpazila("")}>
+            <option value="">বিভাগ</option>
+            {divisions?.map((d) => <option key={d} value={d}>{d}</option>)}
+          </select>
+
+          <select className="select select-bordered w-full" value={district} onChange={(e) => handleFilterChange(setDistrict)(e?.target?.value) & setUpazila("")} disabled={!division}>
+            <option value="">জেলা</option>
+            {districts?.map((d) => <option key={d} value={d}>{d}</option>)}
+          </select>
+
+          <select className="select select-bordered w-full" value={upazila} onChange={(e) => handleFilterChange(setUpazila)(e?.target?.value)} disabled={!district}>
+            <option value="">থানা</option>
+            {upazilas?.map((u) => <option key={u} value={u}>{u}</option>)}
+          </select>
+
+          <select className="select select-bordered w-full" value={blood} onChange={(e) => handleFilterChange(setBlood)(e?.target?.value)}>
+            <option value="">Blood Group</option>
+            {bloodGroups?.map((b) => <option key={b} value={b}>{b}</option>)}
+          </select>
         </div>
-      ) : (
-        <DonorTable donors={finalResult} />
+
+        {/* RIGHT SEARCH + RESULTS */}
+        <div className="md:col-span-3 flex flex-col">
+
+          {/* SEARCH BOX */}
+          <div className="flex md:justify-end justify-center mb-4">
+            <input type="text" placeholder="Donor Name বা Mobile দিয়ে খুঁজুন"
+              value={search}
+              onChange={(e) => { setSearch(e?.target?.value); setVisibleCount(INITIAL_LOAD); }}
+              className="input input-bordered w-72"
+            />
+          </div>
+
+          {filteredDonors?.length === 0 && (
+            <p className="text-gray-500 text-center py-10 bg-white rounded-xl shadow">কোনো রক্তদাতা পাওয়া যায়নি!</p>
+          )}
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {donorsToShow?.map((donor) => (
+              <div key={donor?.id} className="bg-white shadow rounded-xl p-5 flex flex-col items-center hover:scale-105 transition-transform duration-300 ease-in-out">
+                
+                <img src={donor?.image} alt={donor?.name} className="w-24 h-24 rounded-full object-cover mb-2"/>
+                
+                {/* Stars below image */}
+                <div className="flex items-center mb-2">
+                  {renderStars(donor?.totalDonate)}
+                </div>
+
+                <h3 className="text-lg font-bold text-center">{donor?.name}</h3>
+                <p className="text-gray-500 text-center text-sm">{donor?.division} | {donor?.district} | {donor?.upazila}</p>
+                <p className="text-red-500 font-semibold mt-1">{donor?.blood}</p>
+                <p className="text-gray-600 text-sm mt-1">📞 {donor?.mobile}</p>
+
+                <div className="flex gap-3 mt-3">
+                  <a href={`tel:${donor?.mobile}`} className="btn btn-success btn-sm">Call</a>
+                  <button onClick={() => setSelectedDonor(donor)} className="btn btn-primary btn-sm">Info</button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {visibleCount < filteredDonors?.length && (
+            <div className="flex justify-center mt-6">
+              <button onClick={handleLoadMore} className="btn btn-outline btn-sm">Load More</button>
+            </div>
+          )}
+
+        </div>
+
+      </div>
+
+      {selectedDonor && (
+        <FindBloodDonarInfoModal donor={selectedDonor} closeModal={() => setSelectedDonor(null)} />
       )}
-    </div>
+    </section>
   );
 };
 

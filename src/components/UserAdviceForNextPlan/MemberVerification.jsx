@@ -62,7 +62,7 @@ const MemberVerification = ({ onVerified }) => {
           {error}{" "}
           {!error.includes("সার্ভার") && (
             <a
-              href="/membership"
+              href="/add/new/member"
               className="underline text-blue-700"
               target="_blank"
             >

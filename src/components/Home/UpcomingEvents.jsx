@@ -66,7 +66,7 @@ const UpcomingEvents = () => {
                   বিস্তারিত দেখুন
                 </button>
 
-                <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-lg">
+                <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-lg tooltip" data-tip="Cooming Soon">
                   ইভেন্টে যুক্ত হতে
                 </button>
               </div>
