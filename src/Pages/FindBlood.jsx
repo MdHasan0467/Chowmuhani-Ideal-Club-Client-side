@@ -45,7 +45,6 @@ const FindBlood = () => {
   const debouncedSearch = useDebounce(search, 400);
 
   // 🔹 divisions, districts, upazilas
-  // const divisions = bdLocations.map((item) => Object.keys(item)[0]);
     const divisions = bdLocations?.map((item) => Object?.keys(item))?.flat();
 
   const districts = division
@@ -69,30 +68,34 @@ const FindBlood = () => {
     });
   }, [debouncedSearch]);
 
-  // 🎯 filter only
-  const filterResult = useMemo(() => {
-    return donorsData.filter((d) => {
-      if (blood.length && !blood.includes(d.blood)) return false;
-      if (division && d.district !== district) return false;
-      return true;
-    });
-  }, [blood, division, district]);
+// 🎯 filter only
+const filterResult = useMemo(() => {
+  return donorsData?.filter((d) => {
+    if (blood?.length && !blood?.includes(d?.blood)) return false;
+    if (division && d.division !== division) return false;  // division ফিল্টার
+    if (district && d.district !== district) return false;  // district ফিল্টার
+    if (upazila && d.upazila !== upazila) return false;    // upazila ফিল্টার
+    return true;
+  });
+}, [blood, division, district, upazila]);
 
-  // 🧠 final combine search + filter
-  const finalResult = useMemo(() => {
-    return donorsData.filter((d) => {
-      if (blood.length && !blood.includes(d.blood)) return false;
-      if (division && d.district !== district) return false;
+// 🧠 final combine search + filter
+const finalResult = useMemo(() => {
+  return donorsData.filter((d) => {
+    if (blood?.length && !blood.includes(d.blood)) return false;
+    if (division && d.division !== division) return false;
+    if (district && d.district !== district) return false;
+    if (upazila && d.upazila !== upazila) return false;
 
-      if (debouncedSearch) {
-        const text = debouncedSearch.toLowerCase();
-        if (!d.name.toLowerCase().includes(text) && !d.mobile.includes(debouncedSearch)) {
-          return false;
-        }
+    if (debouncedSearch) {
+      const text = debouncedSearch.toLowerCase();
+      if (!d.name.toLowerCase().includes(text) && !d.mobile.includes(debouncedSearch)) {
+        return false;
       }
-      return true;
-    });
-  }, [blood, division, district, debouncedSearch]);
+    }
+    return true;
+  });
+}, [blood, division, district, upazila, debouncedSearch]);
 
   return (
     <div className="max-w-6xl mx-auto p-4">
@@ -127,7 +130,7 @@ const FindBlood = () => {
       {/* 🧾 View */}
       {view === "card" ? (
         <div className="grid md:grid-cols-3 gap-4">
-          {finalResult.map((d) => (
+          {finalResult?.map((d) => (
             <DonorCard key={d.id} donor={d} />
           ))}
         </div>

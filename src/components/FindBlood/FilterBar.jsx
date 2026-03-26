@@ -41,7 +41,7 @@ const FilterBar = ({
           }}
         >
           <option value="">বিভাগ</option>
-          {divisions.map((d) => (
+          {divisions?.map((d) => (
             <option key={d} value={d}>{d}</option>
           ))}
         </select>
@@ -58,7 +58,7 @@ const FilterBar = ({
           }}
         >
           <option value="">জেলা</option>
-          {districts.map((d) => (
+          {districts?.map((d) => (
             <option key={d} value={d}>{d}</option>
           ))}
         </select>
@@ -74,7 +74,7 @@ const FilterBar = ({
           }}
         >
           <option value="">উপজেলা</option>
-          {upazilas.map((u) => (
+          {upazilas?.map((u) => (
             <option key={u} value={u}>{u}</option>
           ))}
         </select>

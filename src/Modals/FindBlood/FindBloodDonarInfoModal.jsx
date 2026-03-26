@@ -1,6 +1,7 @@
-import React from "react";
+
 
 const FindBloodDonarInfoModal = ({ donor, closeModal }) => {
+  console.log("donorTable", donor)
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-6 rounded-xl w-96 relative">
